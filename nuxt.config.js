@@ -4,14 +4,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Shoply | Empowering humans to buy the things they love. ❤️',
+    title: 'Henry Ikoh | Creative Entreprenuer Building the Future with Design and Code',
     meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{
 				hid: 'description',
 				name: 'description',
-				content:'Empowering humans to buy the things they love from people they trust.',
+				content:'Creative Entrepreneur exploring how Design, Art, and Technology might be used to build a better future for humanity.',
 			},
 			{
 				name: 'apple-mobile-web-app-status-bar-style',
@@ -20,12 +20,12 @@ export default {
 			{
 				hid: 'og:title',
 				name: 'og:title',
-				content: 'Shoply | Empowering humans to buy the things they love. ❤️'
+				content: 'Henry Ikoh | Creative Entreprenuer Building the Future with Design and Code'
 			},
 			{
 				hid: 'og:description',
 				name: 'og:description',
-				content: 'Empowering humans to buy the things they love from people they trust in our connected world.',
+				content: 'Creative Entrepreneur exploring how Design, Art, and Technology might be used to build a better future for humanity.',
 			},
 			{
 				hid: 'og:image',

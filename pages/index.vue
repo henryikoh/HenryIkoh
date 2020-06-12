@@ -1024,7 +1024,7 @@ export default {
 	.waves {
 		position: absolute;
 		width: 100%;
-		top: -40px;
+		top: -56px;
 		z-index: -1;
 	}
 	.waves svg {
