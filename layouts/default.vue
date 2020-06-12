@@ -29,9 +29,9 @@ html {
 	--secondary-color: #1d232d;
 }
 
-button{
-  outline: none;
-  cursor: pointer;
+button {
+	outline: none;
+	cursor: pointer;
 }
 
 .button--green {

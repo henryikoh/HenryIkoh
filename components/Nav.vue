@@ -2,7 +2,9 @@
 	<div class="head">
 		<nuxt-link to="/">
 			<div class="logo">
-				<h1>Henry Ikoh<span>.</span></h1>
+				<h1>
+					Henry Ikoh<span>.</span>
+				</h1>
 			</div>
 		</nuxt-link>
 		<ul class="menu">
@@ -41,19 +43,18 @@ a:hover {
 		z-index: 2;
 	}
 	.logo {
-		
 	}
 	.logo h1 {
 		color: var(--secondary-color);
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 53px;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 53px;
 	}
-  .logo h1 span {
-    color: var(--primary-color);
-  }
+	.logo h1 span {
+		color: var(--primary-color);
+	}
 	.menu {
 		display: none;
 	}
@@ -68,33 +69,32 @@ a:hover {
 		justify-content: space-between;
 	}
 	.logo {
-		
 	}
 	.logo h1 {
 		color: var(--secondary-color);
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 53px;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 53px;
 	}
-  .logo h1 span {
-    color: var(--primary-color);
-  }
+	.logo h1 span {
+		color: var(--primary-color);
+	}
 	.menu {
 		list-style-type: none;
 	}
 	.menu li {
-		    display: inline-block;
-    margin-left: 15px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #525252;
-    padding: 16px 50px;
-    background: rgba(196, 196, 196, 0.38);
-    border-radius: 5px;
+		display: inline-block;
+		margin-left: 15px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #525252;
+		padding: 16px 50px;
+		background: rgba(196, 196, 196, 0.38);
+		border-radius: 5px;
 	}
 }
 </style>
