@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Henry Ikoh | Creative Entreprenuer Building the Future with Design and Code',
+    title: 'Henry Ikoh | Creative Entrepreneur Building the Future with Design and Code',
     meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +20,7 @@ export default {
 			{
 				hid: 'og:title',
 				name: 'og:title',
-				content: 'Henry Ikoh | Creative Entreprenuer Building the Future with Design and Code'
+				content: 'Henry Ikoh | Creative Entrepreneur Building the Future with Design and Code'
 			},
 			{
 				hid: 'og:description',
