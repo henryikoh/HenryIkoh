@@ -178,6 +178,7 @@ setInterval(breathAnimation, 4400);
 }
 .triangle{
   margin-bottom: 15px;
+   width: 134px;
 }
 .gradient-circle {
   position: absolute;

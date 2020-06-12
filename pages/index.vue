@@ -1088,7 +1088,10 @@ color: #FFFFFF;
 }
 .illust{
   text-align: center;
+  margin: auto;
     margin-top: 68px;
+     width: 348px;
+     
 }
 .areas{
   position: absolute;
