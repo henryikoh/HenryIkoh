@@ -4,7 +4,7 @@
       <div class="circle"></div>
 
       <div class="triangle">
-        <svg width="134" height="122" viewBox="0 0 134 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  viewBox="0 0 134 122" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M48.8375 11.2928C56.931 -2.65178 77.069 -2.65182 85.1625 11.2927L130.965 90.2084C139.091 104.208 128.99 121.75 112.803 121.75H21.1969C5.00976 121.75 -5.09116 104.208 3.03448 90.2084L48.8375 11.2928Z" fill="#FDFFFF"/>
 </svg>
 
@@ -64,6 +64,81 @@ setInterval(breathAnimation, 4400);
 </script>
 
 <style>
+@media screen and (max-width: 767px) {
+  .breathe{
+     padding: 0px 40px;
+    /* align-self: flex-end; */
+    margin-top: 60px;
+}
+.breathe p{
+   font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #C4C4C4;
+    width: 75%;
+    margin: auto;
+    margin-top: 49PX;
+}
+.container {
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 160px;
+    width: 160px;
+    position: relative;
+    transform: scale(1);
+}
+
+.circle {
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.triangle{
+      margin-bottom: 8px;
+    /* font-size: 41px; */
+    width: 70px;
+}
+.gradient-circle {
+  position: absolute;
+    background: var(--secondary-color);
+    height: 185px;
+    width: 185px;
+    z-index: -2;
+    border-radius: 50%;
+}
+
+.pointer {
+  background: var(--secondary-color);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.pointer-container {
+        position: absolute;
+    top: -50px;
+    left: 70px;
+    width: 20px;
+    height: 130px;
+    -webkit-animation: rotate 4.4s linear forwards infinite;
+    animation: rotate 4.4s linear forwards infinite;
+    transform-origin: bottom center;
+
+}
+
+}
+@media screen and (min-width: 768px) {
 .breathe{
       padding: 0px 40px;
     align-self: flex-end;
@@ -129,6 +204,7 @@ setInterval(breathAnimation, 4400);
     height: 170px;
     animation: rotate 4.4s linear forwards infinite;
     transform-origin: bottom center;
+}
 }
 
 @keyframes rotate {

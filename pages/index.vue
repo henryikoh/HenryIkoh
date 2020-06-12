@@ -107,7 +107,7 @@
       </div>
        </div>
        <div class="illust">
-         <svg width="348" height="232" viewBox="0 0 348 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg  viewBox="0 0 348 232" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M195.247 152.089H153.991V162.553H195.247V152.089Z" fill="white" />
         <path
           d="M75.1312 110.604C75.1312 110.604 73.6769 145.255 77.5696 156.671H95.3491C96.2649 156.672 97.1561 156.967 97.892 157.513C98.6279 158.058 99.1699 158.824 99.4386 159.7L100.401 162.881H55.1866C51.7895 160.644 48.9293 157.683 46.8107 154.21C43.8147 148.874 45.6517 110.604 45.6517 110.604H75.1312Z"
@@ -691,6 +691,226 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 767px) {
+  .wrapper{
+     width: 90%;
+    margin: auto;
+}
+.hero{
+      /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.main{
+      
+}
+.profile{
+  
+    align-items: center;
+}
+.profile img {
+      object-fit: cover;
+    object-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.uti{
+   
+}
+.name{
+  display: flex;
+    justify-content: space-between;
+}
+.name h1 {
+      font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--secondary-color);
+}
+.name h2 {
+  font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+
+}
+.name button{
+  -webkit-appearance: none;
+    background: transparent;
+    padding: 6px 30px;
+    border: solid 1px grey;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 30px;
+        height: fit-content;
+    margin-left: 50px;
+}
+.uti p{
+       font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+.main h1{
+ font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 47px;
+    /* line-height: 87px; */
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+.main h1 span{
+  color: var(--primary-color);
+}
+.waves{
+      position: absolute;
+    width: 100%;
+    top: -56px;
+    z-index: -1;
+
+}
+.bluewaves{
+  position: absolute;
+    top: -20px;
+    width: 100%;
+    z-index: -1;
+}
+.bg{
+   background: var(--secondary-color);
+    position: relative;
+    margin-top: 85px;
+    border-bottom-right-radius: 220px;
+}
+.uti1{
+  
+  justify-content: space-between;
+}
+.work{
+  padding-top: 22px;
+ 
+}
+
+.work h1{
+      font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    /* line-height: 96px; */
+    color: #FFFFFF;
+}
+.typed-cursor{
+ color: var(--primary-color);
+}
+.work p {
+  
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.work-actions{
+       margin-top: 25px;
+    position: relative
+}
+.oppurt{
+  display: none;
+  color: #74F989 !important;
+  border-color: #74F989 !important;
+}
+.work-actions button{
+      background: transparent;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.focus{
+          align-self: flex-end;
+    margin-top: 35px;
+}
+.focus h1{
+      font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+    color: #7BF3F2;
+    margin-bottom: 15px;
+}
+.focus h2{
+   font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    /* line-height: 53px; */
+    color: #FFFFFF;
+    padding: 2px 0;
+}
+.illust{
+      text-align: center;
+    margin-top: 138px;
+    /* padding-bottom: 138px; */
+    width: 175px;
+    margin: auto;
+    margin-top: 65px;
+}
+.areas{
+  position: absolute;
+    left: 9px;
+}
+.areas ul{
+  list-style-type: none;
+    border: solid 1px #74F989;
+    border-radius: 5px;
+    width: 210px;
+    margin-top: 21px;
+}
+.areas ul li h2 {
+      font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #74F989;
+    border-bottom: solid 1px;
+    padding: 10px 10px;
+}
+.areas ul li h3{
+      font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 161.5%;
+    color: #74F989;
+    padding: 2px 10px
+}
+.uti2{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+}
+
+@media screen and (min-width: 768px) {
 .wrapper{
   width: 80%;
   margin: auto;
@@ -903,5 +1123,6 @@ color: #FFFFFF;
 .uti2{
   padding-bottom: 10px;
   padding-top: 10px;
+}
 }
 </style>

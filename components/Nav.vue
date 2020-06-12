@@ -41,20 +41,19 @@ a:hover {
 		z-index: 2;
 	}
 	.logo {
-		display: inline-flex;
-		align-items: center;
-		width: min-content;
+		
 	}
 	.logo h1 {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 22px;
-		color: #525252;
-		margin-left: 10px;
-		text-transform: uppercase;
+		color: var(--secondary-color);
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 53px;
 	}
+  .logo h1 span {
+    color: var(--primary-color);
+  }
 	.menu {
 		display: none;
 	}
