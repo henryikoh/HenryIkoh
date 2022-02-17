@@ -129,9 +129,30 @@ export default {
       lang: 'en',
     },
   },
-
+  generate: {
+    // fetch all articles and generate 
+		routes() {
+			const { $content } = require('@nuxt/content')
+			return $content('articles')
+				.only(['slug'])
+				.fetch().then(files =>{
+          
+          return files.map(file =>{
+            
+            return '/blog/' + file.slug
+          })
+        })
+     
+		},
+	},
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+   
+      /*
+       ** You can extend webpack config here
+       */
+      extend(config, ctx) {},
+  },
 }
