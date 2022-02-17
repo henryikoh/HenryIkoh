@@ -31,9 +31,6 @@
 				</p>
 				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="#">work with me</a>
 			</div>
-			<div class="profile">
-				<img src="/henryikoh2.jpeg" alt="Henry Ikoh" />
-			</div>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 			<!-- <h2>Breaking down the complex into the simple comes natural to me</h2> -->
