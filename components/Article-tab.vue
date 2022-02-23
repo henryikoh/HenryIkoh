@@ -1,10 +1,13 @@
 <template>
+<div>
   <ul v-if="page" class=" gap-8 md:gap-6 grid md:grid-cols-3">
 				<li v-for="page in page" :key="page.slug">
 					<ArticleCard :article="page" />
 				</li>
-        <button @click="loadmore">Load more</button>
+        
 			</ul>
+      <button class=" border text-white mx-auto px-8 py-2 block mt-10 rounded" @click="loadmore">Load more</button>
+      </div>
 </template>
 
 <script>
@@ -20,6 +23,8 @@ export default {
 			.without(['body'])
 			.sortBy('createdAt', 'desc')
 			.limit(6)
+
+      // .where({tag: { $contains: ['']}}) // can be used for searching a tag
 			.fetch()
 		
     },

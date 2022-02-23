@@ -3,7 +3,7 @@ title: How I stumbled into Product Management
 description: I don't think anyone ever wakes up in the morning and says, “I want to become a product manager” at least not people who aren't exposed to tech already. My journey to product management is more of a journey of self-discovering and many failed experiments.
 cover: /henlap.jpeg
 alt:
-tag: featured
+tag: ['featured']
 createdAt: April 10 2021
 ---
 

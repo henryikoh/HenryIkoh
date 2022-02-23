@@ -1,5 +1,11 @@
+/* eslint-disable vue/valid-v-for */
 <template>
-  <div class="card">
+  <div class=" relative">
+		<div class=" absolute flex top-3 left-3 gap-3">
+			<p v-for="tag in article.tag" :key="tag" class=" text-white bg-slate-400 px-2 py-2 rounded-lg text-sm" >
+			{{tag}}
+		</p>
+		</div>
 		<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
 		<img :src="article.cover" class="h-60 object-center object-cover rounded-xl w-full" alt="" />
 		<div class=" flex py-1">

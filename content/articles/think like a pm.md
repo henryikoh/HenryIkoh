@@ -3,7 +3,7 @@ title: How to think like a product manager
 description: PMs tend to not stop at surface-level thoughts and ideas. I find that a lot of product managers think deeply about a lot of things. Some might even be philosophers or have created their own philosophy.
 cover: /thinkproduct.jpeg
 alt:
-tag: featured
+tag: ['featured']
 createdAt: April 28 2021
 ---
 

@@ -3,7 +3,7 @@ title: Project C - Bringing you closer to the people that matter.
 description: I am working on a project that would fundamentally change how humans view and interact with the people in their lives. We live in a world where more than ever people are less connected to each other as we spend most of our time interacting with a screen than interacting in person.
 cover: /circles.jpeg
 alt:
-tag: featured
+tag: ['featured']
 createdAt: Jan 3 2022
 ---
 

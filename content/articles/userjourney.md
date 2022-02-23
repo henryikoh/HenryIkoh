@@ -3,7 +3,7 @@ title: Every Founder should Understand The User Journey Map
 description: The user journey map is a story that when told correctly can thrust you into a world that for a brief moment you gain to ability to see and feel things from the perspective of your users.
 cover: /journey.png
 alt:
-tag: featured
+tag: ['featured']
 createdAt: March 16 2021
 ---
 

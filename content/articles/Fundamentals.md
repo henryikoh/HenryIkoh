@@ -3,7 +3,7 @@ title: Fundamentals of good API design — Paystack API Casestudy
 description: For some reason that software, you spent all this money building just never got users and slowly was abandoned. If you haven't experienced this you should probably keep reading cuz this article might save you a lot of money, time and stress.
 cover: /computer1.jpeg
 alt:
-tag: featured
+tag: ['featured']
 createdAt: April 29 2020
 ---
 

@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[700px]" :src="page.cover" alt="" />
-			<nuxt-content class=" prose prose-gray dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:overflow-hidden prose-li:overflow-ellipsis prose-p:overflow-hidden prose-p:overflow-ellipsis	 mx-auto " :document="page" />
+			<nuxt-content class=" prose prose-gray dark:prose-invert prose-lg lg:prose-lg xl:prose-xl prose-li:overflow-hidden prose-li:overflow-ellipsis prose-p:overflow-hidden prose-p:overflow-ellipsis	 mx-auto " :document="page" />
 		</article>
 		<Footer />
 	</div>
@@ -24,7 +24,7 @@ async asyncData({ $content, params }) {
 		const pages = await $content('articles')
 			.where({ slug: params.slug })
 			.fetch()
-		// console.log(pages[0])
+		console.log(pages[0])
 		const page = pages[0]
 		return {
 			page,

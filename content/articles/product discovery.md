@@ -3,7 +3,7 @@ title: The Best Product Discovery guide for building an MVP
 description: I recently read an article by Balaji S. Srinivasan on How to start a new country and this article touched on a lot of things I've been thinking about but haven't really put into words. So I hope to share my thoughts on the idea of building a new country.
 cover: /country.png
 alt:
-tag: featured
+tag: ['featured']
 createdAt: Dec 16 2021
 ---
 
