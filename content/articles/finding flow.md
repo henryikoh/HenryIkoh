@@ -3,7 +3,7 @@ title: Finding oneness and flow within yourself
 description: I’d start this article by saying this, believe that finding and maintaining “flow” is the peak of all human existence and maybe, just maybe, the real meaning of life is about finding and maintaining your flow and alignment with the universe.
 cover: /flow.png
 alt: flow
-tag: [featured, self, spirituality]
+tag: [self, spirituality]
 createdAt: Feb 23 2022
 ---
 
