@@ -36,6 +36,6 @@ props: {
 
 <style>
 .blur{
-	backdrop-filter: blur(8px);
+	backdrop-filter: blur(4px);
 }
 </style>
