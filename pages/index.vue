@@ -52,9 +52,25 @@ export default {
         tab: "Article-tab"
       }
 			},
+			methods: {
+				
+			}
 }
 </script>
 <style>
+*,
+::before,
+::after {
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
 .copy h1 span {
 		background: #000000;
 		background-image: linear-gradient(
