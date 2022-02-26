@@ -15,7 +15,6 @@ I would be reviewing the Get Equity site, I love what they are building and woul
 
 # The Website
 
-![Screenshot 2022-02-26 at 3.30.01 PM.png](Unicorn%20PM%20fcfa4/Screenshot_2022-02-26_at_3.30.01_PM.png)
 
 So the landing page looks cool, The headline, “Fund The Future Today” is nice and catchy it draws you in but it doesn't really explain what it does, So naturally, this is where the subheading should come in. “Create, access and share awesome, well vetted, investment opportunities in startups building the future, today!” Ok, this is alright but it doesn't really tell me what it does something like, “Get equity allows you invest in early stage highly vetted startups who are building the future”. I think this might be slightly better. I know exactly why I would signup. ( of course, I just came up with this copy in 3 seconds so it's not the best example ) 
 
@@ -41,13 +40,13 @@ These things need to be shown and presented in plain English on the website. I'm
 
 So the account creation process, when I click the get started button this should take me to the registration page but instead, it takes me to the login page where is see two options ( investor login / organization login ) I don't even know what to click ( a lot of users would bounce here ) 
 
-![Screenshot 2022-02-26 at 7.34.50 PM.png](Unicorn%20PM%20fcfa4/Screenshot_2022-02-26_at_7.34.50_PM.png)
+![Screenshot 2022-02-26 at 7.34.50 PM.png](/equity2.png)
 
 I had to come back to the page and click the sign button. So a total of 2 clicks just to get to the register page and the second click isn't obvious. I bet like 50% of users bounce from this point. 
 
 So I get the registration form and I notice that I had to fill in way too many things. But the one thing that annoyed me is the username, why do you need to fill this out? Why do I need a username when you have my email, this is redundant data. Note at this point I still haven't seen the listings and at least 10 min have passed. ( more friction )  
 
-![Screenshot 2022-02-26 at 3.33.46 PM.png](Unicorn%20PM%20fcfa4/Screenshot_2022-02-26_at_3.33.46_PM.png)
+![Screenshot 2022-02-26 at 3.33.46 PM.png](/equity3.png)
 
 I skip the identification and also skip linking my bank account. It wasn't clear why I should even click my bank account, why would I link my account when I haven't seen the listings. 
 
@@ -55,9 +54,9 @@ I skip the identification and also skip linking my bank account. It wasn't clear
 
 Finally, I get to the dashboard and the first thing I want to see is the listing. so I can finally learn about the vetted companies they have and how I can invest in them or what I get for investing in them. But as a click the listing I get a popup that says I need to input my address... like really? after all this I still can't view the listings... This is where I officially bounce. At this point, I had invested over 25 mins and I still don't have an idea what kind of companies they list on their product. The questions listed above have NOT been answered. ( more friction )  
 
-![Screenshot 2022-02-26 at 3.37.21 PM.png](Unicorn%20PM%20fcfa4/Screenshot_2022-02-26_at_3.37.21_PM.png)
+![Screenshot 2022-02-26 at 3.37.21 PM.png](/equity4.png)
 
-![Screenshot 2022-02-26 at 3.38.46 PM.png](Unicorn%20PM%20fcfa4/Screenshot_2022-02-26_at_3.38.46_PM.png)
+![Screenshot 2022-02-26 at 3.38.46 PM.png](/equity5.png)
 
 # The App
 
