@@ -15,7 +15,6 @@ I would be reviewing the Get Equity site, I love what they are building and woul
 
 # The Website
 
-
 So the landing page looks cool, The headline, “Fund The Future Today” is nice and catchy it draws you in but it doesn't really explain what it does, So naturally, this is where the subheading should come in. “Create, access and share awesome, well vetted, investment opportunities in startups building the future, today!” Ok, this is alright but it doesn't really tell me what it does something like, “Get equity allows you invest in early stage highly vetted startups who are building the future”. I think this might be slightly better. I know exactly why I would signup. ( of course, I just came up with this copy in 3 seconds so it's not the best example ) 
 
 ## Show don't tell
