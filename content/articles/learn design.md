@@ -7,8 +7,6 @@ tag: ['featured']
 createdAt: December 16 2017
 ---
 
-## *Hello guys, My name is and I am a Human-centered design advocate, The founder of a growing design agency in Lagos Nigeria, SENPAI, and I’m passionate about building a community of human-centered designers, developers, and creators. Hope this article helps you achieve greater things.*
-
 > Designers have been in a very awkward space for a while now, stuck between pixel-pushers and font warriors. but things have begun to change as there are a “new” breed of designers breaking the barrier of mediocrity and stepping to the field to tackle bigger problems with “design thinking”. This is a trend that isn’t going anywhere anytime soon, designers are now taking the driver’s seat of innovation and we expect to see an increase in designers and the appreciation of design in the next couple of years.
 
 ## **So how do you get started as a designer?**
@@ -251,7 +249,6 @@ Also @adobe, Ummm this is just an advice, you are about to get disrupted, so I w
 
 If you need any UX research done hit me up [think.senpai@gmail.com](mailto:think.senpai@gmail.com)
 
-## **If you enjoyed this article, please hold that little 👏below. Share the story with your friends, connect with us on [instagram](https://www.instagram.com/think.senpai/) and thank you for reading :)**
 
 ## **resources**
 

@@ -4,7 +4,7 @@ description: Leverage is simply the ability to use external resources to achieve
 cover: /leverage.jpeg
 alt:
 tag: ['Entrepreneurship']
-createdAt: Feb 26 2022
+createdAt: Feb 25 2022
 ---
 
 
