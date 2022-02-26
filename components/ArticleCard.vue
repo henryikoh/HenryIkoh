@@ -2,7 +2,7 @@
 <template>
   <div class=" relative">
 		<div class=" absolute flex top-3 left-3 gap-3">
-			<p v-for="tag in article.tag" :key="tag" class=" blur text-white px-2 py-2 rounded-lg text-sm bg-slate-400 backdrop-blur bg-opacity-30" >
+			<p v-for="tag in article.tag" :key="tag" class=" myblur text-white px-2 py-2 rounded-lg text-sm bg-slate-400 backdrop-blur bg-opacity-30" >
 			{{tag}}
 		</p>
 		</div>
@@ -35,7 +35,7 @@ props: {
 </script>
 
 <style>
-.blur{
+.myblur{
 	backdrop-filter: blur(4px);
 }
 </style>

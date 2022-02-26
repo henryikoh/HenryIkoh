@@ -86,6 +86,9 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/sitemap'
   ],
+  // googleAnalytics: {
+  //   id: 'UA-220760089-1'
+  // },
   hooks: {
 		'content:file:beforeInsert': document => {
 			if (document.extension === '.md') {
