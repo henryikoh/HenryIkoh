@@ -9,22 +9,11 @@
 						Unicorn
 					</span>
 					<br />
-					/Product Strategist/ 
+					/Product Architect/ 
 				</h1>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Hi, I'm Henry Ikoh, founder of
-					<span>
-						<a
-							style="color:#41c0bf"
-							href="http://thinksenpai.com/"
-							target="_blank"
-						>
-							Senpai,
-						</a>
-					</span>
-
-					and an independent creative professional passionate about helping
-					early stage startup founders define, plan and execute unicorn product ideas.
+					Hi, I'm Henry Ikoh, a creative technologist and strategist passionate about helping
+					early stage startup founders and businesses define, plan and build unicorn product ideas.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					I have a goal to impact the lives of a billion users ❤️ 🦄

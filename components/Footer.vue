@@ -5,7 +5,7 @@
 			This website was designed and built with ❤️ by
 			<a target="_blank" class=" underline" href="https://twitter.com/henryikoh_">Henry Ikoh</a>
 		</h2>
-		<p>Copyright © 2022</p>
+		<p>Copyright © 2024</p>
 	</div>
 	<div class=" pb-12"></div>
 </div>
