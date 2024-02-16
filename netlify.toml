@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && npm audit && npm run build"
+  publish = "dist"  # Adjust to your build output directory
