@@ -12,8 +12,7 @@
 					/Product Architect/ 
 				</h1>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️passionate about partnering with
-					Early Stage Startup Founders and Businesses to build unicorn product ideas.
+					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building Product Ideas helping them go from 0 - 1.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					I have a goal to impact the lives of a billion users ❤️ 🦄

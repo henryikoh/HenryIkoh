@@ -4,7 +4,7 @@ title: Mobile app that allows you buy anything from local markets on your phone
 description: Mobile app that allows you buy anything from local markets on your phone 
 cover: /tradr.png
 alt:
-tag: ['Startup','UX Design']
+tag: ['Mobile App','UX Design','Consumer','Backend']
 createdAt: March 1 2022
 ---
 
