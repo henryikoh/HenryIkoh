@@ -12,17 +12,21 @@
 					/Product Architect/ 
 				</h1>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Hi, I'm Henry Ikoh, a creative technologist and strategist passionate about helping
-					early stage startup founders and businesses define, plan and build unicorn product ideas.
+					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️passionate about partnering with
+					Early Stage Startup Founders and Businesses to build unicorn product ideas.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					I have a goal to impact the lives of a billion users ❤️ 🦄
 				</p>
-				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="#">work with me</a>
+				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="#">what are you working on?</a>
 			</div>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
-			<!-- <h2>Breaking down the complex into the simple comes natural to me</h2> -->
+		
+		<ProjectsTab/>
+		</div>
+		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+		
 			<component :is="tab"></component>
 		</div>
 		<Footer/>
@@ -30,20 +34,19 @@
 </template>
 
 <script>
+import ProjectsTab from '~/components/ProjectsTab.vue';
+
 export default {
-  name: 'IndexPage',
-	async asyncData({ $content }) {
-		
-		
-	},
-	 data() {
-      return {
-        tab: "Article-tab"
-      }
-			},
-			methods: {
-				
-			}
+    name: 'IndexPage',
+    async asyncData({ $content }) {
+    },
+    data() {
+        return {
+            tab: "Article-tab"
+        };
+    },
+    methods: {},
+    components: { ProjectsTab }
 }
 </script>
 <style>
