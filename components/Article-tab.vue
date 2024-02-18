@@ -16,14 +16,14 @@ export default {
    data() {
       return {
         page: [],
-        count: 6
+        count: 3
       }
     },
     async fetch() {
       this.page = await this.$content('articles')
 			.without(['body'])
 			.sortBy('createdAt', 'desc')
-			.limit(6)
+			.limit(this.count)
 
       // .where({tag: { $contains: ['']}}) // can be used for searching a tag
 			.fetch()
