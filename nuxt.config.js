@@ -58,13 +58,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
-  gtag: {
-    id: 'G-RJEPYYEJHZ'
-  },
+  // gtag: {
+  //   id: 'G-RJEPYYEJHZ'
+  // },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  // plugins: [
-  //   '@/plugins/gtag.js'
-  // ],
+  plugins: [
+    '@/plugins/gtag.js'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

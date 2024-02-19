@@ -85,10 +85,7 @@ async asyncData({ $content, params }) {
 		}
 	},
 	created(){
-		const { gtag, grantConsent, revokeConsent } = useGtag()
-
-		gtag('event','page_view',{ page_path: this.page.slug, page_title:this.page.title, page_location:this.$route })
-		
+		this.$gtag.pageview({ page_path: this.page.slug, page_title:this.page.title, page_location:this.$route })
       
      
 	},
