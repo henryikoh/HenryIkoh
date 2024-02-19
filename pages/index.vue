@@ -28,6 +28,10 @@
 		
 			<component :is="tab"></component>
 		</div>
+		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+		
+		<ServicesTab/>
+		</div>
 		<Footer/>
   </div>
 </template>
