@@ -83,7 +83,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/google-analytics',
+   
     '@nuxtjs/sitemap'
   ],
   // googleAnalytics: {
