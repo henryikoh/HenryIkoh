@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[700px]" :src="page.cover" alt="" />
-			<nuxt-content class=" prose prose-gray dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:overflow-hidden prose-li:overflow-ellipsis prose-p:overflow-hidden prose-p:overflow-ellipsis	 mx-auto  " :document="page" />
+			<nuxt-content class=" prose prose-gray dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
 		</article>
 		<Footer />
 	</div>
@@ -81,7 +81,13 @@ async asyncData({ $content, params }) {
 					name: 'twitter:description',
 					content: this.page.description,
 				},
+				
 			],
+			link: [{
+      rel: 'canonical',
+    
+      href: 'https://www.henryikoh.com/blog/' + this.page.slug,
+    },],
 		}
 	},
 	created(){
@@ -98,6 +104,8 @@ async asyncData({ $content, params }) {
 }
 </script>
 
-<style>
-
+<style scoped>
+/* ul.li::marker {
+	color: red;
+} */
 </style>

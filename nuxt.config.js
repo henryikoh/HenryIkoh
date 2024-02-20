@@ -12,7 +12,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content:
-					'Henry Ikoh is a Creative Entrepreneur, Founder SENPAI, turned Unicorn Product manager and he helps entrepreneurs and startup teams plan, build, and launch amazing digital products',
+					"Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1",
 			},
 			{
 				name: 'apple-mobile-web-app-status-bar-style',
@@ -27,7 +27,7 @@ export default {
 				hid: 'og:description',
 				name: 'og:description',
 				content:
-					'Henry Ikoh is a Creative Entrepreneur, Founder SENPAI, turned Unicorn Product Manager and he helps entrepreneurs and startup teams plan, build, and launch amazing digital products',
+        "Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1",
 			},
 			{
 				hid: 'og:image',
@@ -49,11 +49,28 @@ export default {
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favic.png',
-    },	{
+    },
+    {
+      rel: 'shortcut icon',
+      type: 'image/x-icon',
+      href: '/favic.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      type: 'image/x-icon',
+      href: '/favic.png',
+    },
+    	{
       rel: 'stylesheet',
       href:
         'https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap',
-    },],
+    },
+    {
+      rel: 'canonical',
+    
+      href: 'https://www.henryikoh.com',
+    }
+  ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-4xl font-bold dark:text-white pb-9">Projects</h1>
+        <h2 class="text-4xl font-bold dark:text-white pb-9">Projects</h2>
       <ul v-if="page" class=" gap-8 md:gap-6 grid md:grid-cols">
                     <li v-for="page in page" :key="page.slug">
                         <ProjectCard :article="page" />

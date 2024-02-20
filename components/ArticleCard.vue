@@ -13,7 +13,7 @@
 			<p class=" text-gray-600 ml-2">{{ article.readingTime }}</p>
 		</div>
 		
-			<h1 class="text-2xl font-bold dark:text-white">{{ article.title }}</h1>
+			<h3 class="text-2xl font-bold dark:text-white">{{ article.title }}</h3>
 		
 		<p class=" text-gray-700 pt-1 dark:text-slate-400">{{ article.description }}</p>
 		</nuxt-link>

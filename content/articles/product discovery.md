@@ -1,10 +1,10 @@
 ---
-title: The Best Product Discovery guide for building an MVP
-description: I recently read an article by Balaji S. Srinivasan on How to start a new country and this article touched on a lot of things I've been thinking about but haven't really put into words. So I hope to share my thoughts on the idea of building a new country.
-cover: /country.png
+title: The Best Product Discovery guide for building a Saas MVP
+description: Learn how to build a SaaS MVP to validate your ideas and promote your product with this free product discovery workshop
+cover: /ship.jpg
 alt:
-tag: ['featured']
-createdAt: Dec 16 2021
+tag: ['Product workshop']
+createdAt: Feb 16 2024
 ---
 
 
@@ -135,12 +135,20 @@ This is a very important step because you want to get first-hand feedback on how
 
 There are many ways to create customer personas and you can go all in and gather as much information about the customer as possible. I created an easy-to-use framework that would be very useful for you. 
 
-<aside>
-💡 When you create a new document there is a "persona templated" Click that to see the template. You can make personas from the people you interviewed which is why its important to record the call or take notes.
 
-</aside>
+You should all the demographics information here
 
-[Customer Type Name](https://www.notion.so/2b1abfed7cb6473da82e7f61cb9f7a12)
+**Needs/goals**
+
+* There needs and goals would be gotten from the interviews
+
+**pain points**
+
+* where does it hurt?
+
+**How might we help them elevate their pain**
+
+* Write out potensial solutions here.
 
 ## Solution Hypothesis
 
@@ -196,7 +204,7 @@ The user journey map just breaks down a series of actions or steps the user take
 
  Here is an example from a project I did early this year. 
 
-![Product%20Strategy%20Workshop%205ed7194d354048e18627710efc6d8851/tradr_-_Frame_1.jpeg](Product%20Strategy%20Workshop%205ed7194d354048e18627710efc6d8851/tradr_-_Frame_1.jpeg)
+![Product%20Strategy%20Workshop%205ed7194d354048e18627710efc6d8851/tradr_-_Frame_1.jpeg](https://file.notion.so/f/f/f1ef136d-7758-41de-8974-c6aae1aaba04/3877bc38-b7c9-498a-b2fe-0b490e5c1e06/tradr_-_Frame_1.jpeg?id=5ed7194d-3540-48e1-8627-710efc6d8851&table=block&spaceId=f1ef136d-7758-41de-8974-c6aae1aaba04&expirationTimestamp=1708488000000&signature=sIzIjBvqqTUreT9Ce85eJuOW75x-IYYY9rDtMGeOhUo&downloadName=tradr_-_Frame_1.jpeg)
 
 ## Build MVP
 

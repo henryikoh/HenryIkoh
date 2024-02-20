@@ -4,13 +4,13 @@
     <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-8 md:pt-14">
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
-				<h1 class=" mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
+				<h2 class=" mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
 					<span class=" font-bold md:text-8xl text-5xl">
 						Unicorn
 					</span>
 					<br />
 					/Product Architect/ 
-				</h1>
+				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
 					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1.
 				</p>
@@ -53,7 +53,7 @@ export default {
 }
 </script>
 <style>
-.copy h1 span {
+.copy h2 span {
 		background: #000000;
 		background-image: linear-gradient(
 			110deg,
