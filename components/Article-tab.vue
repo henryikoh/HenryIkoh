@@ -16,7 +16,7 @@ export default {
    data() {
       return {
         page: [],
-        count: 3
+        count: 6
       }
     },
     async fetch() {
