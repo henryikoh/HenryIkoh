@@ -17,7 +17,7 @@
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					I have a goal to impact the lives of a billion users ❤️ 🦄
 				</p>
-				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">what are you working on?</a>
+				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Book a free Product Discovery Call</a>
 			</div>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
