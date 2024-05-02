@@ -33,6 +33,6 @@ Having hit my initial goals in all of this with financial goals in the process o
 
 It’s important to build a personal brand because it can give you leverage forever and even after your death. So that’s what I'm focusing on. But what is a personal brand? Well, my definition is: 
 
-A personal brand is the story of how you got to where you are, where you are going, and the values and lessons you learned along the way.
+> A personal brand is the story of how you got to where you are, where you are going, and the values and lessons you learned along the way.
 
 It’s about highlighting your key strengths, values, and perspective on the world which is unique to just you. This would turn attract people who resonate with your values and might be interested in learning about how you overcame certain struggles or how you might be able to help them to the same. This is the pathway for the solo creator on the internet. This isn’t necessary if you just want to work a 9-5 job, this is for those who wish to build life on their terms on the internet. For the true Egoist.
