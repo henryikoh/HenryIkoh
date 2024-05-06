@@ -10,7 +10,7 @@
 					<p class="md:pl-6 pl-4 md:text-2xl text-gray-500">{{ page.readingTime }}</p>
 				</div>
 			</div>
-			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[700px]" :src="page.cover" alt="" />
+			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[600px]" :src="page.cover" alt="" />
 			<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
 		</article>
 		<Footer />
