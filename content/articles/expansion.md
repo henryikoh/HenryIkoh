@@ -3,7 +3,7 @@ title: Am I Keeping Up with My Expansion?
 description: Reflecting on the alignment between our dreams, goals, and current feelings as indicators of our expansion and manifestation journey.
 cover: /expand.jpeg
 alt: Cover image description
-tag: ['Manifestation', 'Expansion', 'Personal Growth']
+tag: ['Expansion', 'Personal Growth']
 createdAt: May 10, 2024
 ---
 
