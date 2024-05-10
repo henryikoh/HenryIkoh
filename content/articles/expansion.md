@@ -7,8 +7,6 @@ tag: ['Manifestation', 'Expansion', 'Personal Growth']
 createdAt: May 10, 2024
 ---
 
-# Am I Keeping Up with My Expansion?
-
 We all have thoughts, dreams, goals, and ambitions we aspire to. You have a dream life that you may imagine living or you wish to have. Think about your ideal life, ideal country, ideal amount in your bank account. Now think back to this present moment, how do you feel about those dreams?
 
 Do you feel anxious or excited? Sad or happy? Good or bad? How good do you feel? How bad do you feel? This is a signal to let you know if you are keeping up with your expansion. The better you feel and the longer you can maintain that feeling, the more aligned you are with your ideal life. The worse you feel, the more disconnected you may be.
