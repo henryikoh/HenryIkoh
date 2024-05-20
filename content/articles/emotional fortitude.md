@@ -1,5 +1,5 @@
 ---
-title: Emotional Fortitude
+title: "Simple Domain Technique: Emotional Fortitude"
 description: Understanding and building emotional fortitude can transform your life by helping you become a conscious creator of your reality. Discover four steps to strengthen your emotional resilience.
 cover: /tod0.webp    
 alt: A person meditating in a serene environment
