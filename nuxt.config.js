@@ -148,19 +148,22 @@ export default {
     },
   },
   generate: {
-    // fetch all articles and generate 
-		routes() {
+    // fetch all articles and projects and generate
+		async routes() {
 			const { $content } = require('@nuxt/content')
-			return $content('articles')
+
+			const articles = await $content('articles')
 				.only(['slug'])
-				.fetch().then(files =>{
-          
-          return files.map(file =>{
-            
-            return '/blog/' + file.slug
-          })
-        })
-     
+				.fetch()
+
+			const projects = await $content('projects')
+				.only(['slug'])
+				.fetch()
+
+			const articleRoutes = articles.map(file => '/blog/' + file.slug)
+			const projectRoutes = projects.map(file => '/projects/' + file.slug)
+
+			return [...articleRoutes, ...projectRoutes]
 		},
 	},
 

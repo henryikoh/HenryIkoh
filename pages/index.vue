@@ -9,7 +9,7 @@
 						Unicorn
 					</span>
 					<br />
-					/Product Architect/ 
+					/AI Product Architect/ 
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
 					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1.
