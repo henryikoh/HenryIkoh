@@ -5,14 +5,14 @@
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
 				<h2 class=" mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
-					<span class=" font-bold md:text-8xl text-5xl">
-						Unicorn
+					Building better <span class=" font-bold md:text-8xl text-5xl">
+						futures.
 					</span>
 					<br />
-					/AI Product Architect/ 
+					People. Systems. Potential.
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1.
+					Human. Artist. Lover. Builder. Creator. Engineer. Renaissance polymath for the new age. I build systems, products, and experiences that unlock human potential and give people better futures.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					I have a goal to impact the lives of a billion users ❤️ 🦄, find out how 👇.
