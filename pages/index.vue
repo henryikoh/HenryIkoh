@@ -4,21 +4,19 @@
     <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-8 md:pt-14">
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
-				<h2 class=" mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
-					Building better <span class=" font-bold md:text-8xl text-5xl">
-						futures.
-					</span>
+				<h2 class="mb-1 md:mb-5 font-bold md:text-7xl text-4xl">
+					<span class="text-gray-500">Building better </span><span class="gradient-text">futures.</span>
 					<br />
-					People. Systems. Potential.
+					<span class="text-gray-500">People. Systems. Potential.</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
 					Human. Artist. Lover. Builder. Creator. Engineer. Renaissance polymath for the new age. I build systems, products, and experiences that unlock human potential and give people better futures.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
-					I have a goal to impact the lives of a billion users ❤️ 🦄, find out how 👇.
+					Building better futures through stronger relationships and powerful systems—with a goal to impact billions of people in the process.
 				</p>
-				
-				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">What are you building? 🚀</a>
+
+				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Ready for a better future?</a>
 			
 			
 			</div>
@@ -63,7 +61,7 @@ export default {
 }
 </script>
 <style>
-.copy h2 span {
+.copy h2 .gradient-text {
 		background: #000000;
 		background-image: linear-gradient(
 			110deg,
