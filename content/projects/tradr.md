@@ -6,7 +6,7 @@ cover: /tradr.png
 alt: Tradr mobile app interface
 tag: ['Product Management', 'Mobile App', 'Firebase', 'Flutter']
 createdAt: March 1 2022
-status: Completed
+status: Inactive
 type: Product
 role: Product Manager, Cloud Engineer, Frontend Developer
 ---
