@@ -1,11 +1,11 @@
 <template>
   <div class="dark:bg-dark">
     <Navbar :show-profile="true" />
-    <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-8 md:pt-14">
+    <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-16 md:pt-20">
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
-					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white">Building Better <span class="gradient-text">Futures.</span></span>
+					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white whitespace-nowrap">Building Better <span class="gradient-text">Futures.</span></span>
 					<br />
 					/People. Systems. Potential./
 				</h2>
@@ -16,7 +16,7 @@
 					Building better futures through stronger relationships and powerful systems—with a goal to impact billions of people in the process.
 				</p>
 
-				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Ready for a better future?</a>
+				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Let's discuss your future</a>
 			
 			
 			</div>
