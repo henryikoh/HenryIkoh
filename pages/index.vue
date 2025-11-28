@@ -5,7 +5,7 @@
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
-					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white whitespace-nowrap">Building Better <span class="gradient-text">Futures.</span></span>
+					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Futures.</span></span>
 					<br />
 					/People. Systems. Potential./
 				</h2>
