@@ -10,10 +10,10 @@
 					/People. Systems. Potential./
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Human. Artist. Lover. Builder. Creator. Engineer. Renaissance polymath for the new age. I build systems, products, and experiences that unlock human potential and give people better futures.
+					Human. Artist. Lover. Builder. Creator. Engineer. Renaissance polymath for the new age. I create systems, products, and experiences that unlock human potential and give people better futures.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
-					Building better futures through stronger relationships and powerful systems—with a goal to impact billions of people in the process.
+					I am on a mission to impact billions of lives by creating systems and experiences that unlock human potential and give people better futures.
 				</p>
 
 				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Let's discuss your future</a>
