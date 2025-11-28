@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-dark">
     <Navbar :show-profile="true" />
-    <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-16 md:pt-20">
+    <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-20 md:pt-32">
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
