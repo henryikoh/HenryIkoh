@@ -6,7 +6,7 @@ cover: /kindred-cover.png
 alt: Kindred app interface
 tag: ['Product Design', 'Relationship Tech', 'Mobile App', 'Systems Design']
 createdAt: 2022-01-03
-status: In Progress
+status: Active
 type: Product
 role: Founder, Product Designer, Logo Designer, Systems Architect
 timeline: 2022 - Present
