@@ -14,7 +14,7 @@ export default {
     status: {
       type: String,
       required: true,
-      validator: (value) => ['Active', 'Completed', 'In Progress', 'Upcoming'].includes(value)
+      validator: (value) => ['Active', 'Completed', 'In Progress', 'Upcoming', 'Paused'].includes(value)
     }
   },
   computed: {
@@ -23,7 +23,8 @@ export default {
         'Active': 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
         'Completed': 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
         'In Progress': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
-        'Upcoming': 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200'
+        'Upcoming': 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
+        'Paused': 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'
       }
       return classes[this.status] || classes['Active']
     },
@@ -32,7 +33,8 @@ export default {
         'Active': 'bg-green-500',
         'Completed': 'bg-blue-500',
         'In Progress': 'bg-yellow-500',
-        'Upcoming': 'bg-purple-500'
+        'Upcoming': 'bg-purple-500',
+        'Paused': 'bg-gray-500'
       }
       return classes[this.status] || classes['Active']
     }

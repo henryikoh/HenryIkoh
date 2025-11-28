@@ -6,7 +6,7 @@ cover: /senpai-cover.png
 alt: ThinkSenpai community and programs
 tag: ['Community Building', 'Design Education', 'Social Enterprise', 'Brand Design']
 createdAt: 2019-01-01
-status: Active
+status: Paused
 type: Community/Business
 role: Founder, Community Leader, Educator, Brand Designer, Newsletter Writer
 timeline: 2019 - Present
