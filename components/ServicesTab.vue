@@ -2,19 +2,20 @@
     <div>
         <h2 class="text-4xl font-bold dark:text-white pb-9">How I Can Help</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-3xl">
-            I work with founders, executives, and leaders to build better futures through products, systems, relationships, and people—or any combination that serves your vision.
+            I work with founders, executives, and leaders to build better futures through AI, products, systems, relationships, and people—or any combination that serves your vision.
         </p>
       <ul  class=" gap-8 md:gap-10 grid md:grid-cols-2">
                     <li>
                         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6">
-                            <h1 class="text-3xl font-bold dark:text-white mb-3">Products & Systems</h1>
+                            <h1 class="text-3xl font-bold dark:text-white mb-3">AI & Product Systems</h1>
                             <p class="text-gray-700 dark:text-gray-300 text-base leading-relaxed mb-3">
-                                Building better products from 0-1. Product strategy, systems design, user experience, and creating solutions that solve real problems for real people.
+                                Building better AI-powered products from 0-1. AI strategy, product strategy, systems design, and creating intelligent solutions that solve real problems for real people.
                             </p>
                             <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
-                                <li>• App development & mobile products</li>
+                                <li>• AI product strategy & implementation</li>
+                                <li>• AI-powered app development</li>
                                 <li>• Product strategy & roadmapping</li>
-                                <li>• Systems design & architecture</li>
+                                <li>• Intelligent systems design & architecture</li>
                                 <li>• UX/UI design & user research</li>
                                 <li>• MVP development & validation</li>
                             </ul>
@@ -54,14 +55,15 @@
                         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6">
                             <h1 class="text-3xl font-bold dark:text-white mb-3">Integrated Solutions</h1>
                             <p class="text-gray-700 dark:text-gray-300 text-base leading-relaxed mb-3">
-                                The magic happens when we combine all three. Building products that serve people, creating systems that strengthen relationships, and transforming how you think about your future.
+                                The magic happens when we combine AI, products, people, and systems. Building AI-powered solutions that serve people, creating intelligent systems that strengthen relationships, and transforming how you think about your future.
                             </p>
                             <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
-                                <li>• Full-stack consulting (product + people + systems)</li>
+                                <li>• Full-stack consulting (AI + product + people + systems)</li>
+                                <li>• AI transformation & implementation</li>
                                 <li>• Family business transformation</li>
                                 <li>• Founder/executive holistic coaching</li>
                                 <li>• Community & platform building</li>
-                                <li>• Custom solutions for your unique challenges</li>
+                                <li>• Custom AI-powered solutions for your unique challenges</li>
                             </ul>
                         </div>
                     </li>
