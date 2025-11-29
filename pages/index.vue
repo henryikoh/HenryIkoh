@@ -7,7 +7,7 @@
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
 					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Futures.</span></span>
 					<br />
-					/People. Systems. AI./
+					/People. Systems. Potential./
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
 					Human. Artist. Lover. Builder. Creator. Engineer. AI Expert. Renaissance polymath for the new age. I create AI-powered systems, products, and experiences that unlock human potential and give people better futures.
