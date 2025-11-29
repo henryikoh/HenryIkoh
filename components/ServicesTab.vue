@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl font-bold dark:text-white pb-9">How I Can Help</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-3xl">
-            I work with founders, executives, and leaders to build better futures through AI, products, systems, relationships, and people—or any combination that serves your vision.
+            I work with founders, executives, and leaders to build better futures through AI, products, systems, relationships, and people—or any combination that serves your vision. My focus is creating high-efficiency systems and relationships. I embrace the necessary chaos at the start because that's where the magic happens—turning disorder into highly efficient, elegant solutions that unlock potential and drive real impact.
         </p>
       <ul  class=" gap-8 md:gap-10 grid md:grid-cols-2">
                     <li>
