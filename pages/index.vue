@@ -4,10 +4,10 @@
     <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-8 md:pt-32">
 		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
-				<h2 class="mb-4 md:mb-8 md:text-4xl text-xl text-gray-500">
+				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
 					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Futures.</span></span>
 					<br />
-					/People. Systems. Potential./
+					<span class="block mt-3 md:mt-4">/People. Systems. Potential./</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
 					Human. Artist. Lover. Builder. Creator. Engineer. AI Expert. Renaissance polymath for the new age. I create systems, products, and experiences that unlock human potential and give people better futures.
