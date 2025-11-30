@@ -12,6 +12,59 @@
 			</div>
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[600px]" :src="page.cover" alt="" />
 			<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
+
+			<!-- Contact CTA Section -->
+			<div class="border-t border-gray-200 dark:border-gray-700 mt-16 pt-12 mb-12">
+				<div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 md:p-12 text-center">
+					<h3 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+						Ready to Build Your Future?
+					</h3>
+					<p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
+						If this article resonated with you and you're ready to transform your vision into reality, let's talk.
+					</p>
+					<nuxt-link
+						to="/contact"
+						class="bg-black dark:bg-gray-600 inline-block px-8 py-4 text-lg md:text-xl rounded-md text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors font-medium"
+					>
+						Get in touch
+					</nuxt-link>
+				</div>
+			</div>
+
+			<!-- Next/Previous Navigation -->
+			<div class="border-t border-gray-200 dark:border-gray-700 pt-8 pb-16">
+				<div class="flex flex-col md:flex-row justify-between items-stretch gap-6">
+					<!-- Previous Article -->
+					<nuxt-link
+						v-if="prev"
+						:to="{ name: 'blog-slug', params: { slug: prev.slug } }"
+						class="flex-1 group"
+					>
+						<div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 h-full hover:border-gray-900 dark:hover:border-gray-300 transition-colors">
+							<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">← Previous Article</p>
+							<h4 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+								{{ prev.title }}
+							</h4>
+						</div>
+					</nuxt-link>
+					<div v-else class="flex-1"></div>
+
+					<!-- Next Article -->
+					<nuxt-link
+						v-if="next"
+						:to="{ name: 'blog-slug', params: { slug: next.slug } }"
+						class="flex-1 group"
+					>
+						<div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 h-full hover:border-gray-900 dark:hover:border-gray-300 transition-colors text-right">
+							<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Next Article →</p>
+							<h4 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+								{{ next.title }}
+							</h4>
+						</div>
+					</nuxt-link>
+					<div v-else class="flex-1"></div>
+				</div>
+			</div>
 		</article>
 		<Footer />
 	</div>
@@ -26,8 +79,24 @@ async asyncData({ $content, params }) {
 			.fetch()
 		// console.log(pages[0])
 		const page = pages[0]
+
+		// Fetch all articles sorted by date to get prev/next
+		const allArticles = await $content('articles')
+			.only(['title', 'slug', 'createdAt'])
+			.sortBy('createdAt', 'desc')
+			.fetch()
+
+		// Find current article index
+		const currentIndex = allArticles.findIndex(article => article.slug === params.slug)
+
+		// Get previous and next articles
+		const prev = currentIndex < allArticles.length - 1 ? allArticles[currentIndex + 1] : null
+		const next = currentIndex > 0 ? allArticles[currentIndex - 1] : null
+
 		return {
 			page,
+			prev,
+			next
 		}
 	},
 	head() {
@@ -81,19 +150,19 @@ async asyncData({ $content, params }) {
 					name: 'twitter:description',
 					content: this.page.description,
 				},
-				
+
 			],
 			link: [{
       rel: 'canonical',
-    
+
       href: 'https://www.henryikoh.com/blog/' + this.page.slug,
     },],
 		}
 	},
 	created(){
 		this.$gtag.pageview({ page_path: this.page.slug, page_title:this.page.title, page_location:this.$route })
-      
-     
+
+
 	},
 	methods: {
 		formatDate(date) {
