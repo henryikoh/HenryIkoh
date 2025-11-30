@@ -58,13 +58,24 @@
           }
         },
         async fetch() {
-          this.page = await this.$content('projects')
+          const projects = await this.$content('projects')
                 .without(['body'])
                 .sortBy('createdAt', 'desc')
                 .limit(this.count)
 
           // .where({tag: { $contains: ['']}}) // can be used for searching a tag
                 .fetch()
+
+          // Custom order: Kindred (Active) -> SENPAI (Paused, relaunching) -> Tradr (Inactive)
+          const desiredOrder = ['kindred', 'thinksenpai', 'tradr']
+          this.page = projects.sort((a, b) => {
+            const indexA = desiredOrder.indexOf(a.slug)
+            const indexB = desiredOrder.indexOf(b.slug)
+            // If slug not in desiredOrder, put at end
+            if (indexA === -1) return 1
+            if (indexB === -1) return -1
+            return indexA - indexB
+          })
 
         },
         mounted() {
