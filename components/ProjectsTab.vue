@@ -67,7 +67,11 @@
                 .fetch()
 
           // Custom order: Kindred (Active) -> SENPAI (Paused, relaunching) -> Tradr (Inactive)
-          const desiredOrder = ['kindred', 'thinksenpai', 'tradr']
+          const desiredOrder = [
+            'relationship-management-system-for-executives', // Kindred
+            'creating-the-future-ai-powered-learning-community', // SENPAI
+            'a-mobile-app-that-connects-you-to-local-markets' // Tradr
+          ]
           this.page = projects.sort((a, b) => {
             const indexA = desiredOrder.indexOf(a.slug)
             const indexB = desiredOrder.indexOf(b.slug)
