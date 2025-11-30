@@ -123,7 +123,7 @@
           Prefer email?
         </p>
         <a
-          href="mailto:henry@thinksenpai.com?subject=Contact from HenryIkoh.com"
+          href="mailto:think.senpai@gmail.com?subject=Contact from HenryIkoh.com"
           class="inline-block bg-gray-800 dark:bg-gray-700 text-white px-6 py-3 text-lg rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
         >
           Email me directly
