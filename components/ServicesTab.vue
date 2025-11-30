@@ -79,9 +79,9 @@
                 </ul>
 
                 <div class="mt-12 text-center">
-                    <a href="https://calendly.com/henryikoh/product-chat" target="_blank" class="bg-black dark:bg-gray-600 inline-block px-8 py-4 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">
+                    <nuxt-link to="/contact" class="bg-black dark:bg-gray-600 inline-block px-8 py-4 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">
                         Let's discuss your future
-                    </a>
+                    </nuxt-link>
                 </div>
 
           </div>

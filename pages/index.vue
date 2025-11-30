@@ -16,7 +16,7 @@
 					I am on a mission to impact billions of lives by creating systems and experiences that unlock human potential and give people better futures.
 				</p>
 
-				<a class="bg-black dark:bg-gray-600 inline-block mt-4  px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white" href="https://calendly.com/henryikoh/product-chat" target="_blank">Let's discuss your future</a>
+				<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 inline-block mt-4 px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Let's discuss your future</nuxt-link>
 			
 			
 			</div>
