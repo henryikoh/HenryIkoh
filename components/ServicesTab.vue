@@ -14,6 +14,7 @@
                             <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
                                 <li>• AI product strategy & implementation</li>
                                 <li>• AI-powered app development</li>
+                                <li>• AI agent systems for community & operations management</li>
                                 <li>• High-efficiency system design & optimization</li>
                                 <li>• Product strategy & roadmapping</li>
                                 <li>• Intelligent systems architecture</li>
@@ -32,7 +33,8 @@
                             <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
                                 <li>• High-efficiency relationship management systems</li>
                                 <li>• Executive networking strategy</li>
-                                <li>• Connection & community building</li>
+                                <li>• Community building & scalable engagement (2,000+ members experience)</li>
+                                <li>• AI-powered community management at scale</li>
                                 <li>• Relationship coaching & advice</li>
                                 <li>• Social circle optimization</li>
                                 <li>• AI-enhanced connection tracking</li>
