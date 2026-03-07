@@ -7,9 +7,6 @@ createdAt: March 7 2026
 ---
 
 
-# Nigeria's Billion-Dollar Mistake: We Don't Know How to Work With Smart People
-
-
 Nigeria wastes ₦450 billion annually on a mistake most leaders don't even know they're making.
 
 It's not corruption. It's not infrastructure. It's not even lack of resources.
