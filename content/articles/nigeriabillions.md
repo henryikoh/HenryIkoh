@@ -1,6 +1,7 @@
 ---
 title: Nigeria's Billion-Dollar Mistake:We Don't Know How to Work With Smart People
 description: Nigeria wastes ₦450 billion annually on a mistake most leaders don't even know they're making. It's not corruption. It's not infrastructure. It's not even lack of resources. It's this:We hire experts, then refuse to let them use their expertise.
+alt:  Nigeria's Billion-Dollar Mistake
 cover: /nigeriabiliion.jpeg
 tag: ['Systems', 'Nigeria',]
 createdAt: March 7 2026
