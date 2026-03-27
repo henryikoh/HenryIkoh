@@ -1,7 +1,7 @@
 /* eslint-disable vue/valid-v-for */
 <template>
   <div class=" relative">
-		<div class=" absolute flex top-3 left-3 gap-3">
+		<div class="absolute flex flex-wrap top-3 left-3 right-3 gap-2">
 			<p v-for="tag in article.tag" :key="tag" class=" myblur text-white px-2 py-2 rounded-lg text-sm bg-slate-400 backdrop-blur bg-opacity-30" >
 			{{tag}}
 		</p>

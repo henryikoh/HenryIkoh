@@ -21,6 +21,9 @@ results:
 links:
   website: https://thinksenpai.com/
   twitter: https://twitter.com/senpai_future
+problem: "Young African creatives had no structured pathway into tech and design careers. Existing communities were scattered, unstructured, and didn't measure outcomes. No one was treating community building as a systems problem."
+solution: "A social impact design company with structured programs — a 6-month Talent Accelerator across 5 tracks, 2,000+ member community, and a social enterprise model. Now building AI agent systems to solve community management at scale."
+impact: "2,000+ community members · 3,000+ email subscribers · 6-month accelerator program · Social enterprise model · AI systems in development for relaunch."
 ---
 
 # Project Overview

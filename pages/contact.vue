@@ -3,13 +3,24 @@
     <Navbar :show-profile="false" />
     <div class="wrapper w-11/12 md:w-3/5 mx-auto pt-8 md:pt-32 pb-20">
       <!-- Header -->
-      <div class="mb-12">
+      <div class="mb-8">
         <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-          Let's Build Your Future
+          Let's Fix What's Broken
         </h1>
         <p class="text-lg md:text-2xl text-gray-600 dark:text-gray-400 font-light">
-          Ready to transform your vision into reality? Whether you need AI systems, product development, relationship management, or strategic guidance - I'm here to help.
+          If you see dysfunction everywhere and you're done with band-aid fixes — you're in the right place. Whether you're a founder, an organization needing a systems audit, or a social enterprise ready to scale — I'll help you see the system clearly and redesign it properly.
         </p>
+      </div>
+
+      <!-- Zero Point System Summary -->
+      <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-10 bg-gray-50 dark:bg-gray-800">
+        <h3 class="font-bold text-gray-900 dark:text-white text-lg mb-2">My approach: The Zero Point System</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-3">
+          A proven process: Discovery (map what's broken) &rarr; Architecture (redesign from first principles) &rarr; Solution Design (plan how to test it) &rarr; Pilot (prove it works with real data). Each phase delivers standalone value — you decide how far we go together.
+        </p>
+        <nuxt-link to="/system" class="text-gray-900 dark:text-white font-medium hover:underline">
+          See the full process in detail &rarr;
+        </nuxt-link>
       </div>
 
       <!-- Success Message -->
@@ -83,10 +94,9 @@
             class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-400"
           >
             <option value="">Select a topic...</option>
-            <option value="AI & Product Systems">AI & Product Systems</option>
-            <option value="Relationships & Connection">Relationships & Connection</option>
-            <option value="People & Transformation">People & Transformation</option>
-            <option value="Integrated Solutions">Integrated Solutions</option>
+            <option value="System Discovery">System Discovery — Help me understand what's broken</option>
+            <option value="Systems Optimization">Systems Optimization — Founders & Organizations</option>
+            <option value="Systems + Impact">Systems + Impact — Social Enterprise & NGO</option>
             <option value="General Inquiry">General Inquiry</option>
           </select>
         </div>
@@ -94,7 +104,7 @@
         <!-- Message Field -->
         <div class="mb-6">
           <label for="message" class="block text-gray-900 dark:text-white font-medium mb-2 text-lg">
-            Tell me about your vision *
+            Tell me about your challenge *
           </label>
           <textarea
             id="message"
@@ -103,7 +113,7 @@
             required
             rows="6"
             class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-400 resize-y"
-            placeholder="What are you trying to build? What challenges are you facing? What does success look like for you?"
+            placeholder="Tell me about your current systems challenge. What's not working? Where are you losing time or money?"
           ></textarea>
         </div>
 
@@ -143,7 +153,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Get in touch with Henry Ikoh to discuss your vision, product ideas, or collaboration opportunities.'
+          content: 'Start a conversation with Henry Ikoh about your systems challenge. I help early stage innovators design processes and systems that work from day one.'
         },
         {
           hid: 'og:title',
@@ -153,7 +163,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Get in touch with Henry Ikoh to discuss your vision, product ideas, or collaboration opportunities.'
+          content: 'Start a conversation with Henry Ikoh about your systems challenge. I help early stage innovators design processes and systems that work from day one.'
         }
       ]
     }

@@ -13,20 +13,25 @@
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[600px]" :src="page.cover" alt="" />
 			<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
 
+			<!-- Community CTA Section -->
+			<div class="border-t border-gray-200 dark:border-gray-700 mt-16 pt-12 mb-8">
+				<CommunitySignup />
+			</div>
+
 			<!-- Contact CTA Section -->
-			<div class="border-t border-gray-200 dark:border-gray-700 mt-16 pt-12 mb-12">
+			<div class="mb-12">
 				<div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 md:p-12 text-center">
 					<h3 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-						Ready to Build Your Future?
+						Ready to Redesign Your System?
 					</h3>
 					<p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-						If this article resonated with you and you're ready to transform your vision into reality, let's talk.
+						If you've identified a broken system and want help fixing it properly, let's talk.
 					</p>
 					<nuxt-link
 						to="/contact"
 						class="bg-black dark:bg-gray-600 inline-block px-8 py-4 text-lg md:text-xl rounded-md text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors font-medium"
 					>
-						Get in touch
+						Start a Conversation
 					</nuxt-link>
 				</div>
 			</div>

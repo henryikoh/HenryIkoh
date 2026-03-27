@@ -2,6 +2,7 @@
 title: Everything is a System:Why Systems in Nigeria are poorly designed.
 description: Everything around you is a system. Most are just poorly designed. Here's how to think about fixing them.
 cover: /systems.jpg
+alt: Why Systems in Nigeria are poorly designed
 tag: ['Systems', 'Nigeria',]
 createdAt: March 9 2026
 ---

@@ -7,31 +7,36 @@
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
 					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Systems.</span></span>
 					<br />
-					<span class="block mt-3 md:mt-4">/People. Futures. Potentials./</span>
+					<span class="block mt-3 md:mt-4">/People. Systems. Futures./</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Human. Artist. Lover. Builder. Creator. Engineer. AI Expert. Renaissance polymath for the new age. I create systems, products, and experiences that unlock human potential and give people better futures.
+					Everything is a system — your business, your team, your operations. Most dysfunction isn't caused by bad people. It's caused by bad design. I help founders and organizations see what's actually broken, then design systems that work from day one.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
-					I am on a mission to impact billions of lives by creating systems and experiences that unlock human potential and give people better futures.
+					I write code, architect systems, and think deeply about problems before building solutions. Whether it's launching a product, fixing broken operations, or proving real impact — I believe the people who change the world aren't smarter. They just learned to see the systems others can't.
 				</p>
 
-				<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 inline-block mt-4 px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Let's discuss your future</nuxt-link>
-			
-			
+				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7">
+					<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Start a Conversation</nuxt-link>
+					<nuxt-link to="/system" class="text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors">See How I Work</nuxt-link>
+				</div>
+
 			</div>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
-		
+
+		<ServicesTab/>
+		</div>
+		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+
 		<ProjectsTab/>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
-		
+
 			<component :is="tab"></component>
 		</div>
-		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
-		
-		<ServicesTab/>
+		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-12">
+			<CommunitySignup />
 		</div>
 		<Footer/>
   </div>
@@ -42,7 +47,7 @@ import ProjectsTab from '~/components/ProjectsTab.vue';
 
 export default {
     name: 'IndexPage',
-    async asyncData({ $content }) {
+    async asyncData() {
     },
     data() {
         return {

@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Henry Ikoh | Build and launch MVP',
+    title: 'Henry Ikoh | Systems That Work From Day One',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,7 +12,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1",
+          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work. Systems architect. Product engineer. Builder.",
       },
       {
         name: 'apple-mobile-web-app-status-bar-style',
@@ -21,13 +21,13 @@ export default {
       {
         hid: 'og:title',
         name: 'og:title',
-        content: 'Henry Ikoh | Build and launch MVP',
+        content: 'Henry Ikoh | Systems That Work From Day One',
       },
       {
         hid: 'og:description',
         name: 'og:description',
         content:
-          "Hi, I'm Henry Ikoh, a Fullstack Product Engineer⚡️I help Ambitious Entrepreneurs and Founders make sense of the chaos of building SAAS Products helping them go from 0 - 1",
+          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work. Systems architect. Product engineer. Builder.",
       },
       {
         hid: 'og:image',
@@ -137,7 +137,11 @@ export default {
 
       const articles = await $content('articles').only(['slug']).fetch()
 
-      return articles.map((article) => `/blog/${article.slug}`)
+      return [
+        '/system',
+        '/contact',
+        ...articles.map((article) => `/blog/${article.slug}`)
+      ]
     },
   },
   // server: {

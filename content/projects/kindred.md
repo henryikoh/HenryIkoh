@@ -18,6 +18,9 @@ results:
   - Targeting executives and busy professionals
 links:
   website: https://www.trykindredapp.com/
+problem: "Executives and leaders have hundreds of relationships but no system to manage them intentionally. CRMs are built for sales pipelines, not human connection. People fall through the cracks."
+solution: "A personal relationship management system — designed like a CRM but built for real human connections. Track touchpoints, set reminders, and build intentional habits around the people who matter most."
+impact: "Active development · Product strategy and brand identity designed from scratch · Targeting busy professionals who want to be more intentional with relationships."
 ---
 
 # Project Overview
