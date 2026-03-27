@@ -5,22 +5,22 @@
 
     <div class="relative px-8 py-16 md:px-16 md:py-20">
       <!-- Eyebrow -->
-      <p class="text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-6">For builders, founders & systems thinkers</p>
+      <p class="text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-6">For systems builders</p>
 
       <!-- Main heading with gradient -->
       <h3 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 max-w-2xl">
-        You can help 10 people manually.<br>
-        <span class="community-gradient">Or build a system that helps 10,000.</span>
+        Do you see broken systems<br>
+        <span class="community-gradient">and feel the pull to fix them?</span>
       </h3>
 
       <!-- Body -->
       <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-4 max-w-xl leading-relaxed">
-        I write about seeing the systems others can't — and building better ones. Frameworks, case studies, and hard-earned lessons from the field.
+        I write about systems thinking, building things that balance people and profit, and the courage it takes to create something new. If that's you — join the list.
       </p>
 
       <!-- Social proof hint -->
       <p class="text-sm text-gray-500 dark:text-gray-500 mb-8">
-        Join founders, engineers, and leaders who think in systems.
+        Founders, engineers, and leaders who are building better systems.
       </p>
 
       <!-- CTA -->

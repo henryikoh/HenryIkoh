@@ -16,6 +16,7 @@
                         <div class="flex items-center gap-2 mb-3">
                             <StatusBadge v-if="article.status" :status="article.status" />
                             <span v-if="article.timeline" class="text-xs text-gray-500 dark:text-gray-400">{{ article.timeline }}</span>
+                            <span v-if="article.createdAt" class="text-xs text-gray-400 dark:text-gray-500">· {{ formatDate(article.createdAt) }}</span>
                         </div>
                         <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">{{ article.project }}</p>
                         <h2 class="text-xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">{{ article.title }}</h2>

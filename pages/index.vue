@@ -10,10 +10,10 @@
 					<span class="block mt-3 md:mt-4">/People. Systems. Futures./</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Everything is a system — your business, your team, your operations. Most dysfunction isn't caused by bad people. It's caused by bad design. I help founders and organizations see what's actually broken, then design systems that work from day one.
+					Systems architect. I help founders, visionary leaders, and impact-driven organizations build systems that balance people, profit, and sustainability — from day zero, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The Zero Point System</nuxt-link>.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
-					I write code, architect systems, and think deeply about problems before building solutions. Whether it's launching a product, fixing broken operations, or proving real impact — I believe the people who change the world aren't smarter. They just learned to see the systems others can't.
+					The people who change the world aren't smarter than anyone else. They just learned to see broken systems — and had the courage to build new ones.
 				</p>
 
 				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7">

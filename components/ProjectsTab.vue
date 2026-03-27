@@ -102,12 +102,12 @@ export default {
         },
         goToProject(index) {
             this.currentIndex = index
-            this.resetAutoScroll()
+            this.stopAutoScroll()
         },
         startAutoScroll() {
             this.autoScrollInterval = setInterval(() => {
                 this.nextProject()
-            }, 8000)
+            }, 13000)
         },
         stopAutoScroll() {
             if (this.autoScrollInterval) {
