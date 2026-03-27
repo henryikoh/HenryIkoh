@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl font-bold dark:text-white pb-9">How I Can Help</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-3xl">
-            Most things that are broken aren't broken because of bad people — they're broken because of bad design. I bring together systems architecture, product thinking, and software engineering to diagnose what's actually broken, redesign it from first principles, and prove it works. Whether you're a founder building from scratch, an organization fixing broken operations, or a social enterprise proving impact — my approach is called The Zero Point System.
+            Most broken things aren't broken because of bad people — they're broken because of bad design. I diagnose what's actually wrong, redesign it from first principles, and prove it works. My approach is called <nuxt-link to="/system" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white transition-colors">The Zero Point System</nuxt-link>.
         </p>
 
       <ul class="gap-8 md:gap-10 grid md:grid-cols-2">
