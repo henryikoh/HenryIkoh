@@ -1,14 +1,19 @@
 <template>
   <div class="dark:bg-dark">
+		<!-- Reading Progress Bar -->
+		<div class="fixed top-0 left-0 w-full z-50 h-1 bg-gray-200 dark:bg-gray-700">
+			<div class="h-full bg-gray-900 dark:bg-white transition-none" :style="{ width: scrollProgress + '%' }"></div>
+		</div>
+
 		    <Navbar />
 
 		<article class=" w-11/12 md:w-4/5 mx-auto">
 			<h1 class="font-bold pt-5 md:pt-10 text-4xl md:text-7xl wrapa dark:text-white">{{ page.title }}</h1>
 			<div class="info wrapa">
-				<div class="flex items-baseline pb-8 pt-2">
-					<p class="md:text-2xl text-gray-800 dark:text-white">{{ formatDate(page.createdAt) }}</p>
-					<div class="flex gap-3 md:pl-6 pl-4">
-						<p v-for="tag in page.tag" :key="tag" class="md:text-xl text-gray-500">{{ tag }}</p>
+				<div class="flex flex-col md:flex-row md:items-baseline pb-8 pt-2 gap-1 md:gap-0">
+					<p class="text-base md:text-2xl text-gray-800 dark:text-white">{{ formatDate(page.createdAt) }}</p>
+					<div class="flex flex-wrap gap-2 md:pl-6">
+						<span v-for="tag in page.tag" :key="tag" class="text-sm md:text-xl text-gray-500">{{ tag }}</span>
 					</div>
 				</div>
 			</div>
@@ -72,6 +77,17 @@ async asyncData({ $content, params }) {
 		return {
 			page,
 		}
+	},
+	data() {
+		return {
+			scrollProgress: 0
+		}
+	},
+	mounted() {
+		window.addEventListener('scroll', this.updateProgress)
+	},
+	beforeDestroy() {
+		window.removeEventListener('scroll', this.updateProgress)
 	},
 	head() {
 		return {
@@ -140,6 +156,11 @@ async asyncData({ $content, params }) {
 			const options = { year: 'numeric', month: 'long', day: 'numeric' }
 			return new Date(date).toLocaleDateString('en', options)
 		},
+		updateProgress() {
+			const scrollTop = window.scrollY
+			const docHeight = document.documentElement.scrollHeight - window.innerHeight
+			this.scrollProgress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
+		}
 	},
 }
 </script>
