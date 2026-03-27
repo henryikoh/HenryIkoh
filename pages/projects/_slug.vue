@@ -14,6 +14,49 @@
 			</div>
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[600px]" :src="page.cover" alt="" />
 			<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
+
+			<!-- Zero Point System Bridge -->
+			<div class="border-t border-gray-200 dark:border-gray-700 mt-16 pt-12 mb-8 max-w-3xl mx-auto">
+				<p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">The Process Behind the Work</p>
+				<h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+					Every project runs through the same system.
+				</h3>
+				<p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
+					Discovery → Architecture → Solution Design → Pilot. Each phase delivers a standalone result. You always know what's broken, why, and what to do next — before committing to a full build.
+				</p>
+				<nuxt-link to="/system" class="text-gray-900 dark:text-white font-medium hover:underline underline-offset-4 text-lg">
+					See exactly how I work →
+				</nuxt-link>
+			</div>
+
+			<!-- Contact CTA -->
+			<div class="mb-16">
+				<div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 md:p-12">
+					<div class="max-w-3xl mx-auto">
+						<h3 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+							Have a system that needs fixing?
+						</h3>
+						<p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8">
+							Whether you're a founder building from scratch, an organization with broken operations, or a social enterprise ready to scale — let's figure out what's actually wrong before we talk about solutions.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4">
+							<nuxt-link
+								to="/contact"
+								class="bg-black dark:bg-gray-600 text-center inline-block px-8 py-4 text-lg rounded-md text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors font-medium"
+							>
+								Start a Conversation
+							</nuxt-link>
+							<nuxt-link
+								to="/"
+								class="text-center px-8 py-4 text-lg rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors"
+							>
+								See more work
+							</nuxt-link>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</article>
 		<Footer />
 	</div>

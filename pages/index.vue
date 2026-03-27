@@ -25,11 +25,11 @@
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
-		<ServicesTab/>
+		<ProjectsTab/>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
-		<ProjectsTab/>
+		<ServicesTab/>
 		</div>
 		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
