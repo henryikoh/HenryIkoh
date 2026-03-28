@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl font-bold dark:text-white pb-9">How I Can Help</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-3xl">
-            Most broken things aren't broken because of bad people — they're broken because of bad design. I diagnose what's actually wrong, redesign it from first principles, and prove it works. My approach is called <nuxt-link to="/system" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white transition-colors">The Zero Point System</nuxt-link>.
+            Most broken things aren't broken because of bad people — they're broken because of bad design. I diagnose what's actually wrong, redesign it from first principles, build it, and prove it works. Strategy and execution — no handoff gap. My approach is called <nuxt-link to="/system" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white transition-colors">The Zero Point System</nuxt-link>.
         </p>
 
       <ul class="gap-8 md:gap-10 grid md:grid-cols-2">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <p class="text-gray-700 dark:text-gray-300 text-base leading-relaxed mb-3">
-                                Test with real users. Measure everything. We launch a controlled pilot, gather real data, iterate, and only scale what's proven to work.
+                                Test with real users. Measure everything. We build and launch a controlled pilot, gather real data, iterate, and only scale what's proven to work.
                             </p>
                             <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1">
                                 <li>• Build minimum testable system</li>

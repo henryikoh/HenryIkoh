@@ -10,15 +10,15 @@
 					<span class="block mt-3 md:mt-4">People. Systems. Futures.</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Systems architect. I help founders, visionary leaders, and impact-driven organizations build systems that balance impact and profit from day zero, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The Zero Point System</nuxt-link>.
+					I help founders, leaders, and organizations diagnose broken systems and engineer the infrastructure their next stage actually requires, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The Zero Point System</nuxt-link>.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					The people who change the world aren't smarter than anyone else. They just learned to see broken systems — and had the courage to build new ones.
 				</p>
 
 				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7">
-					<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Start a Conversation</nuxt-link>
-					<nuxt-link to="/system" class="text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors">See How I Work</nuxt-link>
+					<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Diagnose Your System →</nuxt-link>
+					<nuxt-link to="/system" class="text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors">See the Method →</nuxt-link>
 				</div>
 
 			</div>
