@@ -99,6 +99,11 @@ export default {
 					content: 'Thought experiments, system designs, and problem breakdowns. Problems that have a real solution if approached the right way.',
 				},
 			],
+			link: [
+				{ rel: 'icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'shortcut icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favic.png' },
+			],
 		}
 	},
 	methods: {

@@ -151,10 +151,12 @@ export default {
 					content: this.page.description,
 				},
 			],
-			link: [{
-				rel: 'canonical',
-				href: 'https://www.henryikoh.com/ideas/' + this.page.slug,
-			}],
+			link: [
+				{ rel: 'icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'shortcut icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'canonical', href: 'https://www.henryikoh.com/ideas/' + this.page.slug },
+			],
 		}
 	},
 	data() {
