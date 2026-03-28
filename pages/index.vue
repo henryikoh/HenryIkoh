@@ -7,10 +7,10 @@
 				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
 					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Systems.</span></span>
 					<br />
-					<span class="block mt-3 md:mt-4">/People. Systems. Futures./</span>
+					<span class="block mt-3 md:mt-4">People. Systems. Futures.</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					Systems architect. I help founders, visionary leaders, and impact-driven organizations build systems that balance people, profit, and sustainability — from day zero, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The Zero Point System</nuxt-link>.
+					Systems architect. I help founders, visionary leaders, and impact-driven organizations build systems that balance impact and profit from day zero, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The Zero Point System</nuxt-link>.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
 					The people who change the world aren't smarter than anyone else. They just learned to see broken systems — and had the courage to build new ones.
@@ -75,6 +75,7 @@ export default {
 		);
 		background-size: 400% 400%;
 		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-webkit-animation: AnimationName 5s ease infinite;
 		-moz-animation: AnimationName 5s ease infinite;
