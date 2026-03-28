@@ -67,8 +67,8 @@ export default {
             .fetch()
 
         const desiredOrder = [
-            'relationship-management-system-for-executives', // Kindred
-            'creating-the-future---ai-powered-learning-community', // SENPAI
+            'kindred-a-relationship-operating-system', // Kindred
+            'senpai-building-a-creative-tech-community-from-scratch', // SENPAI
             'tradr-bringing-local-markets-online' // Tradr
         ]
         this.page = projects.sort((a, b) => {

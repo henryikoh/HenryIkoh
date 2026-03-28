@@ -20,7 +20,9 @@
                         </div>
                         <p class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">{{ article.project }}</p>
                         <h2 class="text-xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">{{ article.title }}</h2>
-                        <p v-if="article.role" class="text-gray-500 dark:text-gray-400 text-sm mb-4">{{ article.role }}</p>
+                        <p v-if="article.role" class="text-gray-500 dark:text-gray-400 text-sm mb-4">
+                            <span class="font-medium text-gray-400 dark:text-gray-500 uppercase tracking-wider text-xs">Role — </span>{{ article.role }}
+                        </p>
                         <div class="flex flex-wrap gap-2">
                             <span v-for="tag in article.tag" :key="tag" class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs rounded-full">
                                 {{ tag }}

@@ -165,10 +165,13 @@ export default {
 
       const projects = await $content('projects').only(['slug']).fetch()
 
+      const ideas = await $content('ideas').only(['slug']).fetch()
+
       const articleRoutes = articles.map((file) => '/blog/' + file.slug)
       const projectRoutes = projects.map((file) => '/projects/' + file.slug)
+      const ideaRoutes = ideas.map((file) => '/ideas/' + file.slug)
 
-      return [...articleRoutes, ...projectRoutes]
+      return [...articleRoutes, ...projectRoutes, ...ideaRoutes]
     },
   },
 

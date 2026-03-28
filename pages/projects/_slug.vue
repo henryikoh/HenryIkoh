@@ -18,7 +18,37 @@
 				</div>
 			</div>
 			<img class=" z-0 mb-10 object-center object-cover h-60 w-full md:h-[600px]" :src="page.cover" alt="" />
-			<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
+
+			<!-- Content + Sidebar layout -->
+			<div :class="page.toc && page.toc.length >= 5 ? 'md:grid md:grid-cols-[1fr_200px] md:gap-12 md:items-start' : ''">
+
+				<nuxt-content class=" prose prose-gray dark:prose-p:text-white dark:prose-invert prose-base lg:prose-lg xl:prose-xl prose-li:marker:text-gray-900  dark:prose-li:marker:text-gray-200 prose-ul:list-outside   prose-p:overflow-hidden prose-p:overflow-ellipsis 	 mx-auto  " :document="page" />
+
+				<!-- Sticky TOC sidebar — desktop only, long articles only -->
+				<aside v-if="page.toc && page.toc.length >= 5" class="hidden md:block sticky top-8 self-start">
+					<div class="max-h-[calc(100vh-4rem)] overflow-y-auto">
+						<p class="text-xs font-medium text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-3">Contents</p>
+						<nav>
+							<ul class="space-y-1">
+								<li
+									v-for="heading in page.toc"
+									:key="heading.id"
+									:class="{ 'pl-3': heading.depth === 3, 'pl-5': heading.depth === 4 }"
+								>
+									<a
+										:href="'#' + heading.id"
+										class="block text-sm py-0.5 transition-colors leading-snug"
+										:class="activeHeading === heading.id
+											? 'text-gray-900 dark:text-white font-medium'
+											: 'text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'"
+									>{{ heading.text }}</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</aside>
+
+			</div>
 
 			<!-- Zero Point System Bridge -->
 			<div class="border-t border-gray-200 dark:border-gray-700 mt-16 pt-12 mb-8 max-w-3xl mx-auto">
@@ -80,14 +110,18 @@ async asyncData({ $content, params }) {
 	},
 	data() {
 		return {
-			scrollProgress: 0
+			scrollProgress: 0,
+			activeHeading: null
 		}
 	},
 	mounted() {
 		window.addEventListener('scroll', this.updateProgress)
+		window.addEventListener('scroll', this.updateActiveHeading)
+		this.updateActiveHeading()
 	},
 	beforeDestroy() {
 		window.removeEventListener('scroll', this.updateProgress)
+		window.removeEventListener('scroll', this.updateActiveHeading)
 	},
 	head() {
 		return {
@@ -160,10 +194,27 @@ async asyncData({ $content, params }) {
 			const scrollTop = window.scrollY
 			const docHeight = document.documentElement.scrollHeight - window.innerHeight
 			this.scrollProgress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
+		},
+		updateActiveHeading() {
+			if (!this.page || !this.page.toc) return
+			const headings = this.page.toc.map(h => document.getElementById(h.id)).filter(Boolean)
+			const scrollY = window.scrollY + 100
+			let current = null
+			for (const el of headings) {
+				if (el.offsetTop <= scrollY) current = el.id
+			}
+			this.activeHeading = current
 		}
 	},
 }
 </script>
 
 <style scoped>
+aside div::-webkit-scrollbar {
+	display: none;
+}
+aside div {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
 </style>

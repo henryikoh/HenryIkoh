@@ -11,7 +11,7 @@ type: Case Study
 role: Founder, Product Designer, Systems Architect, Full-Stack Engineer
 timeline: "2022 – Present"
 problem: "Adults who want to build and maintain meaningful relationships have no tools designed for that purpose. CRMs are built for sales pipelines. Contact apps are built for storage. Nothing is built for human connection."
-solution: "A relationship operating system with AI at the center — contact management, relationship health scoring, interaction logging, intelligent nudges, and a conversational AI agent that lets you manage your circle through natural language."
+solution: "An iOS mobile app — a relationship operating system with AI at the center. Contact management, relationship health scoring, interaction logging, intelligent nudges, and a conversational AI agent that lets you manage your circle through natural language."
 impact: "80+ users · 50+ user interviews · Full-stack solo build · Golang API · Flutter mobile app · Custom AI agent built from scratch · Pivoted to executive market · Active beta."
 ---
 

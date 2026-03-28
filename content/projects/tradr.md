@@ -11,7 +11,7 @@ type: Case Study
 role: Product Manager, Systems Architect, Cloud Engineer
 timeline: "~8 months"
 problem: "Millions of Nigerians prefer local market goods (better prices, variety, negotiation) but lose 100+ hours/year commuting. Existing solutions — supermarkets, e-commerce, informal WhatsApp traders — either cost 30-100% more or lack trust and accountability."
-solution: "A three-sided marketplace with live shopping conversations. Buyers create lists, get matched with expert shoppers physically in the market, confirm each item via photo in real-time, and receive doorstep delivery."
+solution: "Two Android mobile apps (Buyer + Shopper) powering a three-sided marketplace with live shopping conversations. Buyers create lists, get matched with expert shoppers physically in the market, confirm each item via photo in real-time, and receive doorstep delivery."
 impact: "₦20M in sales · 300+ users · 48 active · 2 apps shipped · Proved market demand exists — the system worked, the scope didn't."
 ---
 

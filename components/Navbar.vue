@@ -10,6 +10,7 @@
 			</div>
 		</nuxt-link>
     <div class="flex gap-4 md:gap-6">
+      <nuxt-link to="/ideas" class="text-white text-sm md:text-lg hover:opacity-80 transition-opacity">Ideas</nuxt-link>
       <nuxt-link to="/system" class="text-white text-sm md:text-lg hover:opacity-80 transition-opacity">The System</nuxt-link>
       <nuxt-link to="/contact" class="text-white text-sm md:text-lg hover:opacity-80 transition-opacity">Contact</nuxt-link>
     </div>
