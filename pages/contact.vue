@@ -14,7 +14,7 @@
 
       <!-- Zero Point System Summary -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-10 bg-gray-50 dark:bg-gray-800">
-        <h3 class="font-bold text-gray-900 dark:text-white text-lg mb-2">My approach: The Zero Point System</h3>
+        <h3 class="font-bold text-gray-900 dark:text-white text-lg mb-2">My approach: The <span style="color: #00ff9f;">Zero</span> Point System</h3>
         <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-3">
           A proven process: Discovery (map what's broken) &rarr; Architecture (redesign from first principles) &rarr; Solution Design (plan how to test it) &rarr; Pilot (prove it works with real data). Each phase delivers standalone value — you decide how far we go together.
         </p>

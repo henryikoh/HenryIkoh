@@ -6,7 +6,7 @@
       <!-- Header -->
       <div class="mb-16">
         <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-          The Zero Point System
+          The <span style="color: #00ff9f;">Zero</span> Point System
         </h1>
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light mb-6 max-w-3xl italic">
           Strategic Systems Architecture for Operations That Scale and Impact That Lasts

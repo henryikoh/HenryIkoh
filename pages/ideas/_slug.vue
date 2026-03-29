@@ -6,15 +6,13 @@
 		</div>
 
 		<!-- Zero Point System sticky banner -->
-		<div class="fixed bottom-0 left-0 w-full z-40 flex justify-center pb-4 px-4 pointer-events-none">
-			<nuxt-link
-				to="/system"
-				class="pointer-events-auto flex items-center justify-center gap-2 bg-gray-900/80 dark:bg-white/80 backdrop-blur-sm text-white dark:text-gray-900 text-xs md:text-sm font-medium px-4 py-2 md:px-5 md:py-2.5 rounded-full shadow-lg hover:bg-gray-900/90 dark:hover:bg-white/90 transition-colors text-center"
-			>
-				<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0"></span>
-				This problem is being analyzed through The Zero Point System
-			</nuxt-link>
-		</div>
+		<nuxt-link
+			to="/system"
+			class="fixed bottom-0 left-0 w-full z-40 flex items-center justify-center gap-2 bg-gray-900/80 dark:bg-white/80 backdrop-blur-sm text-white dark:text-gray-900 text-xs md:text-sm font-medium px-4 py-3 shadow-lg hover:bg-gray-900/90 dark:hover:bg-white/90 transition-colors"
+		>
+			<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0"></span>
+			This problem is being analyzed through The <span style="color: #00ff9f;">Zero</span> Point System
+		</nuxt-link>
 
 		<Navbar />
 

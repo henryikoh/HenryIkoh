@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl font-bold dark:text-white pb-9">How I Can Help</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-3xl">
-            Most broken things aren't broken because of bad people — they're broken because of bad design. I diagnose what's actually wrong, redesign it from first principles, build it, and prove it works. Strategy and execution — no handoff gap. My approach is called <nuxt-link to="/system" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white transition-colors">The Zero Point System</nuxt-link>.
+            Most broken things aren't broken because of bad people — they're broken because of bad design. I diagnose what's actually wrong, redesign it from first principles, build it, and prove it works. Strategy and execution — no handoff gap. My approach is called <nuxt-link to="/system" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white transition-colors">The <span style="color: #00ff9f;">Zero</span> Point System</nuxt-link>.
         </p>
 
       <ul class="gap-8 md:gap-10 grid md:grid-cols-2">
