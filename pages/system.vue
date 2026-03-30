@@ -117,42 +117,59 @@
           <p>Phase 1 gave us a clear picture of reality — the system as it exists, the people inside it, and what's broken. Phase 2 is where I take that picture apart and design something better.</p>
           <p>This is the most intellectually demanding part of the process. I'm not applying templates or best practices. I'm rebuilding your system from first principles — eliminating what shouldn't exist, redesigning what should, and producing a blueprint for a system that actually works.</p>
 
+          <!-- Step 1 -->
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 mb-4">
-              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 1 (Collaborative)</h4>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-7 h-7 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-xs font-bold shrink-0">1</div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Visualization Session 1 <span class="font-normal text-gray-500 text-sm">(Collaborative)</span></h3>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 ml-10">
               <p class="mb-3">I present the current state map back to you and your key stakeholders. This isn't a report-out — it's an alignment session. Everyone needs to see the same picture before we design anything new.</p>
               <p class="mb-3">Once we're aligned on what exists and what's broken, we define what the new system needs to accomplish. Not features — outcomes. What does success look like for the people this system serves? What does it look like for the business or organization running it?</p>
-              <p class="text-sm text-gray-600 dark:text-gray-400">We set clear targets: efficiency targets like "Reduce processing time by 70%", "Cut operating costs by 50%" and impact targets like "Increase student retention from 60% to 90%". These targets become the design brief. Everything I build in the reconstruction phase is designed to hit them.</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">We set clear targets — efficiency targets like "Reduce processing time by 70%", "Cut operating costs by 50%" and impact targets like "Increase student retention from 60% to 90%". These targets become the design brief. Everything I build in the reconstruction phase is designed to hit them.</p>
             </div>
           </div>
 
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
-              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 2 (Collaborative)</h4>
-              <p>I'll present the redesigned system(s) to you — before/after comparison, walk through the new flows, explain trade-offs, show expected gains. This is a collaborative refinement session: you know your business context, I know systems architecture. Together, we iterate to get it exactly right.</p>
-            </div>
-
+          <!-- Step 2 -->
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What I Do After: The Mental Reconstruction</h3>
-            <p class="mb-4">This is where the real work happens — and most of it is invisible. Between our sessions, I deconstruct your system completely and rebuild it from scratch.</p>
-            <div class="space-y-3">
-              <div class="flex gap-3">
-                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">1. Deconstruction</span>
-                <p>Strip everything down to fundamental components. Question every single step: "Why does this exist? Is it essential or just accumulated cruft?"</p>
-              </div>
-              <div class="flex gap-3">
-                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">2. Reconstruction</span>
-                <p>Start from first principles. Design new flows — where can we eliminate steps, parallelize, automate, or simplify? Account for human behavior. Design for measurable outcomes. Design within your constraints.</p>
-              </div>
-              <div class="flex gap-3">
-                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">3. Options Development</span>
-                <p>I don't give you one solution. I give you 2-3 approaches with clear trade-offs:</p>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-7 h-7 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-xs font-bold shrink-0">2</div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">The Mental Reconstruction <span class="font-normal text-gray-500 text-sm">(Solo Work)</span></h3>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 ml-10">
+              <p class="mb-4">This is where the real work happens — and most of it is invisible. With the design brief in hand, I go away and deconstruct your system completely, then rebuild it from scratch.</p>
+              <div class="space-y-3 text-sm">
+                <div class="flex gap-3">
+                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">1. Deconstruction</span>
+                  <p class="text-gray-600 dark:text-gray-400">Strip everything down to fundamental components. Question every single step: "Why does this exist? Is it essential or just accumulated cruft?"</p>
+                </div>
+                <div class="flex gap-3">
+                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">2. Reconstruction</span>
+                  <p class="text-gray-600 dark:text-gray-400">Start from first principles. Design new flows — where can we eliminate steps, parallelize, automate, or simplify? Account for human behavior. Design for measurable outcomes. Design within your constraints.</p>
+                </div>
+                <div class="flex gap-3">
+                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">3. Options Development</span>
+                  <div class="text-gray-600 dark:text-gray-400">
+                    <p class="mb-2">I don't give you one solution. I give you 2-3 approaches with clear trade-offs:</p>
+                    <div class="space-y-1 ml-2">
+                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option A:</span> Minimal change — fast, low cost, modest improvement</div>
+                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</div>
+                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="ml-39 mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-400" style="margin-left: 144px;">
-              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option A:</span> Minimal change — fast, low cost, modest improvement</div>
-              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</div>
-              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</div>
+          </div>
+
+          <!-- Step 3 -->
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-7 h-7 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-xs font-bold shrink-0">3</div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Visualization Session 2 <span class="font-normal text-gray-500 text-sm">(Collaborative)</span></h3>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 ml-10">
+              <p>I present the redesigned system(s) back to you — before/after comparison, walk through the new flows, explain trade-offs, show expected gains. This is a collaborative refinement session: you know your business context, I know systems architecture. Together, we iterate until it's exactly right.</p>
             </div>
           </div>
 
