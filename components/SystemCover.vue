@@ -77,7 +77,6 @@ export default {
   width: 100%;
   aspect-ratio: 1200 / 630;
   overflow: hidden;
-  border-radius: 12px;
 }
 
 .canvas {

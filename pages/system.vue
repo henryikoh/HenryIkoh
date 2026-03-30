@@ -20,9 +20,6 @@
         <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
           Most people jump straight to building. I start by understanding the real problem. Whether you're fixing a broken system or creating something new, I use a proven process that ensures we build the right thing, the right way, and measure what actually matters.
         </p>
-        <p class="text-base md:text-lg text-gray-500 dark:text-gray-500 max-w-3xl mt-4 leading-relaxed">
-          Every phase is designed to reduce the cost of being wrong — so by the time you scale, you're scaling something proven.
-        </p>
       </div>
 
       <!-- Process Overview -->
@@ -59,8 +56,23 @@
             <div class="space-y-6">
               <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
                 <h4 class="font-bold text-gray-900 dark:text-white mb-2">Discovery Session (2-3 hours)</h4>
-                <p class="mb-3">We'll sit down and I'll ask you to walk me through your current situation. I'll ask questions like: Where does it break down? What frustrates your team or customers? How long does this take? How much does it cost? What would success look like for the people affected?</p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">I record everything so I can go back and analyze it deeply later.</p>
+                <p class="mb-3">This session is about mapping reality — not brainstorming solutions. Whether you have an existing system or are designing something new, we map what exists or what you're imagining: how it works, who interacts with it, and where it breaks down.</p>
+                <p class="mb-3">We work through three things together:</p>
+                <div class="space-y-3 text-sm">
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white mb-1">1. System Mapping</p>
+                    <p class="text-gray-600 dark:text-gray-400">We trace the system step by step — inputs, processes, outputs, handoffs. If you have an existing system, we map what actually happens today. If you're building something new, we map the hypothetical system you're designing for, so we can stress-test it before anything is built.</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white mb-1">2. User Archetypes</p>
+                    <p class="text-gray-600 dark:text-gray-400">Every system has people in it. We identify every type of user who interacts with the system — their goals, their frustrations, how often they engage, and what they need the system to do for them. This isn't demographic profiling. It's behavioral mapping.</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-gray-900 dark:text-white mb-1">3. Problem Diagnosis</p>
+                    <p class="text-gray-600 dark:text-gray-400">Once the system and its users are visible, the problems become visible too. We identify where the system breaks down, what's causing it, and whose experience it's damaging.</p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-3">I record everything so I can go back and analyze it deeply after our session.</p>
               </div>
               <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
                 <h4 class="font-bold text-gray-900 dark:text-white mb-2">Impact Mapping Workshop <span class="text-sm font-normal text-gray-500">(Optional, +1-2 hours)</span></h4>
@@ -82,7 +94,7 @@
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Diagnosed problems: What's actually broken and why (symptoms vs root causes)</li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key stakeholders identified: Who's affected and how</li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Problem Hypothesis:</strong> A clear statement of the root cause and what solving it would unlock</span></li>
-              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Archetypes:</strong> Behavioral profiles for each distinct user type — goals, pain points, usage patterns, retention signals</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Archetypes:</strong> A behavioral profile for each distinct user type in the system — their goal, pain points, usage patterns, retention signal, and what they specifically need from the solution. This goes beyond demographics to capture how each user type thinks, behaves, and what it would take to keep them coming back.</span></li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Theory of Change map: Activities → Outputs → Outcomes → Impact <span class="text-gray-400">(social impact clients)</span></li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key indicators defined: What we'll measure to prove it worked <span class="text-gray-400">(social impact clients)</span></li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Stakeholder Map:</strong> All actors in the system, their roles, and how they relate <span class="text-gray-400">(social impact clients)</span></span></li>
@@ -102,7 +114,8 @@
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>This is where the real magic happens. This is my secret sauce.</p>
+          <p>Phase 1 gave us a clear picture of reality — the system as it exists, the people inside it, and what's broken. Phase 2 is where I take that picture apart and design something better.</p>
+          <p>This is the most intellectually demanding part of the process. I'm not applying templates or best practices. I'm rebuilding your system from first principles — eliminating what shouldn't exist, redesigning what should, and producing a blueprint for a system that actually works.</p>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
