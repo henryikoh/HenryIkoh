@@ -121,7 +121,9 @@
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
             <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 mb-4">
               <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 1 (Collaborative)</h4>
-              <p>I'll present the current state map and walk through what's broken together. Then we'll set clear improvement targets — efficiency targets like "reduce processing time by 70%" and impact targets like "improve customer satisfaction by 30%."</p>
+              <p class="mb-3">I present the current state map back to you and your key stakeholders. This isn't a report-out — it's an alignment session. Everyone needs to see the same picture before we design anything new.</p>
+              <p class="mb-3">Once we're aligned on what exists and what's broken, we define what the new system needs to accomplish. Not features — outcomes. What does success look like for the people this system serves? What does it look like for the business or organization running it?</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">We set clear targets: efficiency targets like "Reduce processing time by 70%", "Cut operating costs by 50%" and impact targets like "Increase student retention from 60% to 90%". These targets become the design brief. Everything I build in the reconstruction phase is designed to hit them.</p>
             </div>
           </div>
 
@@ -132,7 +134,7 @@
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What I Do After: The Mental Reconstruction</h3>
-            <p class="mb-4">This is what you're really paying for. I take your system completely apart in my mind and rebuild it from scratch.</p>
+            <p class="mb-4">This is where the real work happens — and most of it is invisible. Between our sessions, I deconstruct your system completely and rebuild it from scratch.</p>
             <div class="space-y-3">
               <div class="flex gap-3">
                 <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">1. Deconstruction</span>
@@ -140,12 +142,17 @@
               </div>
               <div class="flex gap-3">
                 <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">2. Reconstruction</span>
-                <p>Start from first principles. Design new flows — eliminate steps, parallelize, automate, simplify. Account for human behavior. Design for measurable outcomes.</p>
+                <p>Start from first principles. Design new flows — where can we eliminate steps, parallelize, automate, or simplify? Account for human behavior. Design for measurable outcomes. Design within your constraints.</p>
               </div>
               <div class="flex gap-3">
-                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">3. Options</span>
-                <p>I don't give you one solution. I give you 2-3 approaches with clear trade-offs: minimal change, complete rebuild, or hybrid.</p>
+                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">3. Options Development</span>
+                <p>I don't give you one solution. I give you 2-3 approaches with clear trade-offs:</p>
               </div>
+            </div>
+            <div class="ml-39 mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-400" style="margin-left: 144px;">
+              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option A:</span> Minimal change — fast, low cost, modest improvement</div>
+              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</div>
+              <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</div>
             </div>
           </div>
 
@@ -160,7 +167,7 @@
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Journey Map:</strong> How users move through the redesigned system, step by step, from first touchpoint to outcome</span></li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><strong>Theory of Change</strong> <span class="text-gray-500">(social impact clients):</span> The logic connecting your activities to the outcomes you're designing for</li>
             </ul>
-            <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">Even if you use your internal team to build it, you now have the architecture. The thinking is done.</p>
+            <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">At the end of this phase you have the architecture — a clear, visual design for how the new system should work, with the thinking behind every decision documented. What you don't yet have is a specification for what to build. The Blueprint and User Journey Map show you what the system looks like and how users will move through it. Phase 3 is where that gets translated into concrete build specifications.</p>
           </div>
         </div>
       </div>
@@ -224,7 +231,7 @@
             </ul>
           </div>
 
-          <p class="text-sm italic text-gray-500 dark:text-gray-400">This plan de-risks your investment and defines success clearly. You can execute it yourself with your internal team, or have me run it.</p>
+          <p class="text-sm italic text-gray-500 dark:text-gray-400">By the end of this phase the ambiguity is gone. You know exactly what to build, who it's for, and what success looks like. If you're a product client, this is the package you hand to your development shop — everything they need to execute without constantly coming back for clarification.</p>
         </div>
       </div>
 
@@ -251,8 +258,8 @@
             <div class="flex gap-4">
               <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">2</div>
               <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Run Pilot in Real Conditions</h4>
-                <p class="text-sm">Test with real users, real inputs, real environment — not in a lab. Track efficiency, measure user experience, monitor outcomes, hold regular reviews.</p>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Run Pilot in Real Conditions <span class="text-xs font-normal text-gray-500">(Weeks 3-12+)</span></h4>
+                <p class="text-sm">Test with real users, real inputs, real environment — not in a lab, but in actual operating conditions. Track efficiency, measure user experience, monitor outcomes, hold regular reviews. Stay aligned and respond quickly, document learnings.</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -266,7 +273,7 @@
               <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">4</div>
               <div>
                 <h4 class="font-bold text-gray-900 dark:text-white mb-1">Scale or Iterate Decision</h4>
-                <p class="text-sm">Based on results, we decide together: scale, iterate, or pivot. Critical rule: we don't scale broken systems.</p>
+                <p class="text-sm">Based on the results, we decide together: If the pilot succeeded, plan the full rollout. If issues remain, design the next iteration. Critical rule: we don't scale broken systems.</p>
               </div>
             </div>
           </div>
@@ -302,11 +309,11 @@
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">The Report Addresses Five Key Questions</h3>
             <div class="space-y-2 text-sm">
-              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Need</span><span>What problem were you trying to solve?</span></div>
-              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Activities</span><span>What did you do to address it?</span></div>
-              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Outcomes</span><span>What were the results?</span></div>
-              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Evidence</span><span>How do you know you made a difference?</span></div>
-              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Lessons</span><span>What would you do differently next time?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">1. Need</span><span>What problem were you trying to solve?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">2. Activities</span><span>What did you do to address it?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">3. Outcomes</span><span>What were the results?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">4. Evidence</span><span>How do you know you made a difference?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">5. Lessons</span><span>What would you do differently next time?</span></div>
             </div>
           </div>
 
@@ -349,7 +356,7 @@
           </div>
           <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
             <h4 class="font-bold text-gray-900 dark:text-white mb-2">I think deeply before I act.</h4>
-            <p class="text-sm text-gray-600 dark:text-gray-400">The mental work I do between sessions — deconstructing your system, rebuilding it from first principles — this is where the real value is created. I give you a custom-designed system that fits your constraints, your people, your context.</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">The mental work I do between sessions — deconstructing your system, rebuilding it from first principles — this is where the real value is created. I don't give you generic "best practices." I give you a custom-designed system that fits your constraints, your people, your context.</p>
           </div>
           <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
             <h4 class="font-bold text-gray-900 dark:text-white mb-2">I measure what actually matters.</h4>
