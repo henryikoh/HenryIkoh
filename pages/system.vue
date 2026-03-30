@@ -37,83 +37,60 @@
       <div class="mb-20">
         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6 mb-8">
           <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phase 1</div>
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            System Discovery + Impact Mapping
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">
-            Understanding What's Actually Broken (And What Success Really Looks Like)
-          </p>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">System Discovery + Impact Mapping</h2>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">Understanding What's Actually Broken (And What Success Really Looks Like)</p>
           <p class="text-sm text-gray-500 dark:text-gray-400">Duration: 1-2 weeks</p>
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>
-            This is where we get clear on the real problem — not what you think it is, but what it actually is. And more importantly, what "good" looks like for the people your system serves.
-          </p>
+          <p>This is where we get clear on the real problem — not what you think it is, but what it actually is. And more importantly, what "good" looks like for the people your system serves.</p>
 
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What We'll Do Together</h3>
-
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Discovery Session (2-3 hours)</h4>
-            <p class="mb-3">We'll sit down and I'll ask you to walk me through your current situation:</p>
-            <ul class="space-y-1 mb-4 ml-4">
-              <li>- If you have an existing system: How does it work today, step by step?</li>
-              <li>- If you're building something new: What problem are you trying to solve, and for whom?</li>
-            </ul>
-            <p class="mb-2">I'll ask questions like:</p>
-            <ul class="space-y-1 mb-4 ml-4">
-              <li>- Where does it break down?</li>
-              <li>- What frustrates your team or customers?</li>
-              <li>- How long does this take? How much does it cost?</li>
-              <li>- Who are all the people involved?</li>
-              <li>- What would success look like for the people affected?</li>
-            </ul>
-            <p>I record everything so I can go back and analyze it deeply later.</p>
-          </div>
-
-          <div>
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Impact Mapping Workshop (Optional, +1-2 hours)</h4>
-            <p class="mb-3">For social impact clients or organizations that need to prove outcomes to stakeholders, we add a structured impact mapping session where we define:</p>
-            <ul class="space-y-1 ml-4">
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Activities:</span> What are the key things you do?</li>
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Outputs:</span> What direct results do those activities produce?</li>
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Outcomes:</span> What changes for people? (Short-term, medium-term, long-term)</li>
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Impact Indicators:</span> How will we know those changes happened?</li>
-            </ul>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
+            <div class="space-y-6">
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Discovery Session (2-3 hours)</h4>
+                <p class="mb-3">We'll sit down and I'll ask you to walk me through your current situation. I'll ask questions like: Where does it break down? What frustrates your team or customers? How long does this take? How much does it cost? What would success look like for the people affected?</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">I record everything so I can go back and analyze it deeply later.</p>
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Impact Mapping Workshop <span class="text-sm font-normal text-gray-500">(Optional, +1-2 hours)</span></h4>
+                <p>For social impact clients or organizations that need to prove outcomes to stakeholders, we add a structured session defining: Activities, Outputs, Outcomes (short, medium, long-term), and Impact Indicators.</p>
+              </div>
+            </div>
           </div>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What I Do After Our Session</h3>
-            <p class="mb-3">After our call, I obsessively replay the conversation — sometimes 3-5 times — and start mentally mapping your system:</p>
-            <ul class="space-y-1 ml-4">
-              <li>- What are the true inputs and outputs?</li>
-              <li>- Where's the actual bottleneck? (Often not where you think)</li>
-              <li>- What's the root cause vs just symptoms?</li>
-              <li>- Where are the dysfunction points?</li>
-            </ul>
-            <p class="mt-3">I start sketching flows, questioning every step: <em>"Why does this exist? What can be eliminated? What does success actually look like?"</em></p>
+            <p>After our call, I obsessively replay the conversation — sometimes 3-5 times — mapping your system, finding the true bottleneck (often not where you think), identifying root causes vs symptoms, and sketching new flows. I question every step: "Why does this exist? What can be eliminated? What does success actually look like?"</p>
           </div>
 
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">What You Get: "System Discovery + Impact Report"</h3>
-            <p class="font-medium text-gray-900 dark:text-white mb-2">System Analysis:</p>
-            <ul class="space-y-1 ml-4 mb-4">
-              <li>- Current system map: Input &rarr; Process &rarr; Output (visual diagram)</li>
-              <li>- Measured baseline metrics: The "before" data (time, cost, quality)</li>
-              <li>- Diagnosed problems: What's actually broken and why (symptoms vs root causes)</li>
-              <li>- Key stakeholders identified: Who's affected and how</li>
-            </ul>
-            <p class="font-medium text-gray-900 dark:text-white mb-2">Impact Framework (if applicable):</p>
-            <ul class="space-y-1 ml-4">
-              <li>- Theory of Change map: Activities &rarr; Outputs &rarr; Outcomes &rarr; Impact</li>
-              <li>- Key indicators defined: What we'll measure to prove it worked</li>
-              <li>- Target audience identified: Who benefits and how we'll track them</li>
-            </ul>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "System Discovery + Impact Report"</h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-2">System Analysis:</p>
+                <ul class="space-y-1.5 text-sm">
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Current system map: Input → Process → Output (visual diagram)</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Measured baseline metrics: The "before" data (time, cost, quality)</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Diagnosed problems: What's actually broken and why (symptoms vs root causes)</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key stakeholders identified: Who's affected and how</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Problem Hypothesis:</strong> A clear statement of the root cause and what solving it would unlock</span></li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Archetypes:</strong> A behavioral profile for each distinct user type — their goal, pain points, usage patterns, retention signal, and what they specifically need from the solution</span></li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-2">Impact Framework <span class="text-sm font-normal text-gray-500">(social impact clients):</span></p>
+                <ul class="space-y-1.5 text-sm">
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Theory of Change map: Activities → Outputs → Outcomes → Impact</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key indicators defined: What we'll measure to prove it worked</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Target audience identified: Who benefits and how we'll track them</li>
+                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><strong>Stakeholder Map:</strong> All actors in the system, their roles, and how they relate to each other</li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">Even if we never work together beyond this point, you'll know exactly what to fix and how to measure success.</p>
           </div>
-
-          <p class="text-gray-900 dark:text-white font-medium">
-            Even if we never work together beyond this point, you'll know exactly what to fix and how to measure success.
-          </p>
         </div>
       </div>
 
@@ -121,12 +98,8 @@
       <div class="mb-20">
         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6 mb-8">
           <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phase 2</div>
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            System Architecture
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">
-            Rebuilding Your System From First Principles
-          </p>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">System Architecture</h2>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">Rebuilding Your System From First Principles</p>
           <p class="text-sm text-gray-500 dark:text-gray-400">Duration: 2-3 weeks</p>
         </div>
 
@@ -134,62 +107,45 @@
           <p>This is where the real magic happens. This is my secret sauce.</p>
 
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What We'll Do Together</h3>
-
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 1 (Collaborative)</h4>
-            <p class="mb-3">I'll present the current state map to you and your key stakeholders. We'll walk through what's broken together and make sure everyone sees the same picture. Then we'll set clear improvement targets:</p>
-            <ul class="space-y-1 ml-4 mb-4">
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Efficiency targets:</span> "Reduce processing time by 70%", "Cut operating costs by 50%"</li>
-              <li>- <span class="font-medium text-gray-900 dark:text-white">Impact targets:</span> "Increase student retention from 60% to 90%", "Improve customer satisfaction by 30%"</li>
-            </ul>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 mb-4">
+              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 1 (Collaborative)</h4>
+              <p>I'll present the current state map and walk through what's broken together. Then we'll set clear improvement targets — efficiency targets like "reduce processing time by 70%" and impact targets like "improve customer satisfaction by 30%."</p>
+            </div>
           </div>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What I Do After: The Mental Reconstruction</h3>
-            <p class="mb-4 font-medium text-gray-900 dark:text-white">This is what you're really paying for. This is where I do my deepest thinking.</p>
-
-            <p class="mb-2">I take your system completely apart in my mind and rebuild it from scratch:</p>
-
-            <div class="space-y-4 ml-4">
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">1. Deconstruction</p>
-                <p>Strip everything down to fundamental components. Question every single step: <em>"Why does this exist? Is it essential or just accumulated cruft?"</em></p>
+            <p class="mb-4">This is what you're really paying for. I take your system completely apart in my mind and rebuild it from scratch.</p>
+            <div class="space-y-3">
+              <div class="flex gap-3">
+                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">1. Deconstruction</span>
+                <p>Strip everything down to fundamental components. Question every single step: "Why does this exist? Is it essential or just accumulated cruft?"</p>
               </div>
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">2. Reconstruction</p>
-                <p>Start from first principles. Design new flows — where can we eliminate steps, parallelize, automate, or simplify? Account for human behavior. Design for measurable outcomes. Design within your constraints.</p>
+              <div class="flex gap-3">
+                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">2. Reconstruction</span>
+                <p>Start from first principles. Design new flows — eliminate steps, parallelize, automate, simplify. Account for human behavior. Design for measurable outcomes.</p>
               </div>
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">3. Options Development</p>
-                <p>I don't give you one solution. I give you 2-3 approaches with clear trade-offs:</p>
-                <ul class="space-y-1 ml-4 mt-2">
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Option A:</span> Minimal change — fast, low cost, modest improvement</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</li>
-                </ul>
+              <div class="flex gap-3">
+                <span class="font-bold text-gray-900 dark:text-white w-36 shrink-0">3. Options</span>
+                <p>I don't give you one solution. I give you 2-3 approaches with clear trade-offs: minimal change, complete rebuild, or hybrid.</p>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 2 (Collaborative)</h4>
-            <p class="mb-3">I'll present the redesigned system(s) to you — before/after comparison, walk through the new flows, explain trade-offs, show expected gains. This is a collaborative refinement session: you know your business context, I know systems architecture. Together, we iterate to get it exactly right.</p>
-          </div>
-
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">What You Get: "System Architecture Blueprint"</h3>
-            <ul class="space-y-1 ml-4">
-              <li>- Redesigned system map(s): 2-3 options, fully visualized</li>
-              <li>- Before/After comparison: Clear visual showing the transformation</li>
-              <li>- Expected improvement projections (efficiency + impact)</li>
-              <li>- Trade-off analysis: What each option costs vs what it gains</li>
-              <li>- Recommended approach with reasoning</li>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "System Architecture Blueprint"</h3>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Redesigned system map(s): 2-3 options, fully visualized</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Before/After comparison: Clear visual showing the transformation</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Expected improvement projections (efficiency + impact)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Trade-off analysis: What each option costs vs what it gains</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Recommended approach with reasoning</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Journey Map:</strong> How users move through the redesigned system, step by step, from first touchpoint to outcome</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><strong>Theory of Change</strong> <span class="text-gray-500">(social impact clients):</span> The logic connecting your activities to the outcomes you're designing for</li>
             </ul>
+            <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">Even if you use your internal team to build it, you now have the architecture. The thinking is done.</p>
           </div>
-
-          <p class="text-gray-900 dark:text-white font-medium">
-            Even if you use your internal team to build it, you now have the architecture. The thinking is done. Most consultants give you theory. I give you the actual design — ready to build.
-          </p>
         </div>
       </div>
 
@@ -197,65 +153,37 @@
       <div class="mb-20">
         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6 mb-8">
           <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phase 3</div>
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Solution Design + Impact Indicators
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">
-            Defining What to Build (And How to Prove It Worked)
-          </p>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">Solution Design + Impact Indicators</h2>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">Defining What to Build (And How to Prove It Worked)</p>
           <p class="text-sm text-gray-500 dark:text-gray-400">Duration: 1-2 weeks</p>
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>We have the architecture. Now we define exactly <em>what</em> to build, how to scope it for a focused test, and <em>how</em> to measure whether it actually worked.</p>
+          <p>We have the architecture. Now we define exactly what to build, how to scope it for a focused test, and how to measure whether it actually worked.</p>
 
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What We'll Do Together</h3>
-
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Solution Scoping Session</h4>
-            <p class="mb-3">We'll define exactly how we're going to prove this works:</p>
-
-            <div class="space-y-4 ml-4">
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">Goals (Measurable at Three Levels):</p>
-                <ul class="space-y-1 ml-4 mt-1">
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Output Goals:</span> Did we build what we said? System is functional, data is accurate, team can operate it.</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Outcome Goals:</span> Did it change behavior/performance? "Reduce time from 5 hours to 1 hour", "Improve satisfaction by 25%"</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Impact Goals:</span> Did it change lives/business? Long-term systemic effects (if applicable)</li>
-                </ul>
-              </div>
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">Budget + Scope:</p>
-                <p>How much can we invest in testing? What's the minimum version we need? Where should we test it? How long should it run?</p>
-              </div>
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white">Data Collection Plan:</p>
-                <ul class="space-y-1 ml-4 mt-1">
-                  <li>- Efficiency metrics: Time, cost, quality, throughput</li>
-                  <li>- User experience: Surveys, interviews, observations</li>
-                  <li>- Outcome metrics: Behavioral changes, performance improvements</li>
-                  <li>- Methods: Baseline data, continuous tracking, post-pilot assessment, follow-up tracking</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">What You Get: "Solution Design + Impact Measurement Plan"</h3>
-            <ul class="space-y-1 ml-4">
-              <li>- Clear goals: Measurable, time-bound targets at all three levels</li>
-              <li>- Budget breakdown: What you'll spend and where</li>
-              <li>- Pilot scope definition: Exactly what, where, who, and for how long</li>
-              <li>- Data collection framework with methods and instruments</li>
-              <li>- Success criteria: How we'll know if it worked (evidence, not opinions)</li>
-              <li>- Risk mitigation plan</li>
-              <li>- Week-by-week execution timeline</li>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "Solution Design + Impact Measurement Plan"</h3>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Clear goals: Measurable, time-bound targets at output, outcome, and impact levels</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Budget breakdown: What you'll spend and where</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Pilot scope definition: Exactly what, where, who, and for how long</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Data collection framework with methods and instruments</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Success criteria: How we'll know if it worked (evidence, not opinions)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Risk mitigation plan</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Week-by-week execution timeline</li>
             </ul>
           </div>
 
-          <p class="text-gray-900 dark:text-white font-medium">
-            This plan de-risks your investment and defines success clearly. You can execute it yourself with your internal team, or have me run it.
-          </p>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-3">For product clients, this phase also produces:</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Strategy Document:</strong> The strategic foundation — vision, target market, user personas, competitive landscape, and the core bets you're making. Answers <em>why</em> you're building this and <em>for whom</em> before a single feature is defined.</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Requirements Document (PRD):</strong> The build specification that translates strategy into concrete detail — feature requirements, functional and non-functional requirements, technical considerations, and what's explicitly out of scope. What your dev team needs to execute without constantly coming back for clarification.</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>MVP Scope Definition:</strong> The minimum slice of the PRD needed to test the core hypothesis — what's in, what's out, and why. Keeps the pilot focused and your investment de-risked.</span></li>
+            </ul>
+          </div>
+
+          <p class="text-sm italic text-gray-500 dark:text-gray-400">This plan de-risks your investment and defines success clearly. You can execute it yourself with your internal team, or have me run it.</p>
         </div>
       </div>
 
@@ -263,308 +191,217 @@
       <div class="mb-20">
         <div class="border-l-4 border-gray-900 dark:border-gray-300 pl-6 mb-8">
           <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phase 4</div>
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Pilot + Impact Measurement
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">
-            Proving It Works (With Real Users, Real Data, Real Outcomes)
-          </p>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">Pilot + Impact Measurement</h2>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">Proving It Works (With Real Users, Real Data, Real Outcomes)</p>
           <p class="text-sm text-gray-500 dark:text-gray-400">Duration: 4 weeks to 6 months (depends on system complexity)</p>
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
           <p>This is where we stop theorizing and start testing in the real world.</p>
 
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What Happens</h3>
-
-            <div class="space-y-6">
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">1</div>
               <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Build Minimum Testable System (Weeks 1-2)</h4>
-                <p>We implement the new process in a limited scope — train the people involved, set up data collection systems, establish baseline measurements.</p>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Build Minimum Testable System</h4>
+                <p class="text-sm">Implement the new process in limited scope — train people, set up data collection, establish baselines. Timeline depends on what we're building: a process change might need 1-2 weeks; a digital product could need 4-8 weeks.</p>
               </div>
-
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">2</div>
               <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Run Pilot in Real Conditions (Weeks 3-12+)</h4>
-                <p class="mb-3">We test with real users, real inputs, real environment — not in a lab, but in actual operating conditions. Throughout the pilot, we:</p>
-                <ul class="space-y-2 ml-4">
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Track efficiency:</span> Time, cost, quality metrics, error rates, bottlenecks</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Measure user experience:</span> Weekly check-ins, surveys, interviews, observations</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Monitor outcomes:</span> Behavioral changes, performance improvements, unexpected effects</li>
-                  <li>- <span class="font-medium text-gray-900 dark:text-white">Hold regular reviews:</span> Stay aligned and respond quickly, document learnings</li>
-                </ul>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Run Pilot in Real Conditions</h4>
+                <p class="text-sm">Test with real users, real inputs, real environment — not in a lab. Track efficiency, measure user experience, monitor outcomes, hold regular reviews.</p>
               </div>
-
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">3</div>
               <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Iterate Based on Reality</h4>
-                <p>As we learn, we adjust — fix what broke, simplify what's too complex, respond to user feedback, re-measure after each adjustment. This is the beauty of a pilot: we learn and improve before scaling.</p>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Iterate Based on Reality</h4>
+                <p class="text-sm">Fix what broke, simplify what's too complex, respond to user feedback, re-measure after each adjustment.</p>
               </div>
-
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">4</div>
               <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-2">Scale or Iterate Decision</h4>
-                <p>Based on the results, we decide together: If the pilot succeeded, plan the full rollout. If issues remain, design the next iteration. <span class="font-medium text-gray-900 dark:text-white">Critical rule: We don't scale broken systems.</span></p>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Scale or Iterate Decision</h4>
+                <p class="text-sm">Based on results, we decide together: scale, iterate, or pivot. Critical rule: we don't scale broken systems.</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">What You Get: "Pilot Results + Impact Evidence"</h3>
-            <ul class="space-y-1 ml-4">
-              <li>- Before/After comparison: Real measured data, not projections</li>
-              <li>- Efficiency gains: Time saved, costs reduced, quality improved</li>
-              <li>- Outcome evidence: What changed for people (data + stories)</li>
-              <li>- What worked, what didn't, what we learned: Honest analysis</li>
-              <li>- ROI calculation: Investment vs value created</li>
-              <li>- Recommendation: Scale, iterate, or pivot?</li>
-              <li>- If scaling: Full implementation roadmap for rollout</li>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "Pilot Results + Impact Evidence"</h3>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Before/After comparison: Real measured data, not projections</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Efficiency gains: Time saved, costs reduced, quality improved</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Outcome evidence: What changed for people (data + stories)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>What worked, what didn't, what we learned: Honest analysis</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>ROI calculation: Investment vs value created</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Recommendation: Scale, iterate, or pivot?</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>If scaling: Full implementation roadmap for rollout</li>
             </ul>
+            <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">You're not trusting my opinion. You're looking at real data from real users in real conditions.</p>
           </div>
-
-          <p class="text-gray-900 dark:text-white font-medium">
-            You're not trusting my opinion. You're looking at real data from real users in real conditions.
-          </p>
         </div>
       </div>
 
-      <!-- Phase 5 (Optional) -->
+      <!-- Phase 5 -->
       <div class="mb-20">
-        <div class="border-l-4 border-gray-400 dark:border-gray-600 pl-6 mb-8">
-          <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phase 5 — Optional</div>
-          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Impact Reporting
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">
-            Communicating the Difference You Made
-          </p>
+        <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-6 mb-8">
+          <div class="text-sm font-medium text-gray-400 uppercase tracking-wider mb-2">Phase 5 — Optional</div>
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">Impact Reporting</h2>
+          <p class="text-lg text-gray-700 dark:text-gray-300 font-medium mb-1">Communicating the Difference You Made</p>
           <p class="text-sm text-gray-500 dark:text-gray-400">Duration: 2-4 weeks | For social impact clients</p>
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>
-            For NGOs, foundations, social enterprises, government programs, or any organization that needs to prove outcomes to funders, stakeholders, or the public.
-          </p>
+          <p>For NGOs, foundations, social enterprises, government programs, or any organization that needs to prove outcomes to funders, stakeholders, or the public.</p>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">The Report Addresses Five Key Questions</h3>
-            <ol class="space-y-2 ml-4">
-              <li>1. <span class="font-medium text-gray-900 dark:text-white">Need:</span> What problem were you trying to solve?</li>
-              <li>2. <span class="font-medium text-gray-900 dark:text-white">Activities:</span> What did you do to address it?</li>
-              <li>3. <span class="font-medium text-gray-900 dark:text-white">Outcomes:</span> What were the results?</li>
-              <li>4. <span class="font-medium text-gray-900 dark:text-white">Evidence:</span> How do you know you made a difference?</li>
-              <li>5. <span class="font-medium text-gray-900 dark:text-white">Lessons Learned:</span> What would you do differently next time?</li>
-            </ol>
-          </div>
-
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">What You Get: "Impact Report"</h3>
-            <p class="mb-3">A professionally designed report (your choice of format):</p>
-            <div class="grid md:grid-cols-2 gap-4">
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white mb-2">Standard Format:</p>
-                <ul class="space-y-1 ml-4 text-sm">
-                  <li>- Executive summary</li>
-                  <li>- Problem statement</li>
-                  <li>- Activities and outputs</li>
-                  <li>- Outcomes achieved</li>
-                  <li>- Evidence (data, stories, testimonials)</li>
-                  <li>- Lessons learned and recommendations</li>
-                </ul>
-              </div>
-              <div>
-                <p class="font-medium text-gray-900 dark:text-white mb-2">Visual Format:</p>
-                <ul class="space-y-1 ml-4 text-sm">
-                  <li>- One-page visual summary</li>
-                  <li>- Data visualizations</li>
-                  <li>- Impact stories with photos</li>
-                  <li>- Before/after comparisons</li>
-                  <li>- Key metrics highlighted</li>
-                  <li>- Shareable for presentations</li>
-                </ul>
-              </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Need</span><span>What problem were you trying to solve?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Activities</span><span>What did you do to address it?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Outcomes</span><span>What were the results?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Evidence</span><span>How do you know you made a difference?</span></div>
+              <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white w-24 shrink-0">Lessons</span><span>What would you do differently next time?</span></div>
             </div>
           </div>
 
-          <p class="text-gray-900 dark:text-white font-medium">
-            Most organizations can show activities (we did X). Few can show outcomes (X changed lives). This report gives you evidence-based storytelling.
-          </p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Standard Format</h4>
+              <ul class="space-y-1 text-sm">
+                <li>• Executive summary</li>
+                <li>• Problem statement</li>
+                <li>• Activities and outputs</li>
+                <li>• Outcomes achieved</li>
+                <li>• Evidence (data, stories, testimonials)</li>
+                <li>• Lessons learned and recommendations</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visual Format</h4>
+              <ul class="space-y-1 text-sm">
+                <li>• One-page visual summary</li>
+                <li>• Data visualizations</li>
+                <li>• Impact stories with photos</li>
+                <li>• Before/after comparisons</li>
+                <li>• Key metrics highlighted</li>
+                <li>• Shareable for presentations</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-sm italic text-gray-500 dark:text-gray-400">Most organizations can show activities (we did X). Few can show outcomes (X changed lives). This report gives you evidence-based storytelling.</p>
         </div>
       </div>
 
       <!-- How We Work Together -->
-      <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
-          How We Work Together
-        </h2>
-        <p class="text-gray-600 dark:text-gray-400 text-base mb-8">
-          Each phase builds on the previous one, but delivers standalone value. You decide how far we go together based on your needs, budget, and internal capabilities.
-        </p>
-        <div class="space-y-4">
-          <div class="flex items-start gap-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 mt-1 shrink-0">After Phase 1</span>
-            <p class="text-gray-700 dark:text-gray-300">You know exactly what's broken, why, and what success looks like. You can stop here — you have the diagnosis.</p>
-          </div>
-          <div class="flex items-start gap-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 mt-1 shrink-0">After Phase 2</span>
-            <p class="text-gray-700 dark:text-gray-300">You have the blueprint for how to fix it. You can stop here and build it yourself if you have the team.</p>
-          </div>
-          <div class="flex items-start gap-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 mt-1 shrink-0">After Phase 3</span>
-            <p class="text-gray-700 dark:text-gray-300">You have the complete test plan and measurement framework. You can execute it internally if you prefer.</p>
-          </div>
-          <div class="flex items-start gap-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 mt-1 shrink-0">After Phase 4</span>
-            <p class="text-gray-700 dark:text-gray-300">You have proof it works and a roadmap to scale. You can take it from here or continue working with me on the rollout.</p>
-          </div>
-          <div class="flex items-start gap-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4 opacity-75">
-            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 mt-1 shrink-0">After Phase 5</span>
-            <p class="text-gray-700 dark:text-gray-300">You have professional documentation of your impact. Use it to secure funding, report to stakeholders, or demonstrate accountability.</p>
-          </div>
+      <div class="mb-20 bg-gray-50 dark:bg-gray-800 rounded-lg p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">How We Work Together</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Each phase builds on the previous one, but delivers standalone value. You decide how far we go together based on your needs, budget, and internal capabilities.</p>
+        <div class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+          <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white shrink-0">After Phase 1 —</span><span>You know exactly what's broken, why, and what success looks like. You can stop here — you have the diagnosis.</span></div>
+          <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white shrink-0">After Phase 2 —</span><span>You have the blueprint for how to fix it. You can stop here and build it yourself if you have the team.</span></div>
+          <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white shrink-0">After Phase 3 —</span><span>You have the complete test plan and measurement framework. You can execute it internally if you prefer.</span></div>
+          <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white shrink-0">After Phase 4 —</span><span>You have proof it works and a roadmap to scale. You can take it from here or continue working with me on the rollout.</span></div>
+          <div class="flex gap-3"><span class="font-bold text-gray-900 dark:text-white shrink-0">After Phase 5 —</span><span>You have professional documentation of your impact. Use it to secure funding, report to stakeholders, or demonstrate accountability.</span></div>
         </div>
       </div>
 
       <!-- What Makes This Different -->
       <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">
-          What Makes This Different
-        </h2>
-        <div class="space-y-6">
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">I don't just give advice — I design solutions.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">Most consultants give you a report full of recommendations. I give you a redesigned system ready to build — with diagrams, process flows, and clear before/after comparisons.</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">What Makes This Different</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">I don't just give advice — I design solutions.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Most consultants give you a report full of recommendations. I give you a redesigned system ready to build — with diagrams, process flows, and clear before/after comparisons.</p>
           </div>
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">I think deeply before I act.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">The mental work I do between sessions — deconstructing your system, rebuilding it from first principles — this is where the real value is created. I don't give you generic "best practices." I give you a custom-designed system that fits your constraints, your people, your context.</p>
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">I think deeply before I act.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">The mental work I do between sessions — deconstructing your system, rebuilding it from first principles — this is where the real value is created. I give you a custom-designed system that fits your constraints, your people, your context.</p>
           </div>
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">I measure what actually matters.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">Most consultants measure efficiency (time, cost). I measure efficiency and outcomes (what changed for people). You get the full picture, not just the numbers.</p>
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">I measure what actually matters.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Most consultants measure efficiency (time, cost). I measure efficiency and outcomes (what changed for people). You get the full picture, not just the numbers.</p>
           </div>
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">You get data, not opinions.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">Every phase produces measurable outputs. Discovery gives you current state metrics. Architecture gives you improvement projections. Solution Design gives you success criteria. Pilot gives you before/after data. You're not trusting my gut. You're looking at evidence.</p>
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">You get data, not opinions.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Every phase produces measurable outputs. Discovery gives you current state metrics. Pilot gives you before/after data. You're not trusting my gut — you're looking at evidence.</p>
           </div>
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">Collaborative, not dictatorial.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">This isn't me telling you what to do. You know your business, your team, your constraints. I know systems architecture, impact measurement, how to build things that scale. Together, we create something better than either of us could alone.</p>
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Collaborative, not dictatorial.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">You know your business, your team, your constraints. I know systems architecture, impact measurement, and how to build things that scale. Together, we create something better than either of us could alone.</p>
           </div>
-          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-2">I bridge worlds most consultants can't.</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm">Business consultants don't measure real human outcomes. Implementation firms don't diagnose properly first. Impact specialists don't fix the actual systems. I do all three: diagnose deeply, design properly, prove it worked.</p>
+          <div class="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-2">I bridge worlds most consultants can't.</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Business consultants don't measure real human outcomes. Implementation firms don't diagnose properly first. Impact specialists don't fix the actual systems. I do all three: diagnose deeply, design properly, prove it worked.</p>
           </div>
         </div>
       </div>
 
       <!-- Service Tiers -->
       <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">
-          Service Tiers
-        </h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">Service Tiers</h2>
+        <div class="grid md:grid-cols-2 gap-6">
           <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Systems Optimization</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">Corporate / Startup Focus</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Phases 1-4</p>
-            <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-4">
-              Focus on efficiency, cost reduction, and scalability.
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Deliverables:</p>
-            <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1 ml-4 mb-4">
-              <li>- System Discovery Report</li>
-              <li>- System Architecture Blueprint</li>
-              <li>- Solution Design Document</li>
-              <li>- Pilot Results + ROI Proof</li>
-            </ul>
-            <p class="text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Best for:</p>
-            <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1 ml-4">
-              <li>- Corporations fixing broken operations</li>
-              <li>- Startups building scalable systems</li>
-              <li>- Businesses optimizing for growth</li>
-            </ul>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Phases 1-4 | Corporate / Startup Focus</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Focus on efficiency, cost reduction, and scalability. Best for startups building from scratch and organizations fixing broken operations.</p>
+            <div class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+              <p class="font-semibold text-gray-900 dark:text-white">Deliverables:</p>
+              <ul class="space-y-1">
+                <li>• System Discovery Report (incl. Problem Hypothesis + User Archetypes)</li>
+                <li>• System Architecture Blueprint (incl. User Journey Map)</li>
+                <li>• Solution Design Document (incl. Product Strategy + PRD + MVP Scope for product clients)</li>
+                <li>• Pilot Results + ROI Proof</li>
+              </ul>
+            </div>
+            <p class="text-xs text-gray-400 dark:text-gray-500 mt-4">Best for: Corporations fixing broken operations · Startups building scalable systems · Businesses optimizing for growth</p>
           </div>
           <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Systems + Impact</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">Social Impact Focus</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Phases 1-5</p>
-            <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-4">
-              Full measurement framework, outcome evidence, and professional documentation for funders and stakeholders.
-            </p>
-            <p class="text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Deliverables:</p>
-            <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1 ml-4 mb-4">
-              <li>- System Discovery + Impact Report</li>
-              <li>- System Architecture Blueprint</li>
-              <li>- Solution Design + Impact Measurement Plan</li>
-              <li>- Pilot Results + Impact Evidence</li>
-              <li>- Professional Impact Report</li>
-            </ul>
-            <p class="text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Best for:</p>
-            <ul class="text-gray-600 dark:text-gray-400 text-sm space-y-1 ml-4">
-              <li>- NGOs proving impact to funders</li>
-              <li>- Foundations measuring program outcomes</li>
-              <li>- Social enterprises tracking social + financial returns</li>
-            </ul>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Systems + Impact 🌱</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Phases 1-5 | Social Impact Focus</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Full measurement framework, outcome evidence, and professional documentation for funders and stakeholders.</p>
+            <div class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+              <p class="font-semibold text-gray-900 dark:text-white">Deliverables:</p>
+              <ul class="space-y-1">
+                <li>• System Discovery + Impact Report (incl. Stakeholder Map + Problem Hypothesis)</li>
+                <li>• System Architecture Blueprint (incl. Theory of Change + User Journey Map)</li>
+                <li>• Solution Design + Impact Measurement Plan</li>
+                <li>• Pilot Results + Impact Evidence</li>
+                <li>• Professional Impact Report</li>
+              </ul>
+            </div>
+            <p class="text-xs text-gray-400 dark:text-gray-500 mt-4">Best for: NGOs proving impact to funders · Foundations measuring program outcomes · Social enterprises tracking social + financial returns</p>
           </div>
         </div>
       </div>
 
       <!-- Is This For You -->
       <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">
-          Is This For You?
-        </h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="font-bold text-gray-900 dark:text-white mb-4">You're a good fit if:</h3>
-            <ul class="text-gray-600 dark:text-gray-400 text-base space-y-3">
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You have a system that's broken and you're tired of band-aid fixes</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You're building something new and want to avoid expensive mistakes</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You value strategic thinking as much as execution</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You're willing to test before scaling</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You want proof (with data) that your investment worked</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">+</span>
-                <span>You care about real outcomes for people, not just operational efficiency</span>
-              </li>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">Is This For You?</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-4">You're a good fit if:</h4>
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You have a system that's broken and you're tired of band-aid fixes</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You're building something new and want to avoid expensive mistakes</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You value strategic thinking as much as execution</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You're willing to test before scaling</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You want proof (with data) that your investment worked</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> You care about real outcomes for people, not just operational efficiency</li>
             </ul>
           </div>
-          <div>
-            <h3 class="font-bold text-gray-900 dark:text-white mb-4">You're not a good fit if:</h3>
-            <ul class="text-gray-600 dark:text-gray-400 text-base space-y-3">
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">-</span>
-                <span>You already know exactly what to build and just need someone to execute</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">-</span>
-                <span>You're not willing to question your assumptions</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">-</span>
-                <span>You want to skip the testing phase and "just launch"</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">-</span>
-                <span>You're looking for the cheapest option, not the best solution</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-900 dark:text-white mr-2 mt-1 shrink-0">-</span>
-                <span>You only care about efficiency and don't want to measure impact on people</span>
-              </li>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-4">You're not a good fit if:</h4>
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex gap-2"><span class="text-red-400">✗</span> You already know exactly what to build and just need someone to execute</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> You're not willing to question your assumptions</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> You want to skip the testing phase and "just launch"</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> You're looking for the cheapest option, not the best solution</li>
+              <li class="flex gap-2"><span class="text-red-400">✗</span> You only care about efficiency and don't want to measure impact on people</li>
             </ul>
           </div>
         </div>
@@ -572,29 +409,27 @@
 
       <!-- What Happens Next -->
       <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">
-          What Happens Next
-        </h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8">What Happens Next</h2>
         <div class="space-y-6">
-          <div class="flex items-start gap-4">
-            <span class="bg-gray-900 dark:bg-gray-300 text-white dark:text-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shrink-0">1</span>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 rounded-full border-2 border-gray-900 dark:border-gray-300 flex items-center justify-center text-sm font-bold text-gray-900 dark:text-white shrink-0">1</div>
             <div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-1">Initial Conversation (30-60 minutes, free)</h3>
-              <p class="text-gray-600 dark:text-gray-400">We'll talk about what you're trying to fix or build, whether my process is the right fit, which tier and phases you might need, and rough timeline.</p>
+              <h4 class="font-bold text-gray-900 dark:text-white mb-1">Initial Conversation <span class="text-sm font-normal text-gray-500">(30-60 minutes, free)</span></h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">We'll talk about what you're trying to fix or build, whether my process is the right fit, which tier and phases you might need, and rough timeline.</p>
             </div>
           </div>
-          <div class="flex items-start gap-4">
-            <span class="bg-gray-900 dark:bg-gray-300 text-white dark:text-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shrink-0">2</span>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 rounded-full border-2 border-gray-900 dark:border-gray-300 flex items-center justify-center text-sm font-bold text-gray-900 dark:text-white shrink-0">2</div>
             <div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-1">Proposal</h3>
-              <p class="text-gray-600 dark:text-gray-400">If we're aligned, I'll send you a proposal outlining which phases we'll start with, timeline, investment, and expected deliverables.</p>
+              <h4 class="font-bold text-gray-900 dark:text-white mb-1">Proposal</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">If we're aligned, I'll send you a proposal outlining which phases we'll start with, timeline, investment, and expected deliverables.</p>
             </div>
           </div>
-          <div class="flex items-start gap-4">
-            <span class="bg-gray-900 dark:bg-gray-300 text-white dark:text-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold shrink-0">3</span>
+          <div class="flex gap-5">
+            <div class="w-10 h-10 rounded-full border-2 border-gray-900 dark:border-gray-300 flex items-center justify-center text-sm font-bold text-gray-900 dark:text-white shrink-0">3</div>
             <div>
-              <h3 class="font-bold text-gray-900 dark:text-white mb-1">Discovery Session</h3>
-              <p class="text-gray-600 dark:text-gray-400">Once you're ready, we begin Phase 1. From there, we move through the process at your pace — stopping wherever makes sense for your situation.</p>
+              <h4 class="font-bold text-gray-900 dark:text-white mb-1">Discovery Session</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Once you're ready, we begin Phase 1. From there, we move through the process at your pace — stopping wherever makes sense for your situation.</p>
             </div>
           </div>
         </div>
@@ -631,7 +466,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'The Zero Point System: a strategic systems architecture framework that helps early stage innovators save time and money by designing processes and systems that work from day one.'
+          content: 'The Zero Point System: a strategic systems architecture framework that helps founders and organizations diagnose broken systems, design the right solution, and prove it works before scaling.'
         },
         {
           hid: 'og:title',
@@ -641,7 +476,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'A 5-phase framework: System Discovery, System Architecture, Solution Design, Pilot, and Impact Reporting. Understand first, design second, prove third.'
+          content: 'A 5-phase framework: System Discovery, System Architecture, Solution Design, Pilot, and Impact Reporting. Diagnose first, design second, prove third.'
         }
       ]
     }
