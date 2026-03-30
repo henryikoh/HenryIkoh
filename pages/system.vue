@@ -20,6 +20,9 @@
         <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
           Most people jump straight to building. I start by understanding the real problem. Whether you're fixing a broken system or creating something new, I use a proven process that ensures we build the right thing, the right way, and measure what actually matters.
         </p>
+        <p class="text-base md:text-lg text-gray-500 dark:text-gray-500 max-w-3xl mt-4 leading-relaxed">
+          Every phase is designed to reduce the cost of being wrong — so by the time you scale, you're scaling something proven.
+        </p>
       </div>
 
       <!-- Process Overview -->
