@@ -1,7 +1,13 @@
 <template>
   <div class="dark:bg-dark min-h-screen">
     <Navbar :show-profile="false" />
-    <div class="wrapper w-11/12 md:w-3/5 mx-auto pt-8 md:pt-32 pb-20">
+
+    <!-- Cover -->
+    <div ref="coverWrap" class="w-full mb-12 md:mb-20">
+      <SystemCover />
+    </div>
+
+    <div class="wrapper w-11/12 md:w-3/5 mx-auto pb-20">
 
       <!-- Header -->
       <div class="mb-16">
@@ -114,6 +120,11 @@
             </div>
           </div>
 
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visualization Session 2 (Collaborative)</h4>
+              <p>I'll present the redesigned system(s) to you — before/after comparison, walk through the new flows, explain trade-offs, show expected gains. This is a collaborative refinement session: you know your business context, I know systems architecture. Together, we iterate to get it exactly right.</p>
+            </div>
+
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">What I Do After: The Mental Reconstruction</h3>
             <p class="mb-4">This is what you're really paying for. I take your system completely apart in my mind and rebuild it from scratch.</p>
@@ -160,6 +171,37 @@
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
           <p>We have the architecture. Now we define exactly what to build, how to scope it for a focused test, and how to measure whether it actually worked.</p>
+
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
+              <h4 class="font-bold text-gray-900 dark:text-white mb-3">Solution Scoping Session</h4>
+              <p class="mb-4">We'll define exactly how we're going to prove this works:</p>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <p class="font-semibold text-gray-900 dark:text-white mb-1">Goals (Measurable at Three Levels):</p>
+                  <ul class="space-y-1.5 ml-3">
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Output Goals:</strong> Did we build what we said? System is functional, data is accurate, team can operate it.</span></li>
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Outcome Goals:</strong> Did it change behavior/performance? "Reduce time from 5 hours to 1 hour", "Improve satisfaction by 25%"</span></li>
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Impact Goals:</strong> Did it change lives/business? Long-term systemic effects (if applicable)</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900 dark:text-white mb-1">Budget + Scope:</p>
+                  <p class="ml-3 text-gray-600 dark:text-gray-400">How much can we invest in testing? What's the minimum version we need? Where should we test it? How long should it run?</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900 dark:text-white mb-1">Data Collection Plan:</p>
+                  <ul class="space-y-1.5 ml-3">
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Efficiency metrics: Time, cost, quality, throughput</li>
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>User experience: Surveys, interviews, observations</li>
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Outcome metrics: Behavioral changes, performance improvements</li>
+                    <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Methods: Baseline data, continuous tracking, post-pilot assessment, follow-up tracking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "Solution Design + Impact Measurement Plan"</h3>
@@ -456,9 +498,32 @@
   </div>
 </template>
 
+
 <script>
+import SystemCover from '~/components/SystemCover.vue'
+
 export default {
   name: 'SystemPage',
+  components: { SystemCover },
+  mounted() {
+    this.scaleCover()
+    window.addEventListener('resize', this.scaleCover)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.scaleCover)
+  },
+  methods: {
+    scaleCover() {
+      const wrap = this.$refs.coverWrap
+      if (!wrap) return
+      const scale = wrap.offsetWidth / 1200
+      const canvas = wrap.querySelector('.canvas')
+      if (canvas) {
+        canvas.style.setProperty('--cover-scale', scale)
+        canvas.style.transform = `scale(${scale})`
+      }
+    }
+  },
   head() {
     return {
       title: 'The Zero Point System - Henry Ikoh',
@@ -477,6 +542,31 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: 'A 5-phase framework: System Discovery, System Architecture, Solution Design, Pilot, and Impact Reporting. Diagnose first, design second, prove third.'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.henryikoh.com/point.png'
+        },
+        {
+          hid: 'og:image:width',
+          property: 'og:image:width',
+          content: '1200'
+        },
+        {
+          hid: 'og:image:height',
+          property: 'og:image:height',
+          content: '630'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://www.henryikoh.com/point.png'
         }
       ]
     }
