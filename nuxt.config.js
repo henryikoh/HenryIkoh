@@ -20,18 +20,18 @@ export default {
       },
       {
         hid: 'og:title',
-        name: 'og:title',
+        property: 'og:title',
         content: 'Henry Ikoh | Systems That Work From Day One',
       },
       {
         hid: 'og:description',
-        name: 'og:description',
+        property: 'og:description',
         content:
           "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work. Systems architect. Product engineer. Builder.",
       },
       {
         hid: 'og:image',
-        name: 'og:image',
+        property: 'og:image',
         content: 'https://henryikoh.com/meta.png',
       },
       {

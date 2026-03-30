@@ -73,28 +73,17 @@
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "System Discovery + Impact Report"</h3>
-            <div class="space-y-4">
-              <div>
-                <p class="font-semibold text-gray-900 dark:text-white mb-2">System Analysis:</p>
-                <ul class="space-y-1.5 text-sm">
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Current system map: Input → Process → Output (visual diagram)</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Measured baseline metrics: The "before" data (time, cost, quality)</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Diagnosed problems: What's actually broken and why (symptoms vs root causes)</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key stakeholders identified: Who's affected and how</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Problem Hypothesis:</strong> A clear statement of the root cause and what solving it would unlock</span></li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Archetypes:</strong> A behavioral profile for each distinct user type — their goal, pain points, usage patterns, retention signal, and what they specifically need from the solution</span></li>
-                </ul>
-              </div>
-              <div>
-                <p class="font-semibold text-gray-900 dark:text-white mb-2">Impact Framework <span class="text-sm font-normal text-gray-500">(social impact clients):</span></p>
-                <ul class="space-y-1.5 text-sm">
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Theory of Change map: Activities → Outputs → Outcomes → Impact</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key indicators defined: What we'll measure to prove it worked</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Target audience identified: Who benefits and how we'll track them</li>
-                  <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><strong>Stakeholder Map:</strong> All actors in the system, their roles, and how they relate to each other</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Current system map: Input → Process → Output (visual diagram)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Measured baseline metrics: The "before" data (time, cost, quality)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Diagnosed problems: What's actually broken and why (symptoms vs root causes)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key stakeholders identified: Who's affected and how</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Problem Hypothesis:</strong> A clear statement of the root cause and what solving it would unlock</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>User Archetypes:</strong> Behavioral profiles for each distinct user type — goals, pain points, usage patterns, retention signals</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Theory of Change map: Activities → Outputs → Outcomes → Impact <span class="text-gray-400">(social impact clients)</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Key indicators defined: What we'll measure to prove it worked <span class="text-gray-400">(social impact clients)</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Stakeholder Map:</strong> All actors in the system, their roles, and how they relate <span class="text-gray-400">(social impact clients)</span></span></li>
+            </ul>
             <p class="mt-4 text-sm italic text-gray-500 dark:text-gray-400">Even if we never work together beyond this point, you'll know exactly what to fix and how to measure success.</p>
           </div>
         </div>
@@ -213,15 +202,9 @@
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Success criteria: How we'll know if it worked (evidence, not opinions)</li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Risk mitigation plan</li>
               <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Week-by-week execution timeline</li>
-            </ul>
-          </div>
-
-          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
-            <h4 class="font-bold text-gray-900 dark:text-white mb-3">For product clients, this phase also produces:</h4>
-            <ul class="space-y-2 text-sm">
-              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Strategy Document:</strong> The strategic foundation — vision, target market, user personas, competitive landscape, and the core bets you're making. Answers <em>why</em> you're building this and <em>for whom</em> before a single feature is defined.</span></li>
-              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Requirements Document (PRD):</strong> The build specification that translates strategy into concrete detail — feature requirements, functional and non-functional requirements, technical considerations, and what's explicitly out of scope. What your dev team needs to execute without constantly coming back for clarification.</span></li>
-              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>MVP Scope Definition:</strong> The minimum slice of the PRD needed to test the core hypothesis — what's in, what's out, and why. Keeps the pilot focused and your investment de-risked.</span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Strategy Document:</strong> Vision, target market, personas, competitive landscape — the why before the what. <span class="text-gray-400">(product clients)</span></span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>Product Requirements Document (PRD):</strong> Feature requirements, technical considerations, and explicit out-of-scope — what your dev team needs to execute. <span class="text-gray-400">(product clients)</span></span></li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span><span><strong>MVP Scope Definition:</strong> The minimum slice needed to test the core hypothesis — what's in, what's out, and why. <span class="text-gray-400">(product clients)</span></span></li>
             </ul>
           </div>
 
@@ -311,29 +294,17 @@
             </div>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
-              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Standard Format</h4>
-              <ul class="space-y-1 text-sm">
-                <li>• Executive summary</li>
-                <li>• Problem statement</li>
-                <li>• Activities and outputs</li>
-                <li>• Outcomes achieved</li>
-                <li>• Evidence (data, stories, testimonials)</li>
-                <li>• Lessons learned and recommendations</li>
-              </ul>
-            </div>
-            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5">
-              <h4 class="font-bold text-gray-900 dark:text-white mb-2">Visual Format</h4>
-              <ul class="space-y-1 text-sm">
-                <li>• One-page visual summary</li>
-                <li>• Data visualizations</li>
-                <li>• Impact stories with photos</li>
-                <li>• Before/after comparisons</li>
-                <li>• Key metrics highlighted</li>
-                <li>• Shareable for presentations</li>
-              </ul>
-            </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What You Get: "Impact Report"</h3>
+            <ul class="space-y-1.5 text-sm">
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Executive summary</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Problem statement and activities</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Outcomes achieved with supporting evidence</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Data visualizations and before/after comparisons</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Impact stories (data + testimonials)</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>Lessons learned and recommendations</li>
+              <li class="flex gap-2"><span class="text-gray-400 mt-0.5">•</span>One-page visual summary — shareable for presentations and funder pitches</li>
+            </ul>
           </div>
           <p class="text-sm italic text-gray-500 dark:text-gray-400">Most organizations can show activities (we did X). Few can show outcomes (X changed lives). This report gives you evidence-based storytelling.</p>
         </div>
