@@ -445,7 +445,7 @@
       <div class="pt-20 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Ready to Get Clarity?</h2>
         <p class="text-xl text-gray-600 dark:text-gray-400 mb-2 max-w-xl mx-auto">Spots are limited. I am only accepting a small number of qualified founders for this offer.</p>
-        <p class="text-gray-500 dark:text-gray-500 mb-12">Discovery Session — $500. Phases 2 + 3 — $5,000. No fluff. Just clarity.</p>
+        <p class="text-gray-500 dark:text-gray-500 mb-12">Discovery Session — $500. No fluff. Just clarity.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://cal.com/henryikoh" target="_blank" rel="noopener" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-black transition-opacity hover:opacity-80" style="background-color: #00ff9f;">
             Book a Discovery Session →
