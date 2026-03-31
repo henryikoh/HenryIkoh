@@ -142,6 +142,87 @@
         </p>
       </div>
 
+      <!-- WHAT CLARITY ACTUALLY LOOKS LIKE -->
+      <div class="py-20 border-b border-gray-200 dark:border-gray-800">
+        <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">What Clarity Actually Looks Like</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 max-w-2xl">There are seven questions every founder must be able to answer before they build.</h2>
+        <p class="text-lg text-gray-700 dark:text-white mb-12 max-w-2xl">Most can't. That's why they're stuck. By the end of this process, you'll have a documented, specific answer to every single one.</p>
+
+        <div class="max-w-2xl space-y-4">
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">Who exactly is this for?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders answer: "Anyone who needs this." That is not an answer.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Discovery: You have 2–3 named user archetypes. Each one has a behavioral profile — their goal, their frustration with the current solution, how often they'd use the product, and the one thing that would make them stay. You can describe them in a paragraph and build for them specifically.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">What problem are we actually solving?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders answer: "It just makes things easier." That is a symptom, not a problem.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Discovery: You have a written Problem Hypothesis — one clear statement of the root cause, who it affects, why the current solutions fail, and what changes if this problem gets solved. Not a pitch. A diagnosis.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">What does the system actually need to do?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders answer with a feature list. Features are not a system.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Architecture: You have a blueprint — every component of the new system, how they connect, and why each one needs to exist. Not a wireframe. A logical design that can be handed to any competent developer and built without ambiguity.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">How will each user type actually move through the product?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders can't walk you through a single user's full journey without gaps.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Architecture: You have a User Journey Map for each archetype — the exact path from first touch to the core action, including every decision point, every handoff, and every place the experience could break down.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">What is the MVP — what is actually enough to test?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders either overbuild or can't name their MVP without waving their hands.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Solution Design: You have a locked MVP Scope — a precise list of what the first version must do to test the core hypothesis, with everything else explicitly cut. No scope creep. No "just one more feature." A line in the sand.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">What do I hand to a developer and what will it cost?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders hand over a vague brief and get back a vague — and inflated — quote.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After Solution Design: You have a full PRD — every screen, every flow, every functional requirement, documented clearly. Developers quote against specifics, not guesses. That alone typically cuts development costs by 30–60%.</p>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+            <div class="px-6 py-4 bg-gray-100 dark:bg-gray-900">
+              <p class="font-semibold text-gray-900 dark:text-white">How do I know if it worked?</p>
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-500 dark:text-gray-500 text-sm mb-2 italic">Most founders launch and wait. Waiting is not a success criterion.</p>
+              <p class="text-gray-700 dark:text-gray-200 text-sm">After the Pilot: You have real data — not surveys, not assumptions — from actual users interacting with the actual product. And a decision framework: what the data means, what you do next, and why. You go into the full build knowing it works.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- THE SOLUTION -->
       <div class="py-20 border-b border-gray-200 dark:border-gray-800">
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">The Solution</p>
@@ -155,8 +236,8 @@
             <div class="shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-black font-bold text-lg" style="background-color: #00ff9f;">1</div>
             <div class="flex-1">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">System Discovery</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Understanding what you're actually building and for whom</p>
-              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">Before anything is designed or built, we map the system. We identify every type of user who interacts with it, what they need, how they behave, and what the current solution is getting wrong. We document the real problem — not the symptom you've been chasing, but the root cause underneath it.</p>
+              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Answers: Who is this for? What problem are we actually solving?</p>
+              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">We map everything that exists before we imagine anything new — every user type, every step in the current experience, every place it breaks down. Then we go deeper: not the symptom on the surface, but the root cause underneath it. The thing nobody has fixed yet. The gap your product can actually own.</p>
               <div class="bg-gray-100 dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-800">
                 <p class="text-sm font-semibold text-gray-900 dark:text-white mb-3">You walk away with:</p>
                 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
@@ -176,8 +257,8 @@
             <div class="shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg border-2 text-gray-900 dark:text-white border-gray-900 dark:border-gray-400">2</div>
             <div class="flex-1">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">System Architecture</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Designing the new system from first principles</p>
-              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">With the discovery in hand, I rebuild your system from scratch. Not based on what's easy to build — based on what actually needs to exist. I produce 2–3 architectural options with clear trade-offs, so you understand exactly what you're choosing and why.</p>
+              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Answers: What does the system need to do? How will users move through it?</p>
+              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">With the discovery in hand, I rebuild the system from scratch — not from templates or best practices, but from what the problem actually requires. I present 2–3 architectural options with explicit trade-offs, so you're choosing with full information. Then we map exactly how each user type moves through the new system, end to end.</p>
               <div class="bg-gray-100 dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-800">
                 <p class="text-sm font-semibold text-gray-900 dark:text-white mb-3">You walk away with:</p>
                 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
@@ -195,8 +276,8 @@
             <div class="shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg border-2 text-gray-900 dark:text-white border-gray-900 dark:border-gray-400">3</div>
             <div class="flex-1">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Solution Design</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Specifying exactly what to build</p>
-              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">This is where architecture becomes a build package. This is the exact document you hand to a development shop — so they build what you actually need, without the endless back-and-forth, scope creep, or guesswork that burns your budget.</p>
+              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Answers: What is the MVP? What do I hand to a developer?</p>
+              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">Architecture becomes a build package. We lock the MVP scope — a precise, non-negotiable definition of what the first version must do to test the core hypothesis. Then we write the full PRD: every screen, every flow, every functional requirement. The document a developer can execute from without a single follow-up question.</p>
               <div class="bg-gray-100 dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-800">
                 <p class="text-sm font-semibold text-gray-900 dark:text-white mb-3">You walk away with:</p>
                 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
@@ -216,8 +297,8 @@
             <div class="shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg border-2 text-gray-900 dark:text-white border-gray-900 dark:border-gray-400">4</div>
             <div class="flex-1">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Pilot</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Proving it works before you go all in</p>
-              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">Before you build the full product, you test the core hypothesis with real users in a controlled environment. Not a prototype — a real pilot with defined success criteria, measured outcomes, and a clear decision point: keep going, adjust, or stop. This is where assumptions become data.</p>
+              <p class="text-sm text-gray-500 dark:text-gray-500 mb-5">Answers: Does it actually work? Should I keep going?</p>
+              <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-5">Before you build the full product, you test the core hypothesis with real users under controlled conditions. We define success criteria before the pilot starts — so the result is a verdict, not an interpretation. Keep going. Adjust. Or stop before you spend $80,000 finding out it didn't work.</p>
               <div class="bg-gray-100 dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-800">
                 <p class="text-sm font-semibold text-gray-900 dark:text-white mb-3">You walk away with:</p>
                 <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
