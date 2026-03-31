@@ -235,13 +235,13 @@
       <!-- THE OFFER -->
       <div class="py-20 border-b border-gray-200 dark:border-gray-800">
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">The Offer</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Phase 1 Is Free.</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl leading-relaxed">I am offering a full System Discovery session at zero cost to a small number of qualified founders. I am actively building my portfolio of case studies and I need real founders with real problems to work with. In exchange for my time and expertise, I get to document the process and results. You get clarity.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Start With Discovery.</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl leading-relaxed">Phase 1 is where everything starts. Before architecture, before a PRD, before a developer touches anything — you need a clear picture of the system, the users, and the real problem. That is what this session delivers.</p>
 
         <div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-8 mb-6 max-w-2xl border border-gray-200 dark:border-gray-800">
-          <p class="text-lg font-bold text-gray-900 dark:text-white mb-1">Free Discovery Session</p>
-          <p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$0</p>
-          <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm">No pitch. No obligation. Just clarity. This is a working session, not a consultation — you walk away with real deliverables.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white mb-1">System Discovery Session</p>
+          <p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$500</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm">A working session, not a consultation. You walk away with real deliverables — not slides, not talking points, but a documented picture of your system that you can act on immediately.</p>
           <ul class="space-y-3 text-gray-700 dark:text-gray-200 text-sm">
             <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Current System Map — a visual diagram of your system and where it breaks down</li>
             <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> User Archetypes — behavioral profiles of every user type and what keeps them coming back</li>
@@ -321,12 +321,12 @@
 
         <div class="max-w-2xl space-y-6 text-gray-700 dark:text-white text-lg leading-relaxed">
           <p>I am Henry Ikoh — Systems Architect and Product Engineer.</p>
-          <p>I built Tradr, a three-sided marketplace connecting buyers with personal shoppers in Nigerian local markets. We generated 20M naira in sales with a team of four. The concept worked.</p>
-          <p>But we also built two full mobile apps before we knew if the model would hold — and ran a pilot for 8 months with no defined success criteria and no decision framework.</p>
-          <p>The product did not fail because the idea was wrong. <strong class="text-gray-900 dark:text-white">It failed because we built too much before we knew enough.</strong></p>
+          <p>I have spent years working with founders at the exact moment this problem shows up — when they are mid-build, money is leaving, and something feels wrong but nobody can name it. I have seen this from every angle: as a founder who made these mistakes myself, and as the person founders bring in to untangle the mess.</p>
+          <p>The pattern is always the same. Not a bad idea. Not a bad developer. A missing step — the step where you stop and actually understand what you are building, for whom, and what success looks like before anyone writes a line of code.</p>
+          <p>I built The Zero Point System because that step needs a structure. Left to themselves, most founders skip it — not because they are lazy, but because nobody ever showed them what it looks like to do it properly.</p>
 
           <div class="border-l-4 pl-6 my-8" style="border-color: #00ff9f;">
-            <p class="text-xl italic text-gray-900 dark:text-white font-light">The Zero Point System is what I wish I had on Tradr. It is the process I now run with every founder I work with — so they do not make the same expensive mistakes I did.</p>
+            <p class="text-xl italic text-gray-900 dark:text-white font-light">Every founder I have run this process with has walked away knowing exactly what to build, who to build it for, and what it will take to prove it works. That clarity is worth more than any feature on your roadmap.</p>
           </div>
         </div>
       </div>
@@ -335,10 +335,10 @@
       <div class="pt-20 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Ready to Get Clarity?</h2>
         <p class="text-xl text-gray-600 dark:text-gray-400 mb-2 max-w-xl mx-auto">Spots are limited. I am only accepting a small number of qualified founders for this offer.</p>
-        <p class="text-gray-500 dark:text-gray-500 mb-12">Free Discovery Session. No pitch. No obligation. Just clarity.</p>
+        <p class="text-gray-500 dark:text-gray-500 mb-12">Discovery Session — $500. Phases 2 + 3 — $5,000. No fluff. Just clarity.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://cal.com/henryikoh" target="_blank" rel="noopener" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-black transition-opacity hover:opacity-80" style="background-color: #00ff9f;">
-            Book a Free Discovery Session →
+            Book a Discovery Session →
           </a>
           <nuxt-link to="/contact" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 hover:border-gray-900 dark:hover:border-gray-400 transition-colors">
             Reach Out Directly →
