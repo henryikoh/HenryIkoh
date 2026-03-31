@@ -138,23 +138,23 @@
             </div>
             <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-5 ml-10">
               <p class="mb-4">This is where the real work happens — and most of it is invisible. With the design brief in hand, I go away and deconstruct your system completely, then rebuild it from scratch.</p>
-              <div class="space-y-3 text-sm">
-                <div class="flex gap-3">
-                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">1. Deconstruction</span>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white mb-1">1. Deconstruction</p>
                   <p class="text-gray-600 dark:text-gray-400">Strip everything down to fundamental components. Question every single step: "Why does this exist? Is it essential or just accumulated cruft?"</p>
                 </div>
-                <div class="flex gap-3">
-                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">2. Reconstruction</span>
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white mb-1">2. Reconstruction</p>
                   <p class="text-gray-600 dark:text-gray-400">Start from first principles. Design new flows — where can we eliminate steps, parallelize, automate, or simplify? Account for human behavior. Design for measurable outcomes. Design within your constraints.</p>
                 </div>
-                <div class="flex gap-3">
-                  <span class="font-bold text-gray-900 dark:text-white w-40 shrink-0">3. Options Development</span>
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white mb-2">3. Options Development</p>
                   <div class="text-gray-600 dark:text-gray-400">
                     <p class="mb-2">I don't give you one solution. I give you 2-3 approaches with clear trade-offs:</p>
-                    <div class="space-y-1 ml-2">
-                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option A:</span> Minimal change — fast, low cost, modest improvement</div>
-                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</div>
-                      <div class="flex gap-2"><span class="font-semibold text-gray-800 dark:text-gray-200 shrink-0">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</div>
+                    <div class="space-y-1.5">
+                      <div><span class="font-semibold text-gray-800 dark:text-gray-200">Option A:</span> Minimal change — fast, low cost, modest improvement</div>
+                      <div><span class="font-semibold text-gray-800 dark:text-gray-200">Option B:</span> Complete rebuild — slower, higher investment, maximum improvement</div>
+                      <div><span class="font-semibold text-gray-800 dark:text-gray-200">Option C:</span> Hybrid — quick wins now + foundation for long-term scale</div>
                     </div>
                   </div>
                 </div>
