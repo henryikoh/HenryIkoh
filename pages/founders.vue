@@ -112,7 +112,7 @@
           <div class="space-y-4">
             <div class="flex gap-3 items-start">
               <span style="color: #00ff9f;" class="text-lg shrink-0 mt-0.5">✓</span>
-              <p class="text-gray-700 dark:text-gray-200">The brief was 30 pages — not a voice note. Every screen, every user flow, every edge case was documented before a line of code was written.</p>
+              <p class="text-gray-700 dark:text-gray-200">The brief was complete. Every screen, every user flow, every edge case was documented before a line of code was written.</p>
             </div>
             <div class="flex gap-3 items-start">
               <span style="color: #00ff9f;" class="text-lg shrink-0 mt-0.5">✓</span>
@@ -133,9 +133,31 @@
           </div>
         </div>
 
-        <blockquote class="border-l-4 pl-6 my-8 max-w-2xl" style="border-color: #00ff9f;">
-          <p class="text-2xl italic text-gray-900 dark:text-white font-light">Two weeks of clarity saved four months of confusion and more than $60,000 in wasted development.</p>
-        </blockquote>
+        <div class="my-10 max-w-2xl">
+          <p class="text-lg font-semibold text-gray-900 dark:text-white mb-5">Two weeks of clarity. Here is what it saved:</p>
+          <div class="space-y-3">
+            <div class="flex gap-4 items-start border-b border-gray-200 dark:border-gray-800 pb-3">
+              <span class="text-red-500 shrink-0 mt-0.5">×</span>
+              <p class="text-gray-700 dark:text-gray-200">4 months of build time they would have had to partially redo</p>
+            </div>
+            <div class="flex gap-4 items-start border-b border-gray-200 dark:border-gray-800 pb-3">
+              <span class="text-red-500 shrink-0 mt-0.5">×</span>
+              <p class="text-gray-700 dark:text-gray-200">$60,000+ in development costs from scope creep and constant back-and-forth</p>
+            </div>
+            <div class="flex gap-4 items-start border-b border-gray-200 dark:border-gray-800 pb-3">
+              <span class="text-red-500 shrink-0 mt-0.5">×</span>
+              <p class="text-gray-700 dark:text-gray-200">A launch to silence — building for the wrong person with no way to know until it was too late</p>
+            </div>
+            <div class="flex gap-4 items-start border-b border-gray-200 dark:border-gray-800 pb-3">
+              <span class="text-red-500 shrink-0 mt-0.5">×</span>
+              <p class="text-gray-700 dark:text-gray-200">Months of anxiety and indecision — not knowing what to cut, what to keep, or when to stop</p>
+            </div>
+            <div class="flex gap-4 items-start pb-3">
+              <span class="text-red-500 shrink-0 mt-0.5">×</span>
+              <p class="text-gray-700 dark:text-gray-200">The version they could have built if they'd known what to build from day one</p>
+            </div>
+          </div>
+        </div>
 
         <p class="text-lg text-gray-700 dark:text-white max-w-2xl">
           That is what the right process looks like. That is what you are buying when you invest in clarity before you build.
@@ -316,32 +338,39 @@
       <!-- THE OFFER -->
       <div class="py-20 border-b border-gray-200 dark:border-gray-800">
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">The Offer</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Start With Discovery.</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl leading-relaxed">Phase 1 is where everything starts. Before architecture, before a PRD, before a developer touches anything — you need a clear picture of the system, the users, and the real problem. That is what this session delivers.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Start with Discovery. Decide the rest after.</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl leading-relaxed">You don't need to commit to the full process upfront. We start with Phase 1 — and once you see what comes out of it, you'll know whether you want to keep going. Most people do.</p>
 
         <div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-8 mb-6 max-w-2xl border border-gray-200 dark:border-gray-800">
-          <p class="text-lg font-bold text-gray-900 dark:text-white mb-1">System Discovery Session</p>
-          <p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$500</p>
-          <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm">A working session, not a consultation. You walk away with real deliverables — not slides, not talking points, but a documented picture of your system that you can act on immediately.</p>
-          <ul class="space-y-3 text-gray-700 dark:text-gray-200 text-sm">
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Current System Map — a visual diagram of your system and where it breaks down</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> User Archetypes — behavioral profiles of every user type and what keeps them coming back</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Problem Hypothesis — a clear documented statement of the real problem and what solving it would unlock</li>
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <p class="text-lg font-bold text-gray-900 dark:text-white mb-1">Phase 1 — System Discovery</p>
+              <p class="text-sm text-gray-500 dark:text-gray-500">Where everything starts</p>
+            </div>
+            <p class="text-3xl font-bold text-gray-900 dark:text-white shrink-0 ml-4">$500</p>
+          </div>
+
+          <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">A working session, not a consultation. You walk away with real deliverables — not slides, not talking points. A documented picture of your system, your users, and your real problem that you can act on immediately.</p>
+
+          <p class="text-sm font-semibold text-gray-900 dark:text-white mb-4">After this session, you will have concrete answers to:</p>
+          <ul class="space-y-3 text-gray-700 dark:text-gray-200 text-sm mb-8">
+            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">→</span> <span><strong class="text-gray-900 dark:text-white">Who is this for?</strong> — 2–3 named user archetypes with behavioral profiles, not demographics</span></li>
+            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">→</span> <span><strong class="text-gray-900 dark:text-white">What problem are we actually solving?</strong> — a written Problem Hypothesis, root cause identified, not just symptoms</span></li>
+            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">→</span> <span><strong class="text-gray-900 dark:text-white">What is broken in the current solution?</strong> — a mapped picture of what exists today and exactly where it fails</span></li>
           </ul>
+
+          <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+            <p class="text-sm font-semibold text-gray-900 dark:text-white mb-3">You receive:</p>
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> Current System Map — visual diagram of your system and where it breaks down</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> User Archetypes — behavioral profiles of every user type</li>
+              <li class="flex gap-2"><span style="color: #00ff9f;">✓</span> Problem Hypothesis — the root cause, documented clearly</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="bg-gray-900 dark:bg-gray-900 rounded-xl p-8 max-w-2xl border border-gray-700 dark:border-gray-700">
-          <p class="text-sm text-gray-400 mb-1">If you want to keep going:</p>
-          <p class="text-lg font-bold text-white mb-1">Phases 2 + 3 — Architecture &amp; Solution Design</p>
-          <p class="text-4xl font-bold text-white mb-6">$5,000</p>
-          <p class="text-gray-400 mb-6 text-sm leading-relaxed">Everything you need before you go near a development shop. This price is available for a limited time while I build my initial case study portfolio.</p>
-          <ul class="space-y-3 text-gray-200 text-sm">
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Full Architecture Blueprint with trade-off analysis</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> User Journey Map for every user type</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Product Strategy Document</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> Full Product Requirements Document (PRD)</li>
-            <li class="flex gap-3 items-start"><span style="color: #00ff9f;" class="shrink-0 mt-0.5">✓</span> MVP Scope Definition</li>
-          </ul>
+        <div class="max-w-2xl bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+          <p class="text-sm text-gray-500 dark:text-gray-500 leading-relaxed">After Phase 1 we debrief. If you want to keep going — Architecture, Solution Design, Pilot — we discuss what makes sense for your specific situation and scope the next steps together. There is no package you have to commit to upfront.</p>
         </div>
       </div>
 
