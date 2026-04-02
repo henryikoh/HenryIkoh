@@ -28,12 +28,13 @@
       <!-- WHAT THE SESSION IS -->
       <div class="py-20 border-b border-gray-200 dark:border-gray-800">
         <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">What This Is</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-10 max-w-2xl">Not a strategy call. Not a consultation. A working session.</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-10 max-w-2xl">Two to three hours of structured, uncomfortable honesty about what you're actually dealing with.</h2>
 
         <div class="space-y-6 text-gray-700 dark:text-white text-lg leading-relaxed max-w-2xl">
-          <p>Most "discovery calls" are really sales calls in disguise. This is not that.</p>
-          <p>We spend the session mapping reality — your system as it actually exists, the people inside it, and the real problem underneath the one you think you're solving. Whether you're designing something new or diagnosing something broken, the process is the same: map what is before you design what should be.</p>
-          <p>I ask hard questions. I push back on assumptions. I record everything so I can go deep after the call. Then I produce three deliverables that give you a documented, honest picture of your situation — before another decision gets made, another feature gets built, or another programme gets run.</p>
+          <p>We map reality — not the version you present to investors, not the version that lives in your pitch deck, but what actually exists. Every step in the system. Every person inside it. Every place it breaks down or falls short.</p>
+          <p>I ask questions most people don't ask. Why does this step exist? What happens when it fails? Who does it actually serve — and who does it leave behind? I push back on assumptions. I name what I see. I record everything so I can go deep after the session and find what the conversation didn't surface.</p>
+          <p>Then I go away and do the analysis. I replay the session. I map what we covered. I look for the root cause underneath the symptoms, the gap between what the system was designed to do and what it actually does. And I write it down — clearly, specifically, without softening it.</p>
+          <p class="text-gray-900 dark:text-white font-medium">By the end of this process, you will see your situation in a way you have not seen it before. That is the point.</p>
         </div>
 
         <div class="mt-12 grid gap-4 max-w-2xl">
