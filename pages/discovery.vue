@@ -118,13 +118,20 @@
 
         <div class="max-w-2xl space-y-6 text-gray-700 dark:text-white text-lg leading-relaxed">
           <p>Not discounted. Not "free intro then we pitch you." Free.</p>
-          <p>I am building my portfolio of case studies — documented, real-world examples of the discovery process working for real founders with real products. To do that, I need to run real sessions with real problems.</p>
-          <p>In exchange for your time and honest engagement, you get the full session and all three deliverables at no cost. I get to document the process and the results.</p>
+          <p>I am building my portfolio of case studies — documented, real-world examples of the discovery process working for real founders and organisations. To do that, I need real sessions with real problems.</p>
+          <p>In exchange for the full session and all three deliverables at no cost, I ask one thing in return.</p>
         </div>
 
-        <div class="mt-10 bg-gray-900 dark:bg-gray-900 rounded-xl p-8 max-w-2xl border border-gray-700">
+        <div class="mt-8 max-w-2xl border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+          <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">One condition</p>
+          <p class="text-gray-900 dark:text-white font-semibold text-lg mb-3">If the work delivers value, you agree to a testimonial.</p>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">If you walk away from this session with genuine clarity — a clearer picture of your system, your users, and your real problem — I ask that you share that in a brief written or video testimonial. Not a review. A real account of what the session surfaced and how it changed your thinking.</p>
+          <p class="text-gray-500 dark:text-gray-500 text-sm">If the session doesn't deliver real value, you owe nothing. The testimonial is only asked for if you feel the work earned it.</p>
+        </div>
+
+        <div class="mt-6 bg-gray-900 dark:bg-gray-900 rounded-xl p-8 max-w-2xl border border-gray-700">
           <p class="text-white font-semibold mb-3">This will not be free forever.</p>
-          <p class="text-gray-300 text-sm leading-relaxed">Once I have the case studies I need, this session moves to a paid offer. The founders who come in now get the full value at none of the cost. No hidden pitch. No obligation to continue. No expiry on what you receive.</p>
+          <p class="text-gray-300 text-sm leading-relaxed">Once I have the case studies I need, this session moves to a paid offer. The founders who come in now get the full value at none of the cost. No hidden pitch. No obligation to continue beyond the session itself.</p>
         </div>
       </div>
 
@@ -213,11 +220,58 @@
         </div>
       </div>
 
+      <!-- RECAP BEFORE CTA -->
+      <div class="py-20 border-b border-gray-200 dark:border-gray-800">
+        <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">What You're Getting</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-14 max-w-2xl">One session. Three documents. The clarity to actually move forward.</h2>
+
+        <div class="max-w-2xl space-y-6">
+
+          <div class="flex gap-5 items-start">
+            <div class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-black text-xs font-bold mt-0.5" style="background-color: #00ff9f;">1</div>
+            <div>
+              <p class="font-bold text-gray-900 dark:text-white mb-1">Current System Map</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A visual diagram of your system as it actually exists — every step, every touchpoint, every place it breaks. You will see things you couldn't see before. So will everyone you share it with.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start">
+            <div class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-black text-xs font-bold mt-0.5" style="background-color: #00ff9f;">2</div>
+            <div>
+              <p class="font-bold text-gray-900 dark:text-white mb-1">User Archetypes</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">2–3 behavioral profiles of the real people in your system — what they need, what frustrates them, what would make them stay. You will stop designing for who you imagined and start building for who is actually there.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start">
+            <div class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-black text-xs font-bold mt-0.5" style="background-color: #00ff9f;">3</div>
+            <div>
+              <p class="font-bold text-gray-900 dark:text-white mb-1">Problem Hypothesis</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A written diagnosis of the real problem — the root cause, not the symptom. What it costs to leave it unsolved. What changes when it gets solved. The document that makes the right next step obvious.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start">
+            <div class="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-black text-xs font-bold mt-0.5" style="background-color: #00ff9f;">+</div>
+            <div>
+              <p class="font-bold text-gray-900 dark:text-white mb-1">Debrief Call</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A follow-up call to walk through every deliverable, answer your questions, and make sure you leave knowing exactly what to do next — whether that's with me or on your own.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <blockquote class="border-l-4 pl-6 mt-14 max-w-2xl" style="border-color: #00ff9f;">
+          <p class="text-xl italic text-gray-900 dark:text-white font-light">You will know who you are building for. You will know what problem you are actually solving. You will know where your system breaks down and why. And you will have it all in writing — before you spend another dollar moving in the wrong direction.</p>
+        </blockquote>
+      </div>
+
       <!-- FINAL CTA -->
       <div class="pt-20 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Book Your Free Session</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-400 mb-2 max-w-xl mx-auto">Spots are limited. Qualified founders only.</p>
-        <p class="text-gray-500 dark:text-gray-500 mb-12">Free for now. Not free forever.</p>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-2 max-w-xl mx-auto">Spots are limited. Qualified applicants only.</p>
+        <p class="text-gray-500 dark:text-gray-500 mb-6">Free for now. Not free forever.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-500 max-w-md mx-auto mb-12">By booking, you agree that if the session delivers real value, you'll provide a brief written or video testimonial on request.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://cal.com/henryikoh" target="_blank" rel="noopener" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-black transition-opacity hover:opacity-80" style="background-color: #00ff9f;">
             Book Your Free Session →
