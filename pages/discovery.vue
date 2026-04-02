@@ -273,8 +273,8 @@
         <p class="text-gray-500 dark:text-gray-500 mb-6">Free for now. Not free forever.</p>
         <p class="text-sm text-gray-500 dark:text-gray-500 max-w-md mx-auto mb-12">By booking, you agree that if the session delivers real value, you'll provide a brief written or video testimonial on request.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://cal.com/henryikoh" target="_blank" rel="noopener" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-black transition-opacity hover:opacity-80" style="background-color: #00ff9f;">
-            Book Your Free Session →
+          <a href="https://forms.gle/bQ7sTWYqnYeTfimj8" target="_blank" rel="noopener" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-black transition-opacity hover:opacity-80" style="background-color: #00ff9f;">
+            Apply for Your Free Session →
           </a>
           <nuxt-link to="/contact" class="inline-block px-10 py-5 text-lg font-semibold rounded-md text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 hover:border-gray-900 dark:hover:border-gray-400 transition-colors">
             Reach Out Directly →
