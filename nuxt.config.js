@@ -77,17 +77,13 @@ export default {
     link: [
       {
         rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favic.png',
-      },
-      {
-        rel: 'shortcut icon',
-        type: 'image/x-icon',
+        type: 'image/png',
+        sizes: '512x512',
         href: '/favic.png',
       },
       {
         rel: 'apple-touch-icon',
-        type: 'image/x-icon',
+        sizes: '180x180',
         href: '/favic.png',
       },
       {
