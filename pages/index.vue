@@ -38,13 +38,6 @@
 		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-12">
 			<CommunitySignup />
 		</div>
-		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-16 text-center">
-			<h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">Read the Newsletter</h3>
-			<p class="text-gray-600 dark:text-gray-400 mb-6">Essays on systems, founders, and building things that actually work.</p>
-			<div class="flex justify-center">
-				<iframe src="https://henryikoh.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
 		<Footer/>
   </div>
 </template>

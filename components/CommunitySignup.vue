@@ -25,7 +25,7 @@
 
       <!-- CTA -->
       <a
-        href="https://substack.com"
+        href="https://henryikoh.substack.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="group inline-flex items-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-4 text-lg rounded-md hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors font-medium"
