@@ -237,6 +237,19 @@ async asyncData({ $content, params }) {
 						},
 					}),
 				},
+				{
+					hid: 'ldjson-breadcrumb',
+					type: 'application/ld+json',
+					innerHTML: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'BreadcrumbList',
+						itemListElement: [
+							{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.henryikoh.com/' },
+							{ '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.henryikoh.com/#articles' },
+							{ '@type': 'ListItem', position: 3, name: this.page.title, item: url },
+						],
+					}),
+				},
 			],
 			__dangerouslyDisableSanitizers: ['script'],
 		}

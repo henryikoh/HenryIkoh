@@ -17,7 +17,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work. Systems architect. Product engineer. Builder.",
+          "Henry Ikoh helps founders diagnose broken systems and engineer the infrastructure their next stage needs — using The Zero Point System.",
       },
       {
         name: 'apple-mobile-web-app-status-bar-style',
@@ -35,7 +35,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work. Systems architect. Product engineer. Builder.",
+          "Henry Ikoh helps founders diagnose broken systems and engineer the infrastructure their next stage needs — using The Zero Point System.",
       },
       {
         hid: 'og:image',
@@ -66,7 +66,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work.",
+          'Diagnose broken systems and engineer ones that work — through The Zero Point System.',
       },
       {
         hid: 'twitter:image',

@@ -536,68 +536,130 @@ export default {
     }
   },
   head() {
+    const url = 'https://www.henryikoh.com/system'
+    const image = 'https://www.henryikoh.com/point.png'
+    const title = 'The Zero Point System — A Systems Architecture Framework | Henry Ikoh'
+    const description = 'The Zero Point System is a 5-phase framework for founders and organizations: Discovery, Architecture, Solution Design, Pilot, and Impact Reporting. Diagnose broken systems first, then design and prove the fix.'
     return {
-      title: 'The Zero Point System - Henry Ikoh',
+      title,
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'The Zero Point System: a strategic systems architecture framework that helps founders and organizations diagnose broken systems, design the right solution, and prove it works before scaling.'
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: 'The Zero Point System - Henry Ikoh'
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: 'A 5-phase framework: System Discovery, System Architecture, Solution Design, Pilot, and Impact Reporting. Diagnose first, design second, prove third.'
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: 'https://www.henryikoh.com/point.png'
-        },
-        {
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: '1200'
-        },
-        {
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: '630'
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: 'https://www.henryikoh.com/system'
-        },
-        {
-          hid: 'twitter:card',
-          name: 'twitter:card',
-          content: 'summary_large_image'
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: 'The Zero Point System - Henry Ikoh'
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: 'A 5-phase framework: Discover, Architect, Design, Pilot, Report. Diagnose first, design second, prove third.'
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: 'https://www.henryikoh.com/point.png'
-        }
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'keywords', name: 'keywords', content: 'The Zero Point System, systems architecture, systems thinking, founders, product strategy, MVP framework, systems design, Henry Ikoh' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:description', property: 'og:description', content: description },
+        { hid: 'og:image', property: 'og:image', content: image },
+        { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+        { hid: 'og:image:height', property: 'og:image:height', content: '630' },
+        { hid: 'og:url', property: 'og:url', content: url },
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'twitter:title', name: 'twitter:title', content: title },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'A 5-phase framework: Discover, Architect, Design, Pilot, Report. Diagnose first, design second, prove third.' },
+        { hid: 'twitter:image', name: 'twitter:image', content: image },
       ],
       link: [
-        { rel: 'canonical', href: 'https://www.henryikoh.com/system' },
+        { rel: 'canonical', href: url },
       ],
+      script: [
+        {
+          hid: 'ldjson-service',
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            '@id': url + '#service',
+            name: 'The Zero Point System',
+            alternateName: 'Zero Point System',
+            serviceType: 'Strategic Systems Architecture',
+            description,
+            url,
+            image,
+            provider: {
+              '@type': 'Person',
+              name: 'Henry Ikoh',
+              url: 'https://www.henryikoh.com/',
+            },
+            areaServed: 'Worldwide',
+            audience: {
+              '@type': 'BusinessAudience',
+              audienceType: 'Founders, organizations, social enterprises',
+            },
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: 'The Zero Point System Phases',
+              itemListElement: [
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Phase 1 — System Discovery + Impact Mapping' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Phase 2 — System Architecture' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Phase 3 — Solution Design + Impact Indicators' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Phase 4 — Pilot + Impact Measurement' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Phase 5 — Impact Reporting (Optional)' } },
+              ],
+            },
+          }),
+        },
+        {
+          hid: 'ldjson-howto',
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'The Zero Point System — A 5-Phase Framework for Building Systems That Work',
+            description,
+            image,
+            totalTime: 'P10W',
+            step: [
+              {
+                '@type': 'HowToStep',
+                position: 1,
+                name: 'System Discovery + Impact Mapping',
+                text: 'Map the system as it actually exists, identify user archetypes, and diagnose root causes vs symptoms. Output: a System Discovery + Impact Report with baseline metrics, problem hypothesis, and stakeholder map.',
+                url: url + '#phase-1',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 2,
+                name: 'System Architecture',
+                text: 'Rebuild the system from first principles. Produce 2–3 architectural options with clear trade-offs, a User Journey Map, and a Theory of Change for impact clients.',
+                url: url + '#phase-2',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 3,
+                name: 'Solution Design + Impact Indicators',
+                text: 'Translate the architecture into a build-ready specification: MVP scope, Product Requirements Document, measurement framework, and pilot plan.',
+                url: url + '#phase-3',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 4,
+                name: 'Pilot + Impact Measurement',
+                text: 'Build the minimum testable system, run it in real conditions, and measure efficiency and outcome metrics against the baseline. Decide: scale, iterate, or pivot — based on evidence.',
+                url: url + '#phase-4',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 5,
+                name: 'Impact Reporting (Optional)',
+                text: 'For social impact clients: produce a professional Impact Report covering need, activities, outcomes, evidence, and lessons — ready for funders and stakeholders.',
+                url: url + '#phase-5',
+              },
+            ],
+          }),
+        },
+        {
+          hid: 'ldjson-breadcrumb',
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.henryikoh.com/' },
+              { '@type': 'ListItem', position: 2, name: 'The Zero Point System', item: url },
+            ],
+          }),
+        },
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
     }
   }
 }

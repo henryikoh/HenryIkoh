@@ -72,7 +72,14 @@ export default {
                         jobTitle: 'Systems Architect & Product Engineer',
                         description:
                             "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work.",
-                        sameAs: ['https://henryikoh.substack.com/'],
+                        sameAs: [
+                            'https://www.linkedin.com/in/henry-ikoh-22a8b3109/',
+                            'https://x.com/henryikoh_',
+                            'https://github.com/henryikoh',
+                            'https://medium.com/@henryikoh',
+                            'https://www.youtube.com/@HenryIkoh',
+                            'https://henryikoh.substack.com/',
+                        ],
                     }),
                 },
                 {
