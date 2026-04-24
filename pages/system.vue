@@ -570,16 +570,34 @@ export default {
           content: '630'
         },
         {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://www.henryikoh.com/system'
+        },
+        {
           hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary_large_image'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'The Zero Point System - Henry Ikoh'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'A 5-phase framework: Discover, Architect, Design, Pilot, Report. Diagnose first, design second, prove third.'
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
           content: 'https://www.henryikoh.com/point.png'
         }
-      ]
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://www.henryikoh.com/system' },
+      ],
     }
   }
 }

@@ -164,8 +164,26 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: 'Start a conversation with Henry Ikoh about your systems challenge. I help early stage innovators design processes and systems that work from day one.'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://www.henryikoh.com/contact'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Contact - Henry Ikoh'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Start a conversation with Henry Ikoh about your systems challenge.'
         }
-      ]
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://www.henryikoh.com/contact' },
+      ],
     }
   },
   data() {

@@ -106,6 +106,10 @@ export default {
 		return { page }
 	},
 	head() {
+		const url = 'https://www.henryikoh.com/ideas/' + this.page.slug
+		const image = this.page.cover
+			? (this.page.cover.startsWith('http') ? this.page.cover : 'https://www.henryikoh.com' + this.page.cover)
+			: 'https://www.henryikoh.com/navback.png'
 		return {
 			title: this.page.title,
 			titleTemplate: '%s - Henry Ikoh',
@@ -115,25 +119,36 @@ export default {
 					name: 'description',
 					content: this.page.description,
 				},
+				{ hid: 'og:type', property: 'og:type', content: 'article' },
 				{
 					hid: 'og:title',
-					name: 'og:title',
+					property: 'og:title',
 					content: this.page.title,
 				},
 				{
 					hid: 'og:description',
-					name: 'og:description',
+					property: 'og:description',
 					content: this.page.description,
 				},
 				{
 					hid: 'og:image',
-					name: 'og:image',
-					content: this.page.cover ? 'https://www.henryikoh.com' + this.page.cover : 'https://www.henryikoh.com/navback.png',
+					property: 'og:image',
+					content: image,
 				},
 				{
 					hid: 'og:url',
-					name: 'og:url',
-					content: 'https://www.henryikoh.com/ideas/' + this.page.slug,
+					property: 'og:url',
+					content: url,
+				},
+				{
+					hid: 'article:published_time',
+					property: 'article:published_time',
+					content: this.page.createdAt,
+				},
+				{
+					hid: 'article:author',
+					property: 'article:author',
+					content: 'Henry Ikoh',
 				},
 				{
 					hid: 'twitter:title',
@@ -146,17 +161,49 @@ export default {
 					content: 'summary_large_image',
 				},
 				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: image,
+				},
+				{
 					hid: 'twitter:description',
 					name: 'twitter:description',
 					content: this.page.description,
 				},
 			],
 			link: [
-				{ rel: 'icon', type: 'image/x-icon', href: '/favic.png' },
-				{ rel: 'shortcut icon', type: 'image/x-icon', href: '/favic.png' },
-				{ rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favic.png' },
-				{ rel: 'canonical', href: 'https://www.henryikoh.com/ideas/' + this.page.slug },
+				{ rel: 'canonical', href: url },
 			],
+			script: [
+				{
+					hid: 'ldjson-article',
+					type: 'application/ld+json',
+					innerHTML: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'Article',
+						headline: this.page.title,
+						description: this.page.description,
+						image: image,
+						author: {
+							'@type': 'Person',
+							name: 'Henry Ikoh',
+							url: 'https://www.henryikoh.com/',
+						},
+						publisher: {
+							'@type': 'Person',
+							name: 'Henry Ikoh',
+							url: 'https://www.henryikoh.com/',
+						},
+						datePublished: this.page.createdAt,
+						dateModified: this.page.updatedAt || this.page.createdAt,
+						mainEntityOfPage: {
+							'@type': 'WebPage',
+							'@id': url,
+						},
+					}),
+				},
+			],
+			__dangerouslyDisableSanitizers: ['script'],
 		}
 	},
 	data() {

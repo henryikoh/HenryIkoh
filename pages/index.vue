@@ -38,6 +38,13 @@
 		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-12">
 			<CommunitySignup />
 		</div>
+		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-16 text-center">
+			<h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">Read the Newsletter</h3>
+			<p class="text-gray-600 dark:text-gray-400 mb-6">Essays on systems, founders, and building things that actually work.</p>
+			<div class="flex justify-center">
+				<iframe src="https://henryikoh.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
 		<Footer/>
   </div>
 </template>
@@ -54,8 +61,43 @@ export default {
             tab: "Article-tab"
         };
     },
+    head() {
+        return {
+            link: [
+                { rel: 'canonical', href: 'https://www.henryikoh.com/' },
+            ],
+            script: [
+                {
+                    hid: 'ldjson-person',
+                    type: 'application/ld+json',
+                    innerHTML: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Person',
+                        name: 'Henry Ikoh',
+                        url: 'https://www.henryikoh.com/',
+                        image: 'https://www.henryikoh.com/profile.jpeg',
+                        jobTitle: 'Systems Architect & Product Engineer',
+                        description:
+                            "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work.",
+                        sameAs: ['https://henryikoh.substack.com/'],
+                    }),
+                },
+                {
+                    hid: 'ldjson-website',
+                    type: 'application/ld+json',
+                    innerHTML: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'WebSite',
+                        name: 'Henry Ikoh',
+                        url: 'https://www.henryikoh.com/',
+                    }),
+                },
+            ],
+            __dangerouslyDisableSanitizers: ['script'],
+        }
+    },
 	mounted(){
-		
+
 		const convertKit = document.createElement('script')
       convertKit.setAttribute('src', 'https://f.convertkit.com/ckjs/ck.5.js')
       document.head.appendChild(convertKit)

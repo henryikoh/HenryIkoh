@@ -481,8 +481,26 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: 'Get clarity before you build. Stop wasting money building the wrong thing.'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://www.henryikoh.com/founders'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'The Zero Point System — For Founders | Henry Ikoh'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Get clarity before you build. Stop wasting money building the wrong thing.'
         }
-      ]
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://www.henryikoh.com/founders' },
+      ],
     }
   }
 }

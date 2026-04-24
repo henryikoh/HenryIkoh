@@ -90,19 +90,32 @@ export default {
 				},
 				{
 					hid: 'og:title',
-					name: 'og:title',
+					property: 'og:title',
 					content: 'Open Problems — Henry Ikoh',
 				},
 				{
 					hid: 'og:description',
-					name: 'og:description',
+					property: 'og:description',
 					content: 'Thought experiments, system designs, and problem breakdowns. Problems that have a real solution if approached the right way.',
+				},
+				{
+					hid: 'og:url',
+					property: 'og:url',
+					content: 'https://www.henryikoh.com/ideas',
+				},
+				{
+					hid: 'twitter:title',
+					name: 'twitter:title',
+					content: 'Open Problems — Henry Ikoh',
+				},
+				{
+					hid: 'twitter:description',
+					name: 'twitter:description',
+					content: 'Thought experiments, system designs, and problem breakdowns.',
 				},
 			],
 			link: [
-				{ rel: 'icon', type: 'image/x-icon', href: '/favic.png' },
-				{ rel: 'shortcut icon', type: 'image/x-icon', href: '/favic.png' },
-				{ rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favic.png' },
+				{ rel: 'canonical', href: 'https://www.henryikoh.com/ideas' },
 			],
 		}
 	},

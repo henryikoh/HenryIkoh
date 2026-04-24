@@ -124,6 +124,10 @@ async asyncData({ $content, params }) {
 		window.removeEventListener('scroll', this.updateActiveHeading)
 	},
 	head() {
+		const url = 'https://www.henryikoh.com/projects/' + this.page.slug
+		const image = this.page.cover && this.page.cover.startsWith('http')
+			? this.page.cover
+			: 'https://www.henryikoh.com' + this.page.cover
 		return {
 			title: this.page.title,
 			titleTemplate: '%s - Henry Ikoh',
@@ -133,25 +137,26 @@ async asyncData({ $content, params }) {
 					name: 'description',
 					content: this.page.description,
 				},
+				{ hid: 'og:type', property: 'og:type', content: 'article' },
 				{
 					hid: 'og:title',
-					name: 'og:title',
+					property: 'og:title',
 					content: this.page.title,
 				},
 				{
 					hid: 'og:description',
-					name: 'og:description',
+					property: 'og:description',
 					content: this.page.description,
 				},
 				{
 					hid: 'og:image',
-					name: 'og:image',
-					content: 'https://www.henryikoh.com' + this.page.cover,
+					property: 'og:image',
+					content: image,
 				},
 				{
 					hid: 'og:url',
-					name: 'og:url',
-					content: 'https://www.henryikoh.com/projects/' + this.page.slug,
+					property: 'og:url',
+					content: url,
 				},
 				{
 					hid: 'twitter:title',
@@ -164,22 +169,19 @@ async asyncData({ $content, params }) {
 					content: 'summary_large_image',
 				},
 				{
-					hid: 'twitter:image:src',
-					name: 'twitter:image:src',
-					content: 'https://www.henryikoh.com' + this.page.cover,
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: image,
 				},
 				{
 					hid: 'twitter:description',
 					name: 'twitter:description',
 					content: this.page.description,
 				},
-
 			],
-			link: [{
-      rel: 'canonical',
-
-      href: 'https://www.henryikoh.com/projects/' + this.page.slug,
-    },],
+			link: [
+				{ rel: 'canonical', href: url },
+			],
 		}
 	},
 	created(){

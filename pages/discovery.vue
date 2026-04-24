@@ -307,8 +307,26 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: 'Free for qualified founders. Not free forever.'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://www.henryikoh.com/discovery'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Free System Discovery Session | Henry Ikoh'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Free for qualified founders. Not free forever.'
         }
-      ]
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://www.henryikoh.com/discovery' },
+      ],
     }
   }
 }

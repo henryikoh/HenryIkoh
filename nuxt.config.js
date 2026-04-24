@@ -4,10 +4,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     title: 'Henry Ikoh | Systems That Work From Day One',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'robots', content: 'index, follow, max-image-preview:large' },
+      { name: 'author', content: 'Henry Ikoh' },
       {
         hid: 'description',
         name: 'description',
@@ -18,6 +23,9 @@ export default {
         name: 'apple-mobile-web-app-status-bar-style',
         content: 'default',
       },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Henry Ikoh' },
+      { hid: 'og:locale', property: 'og:locale', content: 'en_US' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:title',
         property: 'og:title',
@@ -32,17 +40,38 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://henryikoh.com/meta.png',
+        content: 'https://www.henryikoh.com/meta.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'Henry Ikoh — Systems That Work From Day One',
       },
       {
         hid: 'og:url',
-        name: 'og:url',
-        content: 'henryikoh.com/',
+        property: 'og:url',
+        content: 'https://www.henryikoh.com/',
       },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
         content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Henry Ikoh | Systems That Work From Day One',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          "Henry Ikoh helps founders and organizations see what's broken and design systems that actually work.",
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://www.henryikoh.com/meta.png',
       },
     ],
     link: [
@@ -64,11 +93,6 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap',
-      },
-      {
-        rel: 'canonical',
-
-        href: 'https://www.henryikoh.com',
       },
     ],
   },
@@ -131,16 +155,31 @@ export default {
     baseURL: '/',
   },
   sitemap: {
-    hostname: 'https://www.henryikoh.com/',
+    hostname: 'https://www.henryikoh.com',
+    gzip: true,
+    trailingSlash: false,
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    },
     async routes() {
       const { $content } = require('@nuxt/content')
 
       const articles = await $content('articles').only(['slug']).fetch()
+      const projects = await $content('projects').only(['slug']).fetch()
+      const ideas = await $content('ideas').only(['slug']).fetch()
 
       return [
-        '/system',
-        '/contact',
-        ...articles.map((article) => `/blog/${article.slug}`)
+        { url: '/', priority: 1.0, changefreq: 'weekly' },
+        { url: '/system', priority: 0.9 },
+        { url: '/discovery', priority: 0.9 },
+        { url: '/founders', priority: 0.8 },
+        { url: '/contact', priority: 0.7 },
+        { url: '/ideas', priority: 0.7 },
+        ...articles.map((a) => ({ url: `/blog/${a.slug}`, priority: 0.8 })),
+        ...projects.map((p) => ({ url: `/projects/${p.slug}`, priority: 0.7 })),
+        ...ideas.map((i) => ({ url: `/ideas/${i.slug}`, priority: 0.6 })),
       ]
     },
   },
