@@ -190,6 +190,8 @@ export default {
     manifest: {
       lang: 'en',
     },
+    // Disable auto-generation of icons; we declare our own favicon via head.link
+    icon: false,
   },
   generate: {
     // fetch all articles and projects and generate

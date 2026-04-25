@@ -12,7 +12,7 @@
     <div class="flex gap-4 md:gap-6">
       <nuxt-link to="/ideas" class="text-white text-sm md:text-lg font-bold hover:opacity-80 transition-opacity">Ideas</nuxt-link>
       <nuxt-link to="/system" class="hidden md:block text-white text-sm md:text-lg font-bold hover:opacity-80 transition-opacity">The System</nuxt-link>
-      <a href="https://henryikoh.substack.com/" target="_blank" rel="noopener" class="text-white text-sm md:text-lg font-bold hover:opacity-80 transition-opacity">Newsletter</a>
+      <a href="https://henryikoh.substack.com/" target="_blank" rel="noopener" class="hidden md:block text-white text-sm md:text-lg font-bold hover:opacity-80 transition-opacity">Newsletter</a>
       <nuxt-link to="/contact" class="text-white text-sm md:text-lg font-bold hover:opacity-80 transition-opacity">Contact</nuxt-link>
     </div>
     <img v-if="showProfile" class="absolute invisible md:visible h-20 w-20 md:h-36 md:w-36 object-cover rounded-full left-0 right-0 mr-auto ml-auto top-10 border-4 border-white" src="/profile.jpeg" alt="henry ikoh">
