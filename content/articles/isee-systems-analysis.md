@@ -17,7 +17,7 @@ He could have done what most well-meaning people do: donated some money to a few
 
 Instead, he built a system.
 
-**iSEE** (isee.ng) has now moved ₦55.9M through its platform in transparent transactions, funded education for 236 students, and is planning the most audacious education prize structure Nigeria has ever seen.
+**iSEE** ([isee.ng](https://isee.ng)) has now moved ₦55.9M through its platform in transparent transactions, funded education for 236 students, and is planning the most audacious education prize structure Nigeria has ever seen.
 
 For 2027, Alex announced:
 
@@ -48,7 +48,7 @@ Think of it as a modernized village contribution system powered by technology.
 
 **The structure:**
 
-1. Anyone can join as a "Villager" (donor) at isee.ng
+1. Anyone can join as a "Villager" (donor) at [isee.ng](https://isee.ng)
 2. Pledge monthly or one-time donations
 3. Get voting rights on which education projects to fund
 4. Track everything via public ledger — every naira in, every naira out
@@ -63,7 +63,7 @@ Financial transparency (real-time public ledger):
 - Cash on hand: ₦1,255,525
 - Transactions logged: 396
 
-Every single transaction visible at isee.ng/public-ledger.
+Every single transaction visible at [isee.ng/public-ledger](https://isee.ng/public-ledger).
 
 **Impact so far:**
 - 236 students sponsored (all academically progressing)
@@ -116,7 +116,7 @@ This is systems thinking applied to incentive design.
 iSEE isn't a novel concept. It's based on traditional Igbo community contribution systems (*isusu*, village development unions) that have worked for generations.
 
 Alex just added:
-- Technology (easier to contribute via isee.ng)
+- Technology (easier to contribute via [isee.ng](https://isee.ng))
 - Transparency (public ledger with 396 transactions logged)
 - Scale (entire SE region, not one village)
 
@@ -126,7 +126,7 @@ He didn't invent a new behavior. He amplified an existing one. Igbo communities 
 
 ### 2. Radical Transparency (Every Naira Tracked)
 
-Public ledger at isee.ng/public-ledger shows all 396 transactions, updated in real-time. You can literally watch money move in and out.
+Public ledger at [isee.ng/public-ledger](https://isee.ng/public-ledger) shows all 396 transactions, updated in real-time. You can literally watch money move in and out.
 
 Most charities fail because of trust issues. People don't know where money goes. iSEE eliminates that question. No opacity. No ambiguity. Result: Donors keep giving because they see exactly what happens with their money.
 
@@ -414,4 +414,4 @@ The vision deserves to last 100 years. With the right structural improvements, i
 
 *Systems Architect. Builder. Thinker.*
 
-**P.S.** — If you're inspired by iSEE: donate at isee.ng (100% transparent, see exactly where your money goes). And if you're building something similar — community-funded education, tech-enabled charity, social impact initiative — the principles here apply to you too.
+**P.S.** — If you're inspired by iSEE: donate at [isee.ng](https://isee.ng) (100% transparent, see exactly where your money goes). And if you're building something similar — community-funded education, tech-enabled charity, social impact initiative — the principles here apply to you too.
