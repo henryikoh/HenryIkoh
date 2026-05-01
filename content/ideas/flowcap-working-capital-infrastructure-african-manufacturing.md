@@ -56,11 +56,11 @@ This isn't a lending product. It's trade finance infrastructure. The distinction
 
 ## The Real Insight
 
-The founder of this business doesn't just understand this problem intellectually. He lives it.
-He co-runs a foam manufacturing business — Harmony Foam — with his brother Richard. He has sat at that desk with confirmed orders and insufficient materials. He knows the specific raw materials, the specific supplier relationships, the specific cash flow cycles of his sector. He knows which suppliers might extend informal credit and which ones absolutely won't. He knows the gap between when manufacturers receive purchase orders and when customers actually pay.
+I don't just understand this problem intellectually. I live it.
+I co-run a foam manufacturing business — Harmony Foam — with my brother Richard. I have sat at that desk with confirmed orders and insufficient materials. I know the specific raw materials, the specific supplier relationships, the specific cash flow cycles of my sector. I know which suppliers might extend informal credit and which ones absolutely won't. I know the gap between when manufacturers receive purchase orders and when customers actually pay.
 This matters for a reason that goes beyond competitive advantage.
 Most fintech founders who enter the SME lending space are outsiders designing solutions for a world they don't live in. They model the problem from data. They interview customers. They build a product and discover six months into deployment that their underwriting model missed something fundamental about how cash actually moves in manufacturing supply chains — a seasonal pattern, an industry norm, a relationship dynamic that doesn't show up in bank statements.
-The founder here isn't modeling from the outside. He's designing from the inside.
+I'm not modeling from the outside. I'm designing from the inside.
 And the specific insight this gives him is this: the problem isn't just that manufacturers can't get financing. It's that suppliers can't safely give credit.
 If you fix only the manufacturer side — give manufacturers capital to buy materials — you've created a loan product. Useful. But generic. Replicable.
 If you fix both sides simultaneously — guarantee suppliers immediate payment while giving manufacturers time to pay — you've created something different. You've made the entire transaction work for everyone. Suppliers can safely increase their volume. Manufacturers can scale their production. The platform earns on the spread between immediate payment and deferred collection.
@@ -126,7 +126,7 @@ And the relationship system is what makes the underwriting system work. In a mar
 
 ### Designing the Underwriting System
 
-Traditional credit scoring is insufficient for this market. Bank statements show cash flows but miss the crucial context: why did this manufacturer's revenue drop in Q3? Seasonal demand? Raw material shortage? A lost customer? Or a fundamental business problem? Only someone with deep sector knowledge can distinguish these — which is exactly the advantage the founder's background provides.
+Traditional credit scoring is insufficient for this market. Bank statements show cash flows but miss the crucial context: why did this manufacturer's revenue drop in Q3? Seasonal demand? Raw material shortage? A lost customer? Or a fundamental business problem? Only someone with deep sector knowledge can distinguish these — which is exactly the advantage my background provides.
 The underwriting framework operates at three levels:
 Transaction verification — Is the specific purchase order real? Does the supplier confirm the order? Is the raw material request consistent with the manufacturer's production capacity? This isn't credit scoring. It's transaction-specific verification. ₦5M of polyols for a foam manufacturer who produces ₦20M monthly is a logical transaction. ₦50M of polyols for the same manufacturer is a red flag requiring explanation.
 Manufacturer assessment — Six to eight data points that together paint a credit picture: bank statements (cash flow patterns, not just balances), customer order history (concentration, tenure, payment behavior), production capacity verification (site visit or photograph-based), supplier relationship tenure, repayment history with any existing creditors, and owner character assessment (relationship-based, weighted heavily in early transactions). The model is built to improve over time — the first ten transactions teach the platform something the eleventh transaction benefits from.
@@ -144,7 +144,7 @@ WhatsApp as the interface layer is not a compromise — it's a deliberate design
 ### Designing the Relationship System
 
 This is the system that most fintech companies underinvest in because it doesn't scale the way software scales. But in a market where trust is the scarcest resource, the relationship system is what makes everything else function.
-On the manufacturer side: The first ten manufacturers come from the founder's existing network. Not because this is the only acquisition channel, but because starting with known relationships allows the underwriting model to calibrate against known realities before it needs to generalize. These first manufacturers are also the reference customers — the proof points that every subsequent manufacturer encounter references. "Talk to Richard at Harmony Foam. He's been using Flowcap for six months."
+On the manufacturer side: The first ten manufacturers come from my existing network. Not because this is the only acquisition channel, but because starting with known relationships allows the underwriting model to calibrate against known realities before it needs to generalize. These first manufacturers are also the reference customers — the proof points that every subsequent manufacturer encounter references. "Talk to Richard at Harmony Foam. He's been using Flowcap for six months."
 On the supplier side: Supplier relationships are more important than manufacturer relationships in the early phase. A signed relationship with three major polyol suppliers, two major textile raw material importers, and two major food ingredient distributors provides the supplier network that makes the platform useful before manufacturer volume is high enough to generate organic supplier interest. These aren't just payment recipients — they're distribution partners who refer manufacturers who come to them looking for credit they can't extend.
 The flywheel: Every manufacturer onboarded increases the volume Flowcap routes through its supplier partners. Higher volume enables better volume discount negotiations. Better supplier pricing either increases Flowcap's margin or gets shared with manufacturers as a competitive advantage over doing the transaction themselves. The network becomes more valuable with every participant — a compounding effect that is very difficult for a new entrant to replicate after critical mass is achieved.
 
@@ -166,7 +166,7 @@ The repayment behavior matches the model: do manufacturers actually repay in 60-
 
 ### Pilot Design
 
-The first cohort: Five to ten foam manufacturers, all from the founder's existing network, all with known production histories, all with established supplier relationships. This isn't the addressable market — this is a controlled environment for model validation.
+The first cohort: Five to ten foam manufacturers, all from my existing network, all with known production histories, all with established supplier relationships. This isn't the addressable market — this is a controlled environment for model validation.
 The capital deployment: ₦10-20 million initial capital. Small enough to survive a complete loss if the model is fundamentally wrong. Large enough to run enough transactions to generate statistically meaningful repayment data.
 The measurement framework:
 Output goals: Transactions completed. Suppliers paid on time. Materials delivered. No fraudulent transactions in the first cohort.
