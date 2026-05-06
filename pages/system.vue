@@ -52,7 +52,7 @@
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>This is where we get clear on the real problem — not what you think it is, but what it actually is. And more importantly, what "good" looks like for the people your system serves.</p>
+          <p>Most fixes fail because they're solving the wrong problem. Before anything is designed or built, we need to see the system as it actually is — how it operates, who it serves, and where it truly breaks down. Skipping this step is why most systems stay broken. This phase is about getting that picture right.</p>
 
           <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">What We'll Do Together</h3>
@@ -265,7 +265,7 @@
         </div>
 
         <div class="space-y-8 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
-          <p>This is where we stop theorizing and start testing in the real world.</p>
+          <p>Three phases of diagnosis, design, and planning have all built toward this moment. Now we put it in front of real users, in real conditions, and find out if it actually works. This is where theory meets reality — and where we collect the evidence to prove it.</p>
 
           <div class="space-y-4">
             <div class="flex gap-4">
