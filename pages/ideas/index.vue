@@ -81,23 +81,23 @@ export default {
 	},
 	head() {
 		return {
-			title: 'Open Problems — Henry Ikoh',
+			title: 'Ideas & Problem Breakdowns — Henry Ikoh',
 			meta: [
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh. Problems that have a real solution if approached the right way.',
+					content: "Henry Ikoh's ideas library — system designs, thought experiments, and problem breakdowns. Real problems, approached the right way.",
 				},
 				{ hid: 'og:type', property: 'og:type', content: 'website' },
 				{
 					hid: 'og:title',
 					property: 'og:title',
-					content: 'Open Problems — Henry Ikoh',
+					content: 'Ideas & Problem Breakdowns — Henry Ikoh',
 				},
 				{
 					hid: 'og:description',
 					property: 'og:description',
-					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh. Problems that have a real solution if approached the right way.',
+					content: "Henry Ikoh's ideas library — system designs, thought experiments, and problem breakdowns. Real problems, approached the right way.",
 				},
 				{
 					hid: 'og:url',
@@ -117,12 +117,12 @@ export default {
 				{
 					hid: 'twitter:title',
 					name: 'twitter:title',
-					content: 'Open Problems — Henry Ikoh',
+					content: 'Ideas & Problem Breakdowns — Henry Ikoh',
 				},
 				{
 					hid: 'twitter:description',
 					name: 'twitter:description',
-					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh.',
+					content: "Henry Ikoh's ideas library — system designs, thought experiments, and problem breakdowns.",
 				},
 				{
 					hid: 'twitter:image',
@@ -140,8 +140,8 @@ export default {
 					innerHTML: JSON.stringify({
 						'@context': 'https://schema.org',
 						'@type': 'CollectionPage',
-						name: 'Open Problems — Henry Ikoh',
-						description: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh.',
+						name: 'Ideas & Problem Breakdowns — Henry Ikoh',
+						description: "Henry Ikoh's ideas library — system designs, thought experiments, and problem breakdowns.",
 						url: 'https://www.henryikoh.com/ideas',
 						author: {
 							'@type': 'Person',
