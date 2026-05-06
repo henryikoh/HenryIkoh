@@ -21,7 +21,7 @@
           After ten years as a designer, product manager, engineer, and founder — working with startups, venture studios, and social impact organizations — one pattern kept showing up: people skip the foundation. They skip the diagnosis. They go straight to building before they understand what's actually broken or what success even looks like.
         </p>
         <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
-          The Zero Point System is the framework I built in response. Zero Point means going all the way back — before the assumptions, before the solutions — to see the system as it actually is. From that ground state, we can build better systems: the right thing, the right way, with real proof that it worked.
+          The Zero Point System is the framework I built in response. Zero Point means going all the way back — before the assumptions, before the solutions — to see the system as it actually is. It is a framework for building better systems.
         </p>
       </div>
 
