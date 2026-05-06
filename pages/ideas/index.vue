@@ -41,7 +41,7 @@
 								<p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Idea</p>
 								<p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{{ idea.idea }}</p>
 							</div>
-							<div class="grid grid-cols-2 gap-3 pt-1">
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
 								<div v-if="idea.market" class="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
 									<p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Market</p>
 									<p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{{ idea.market }}</p>
