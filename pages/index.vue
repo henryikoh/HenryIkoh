@@ -79,6 +79,7 @@ export default {
                             'https://medium.com/@henryikoh',
                             'https://www.youtube.com/@HenryIkoh',
                             'https://henryikoh.substack.com/',
+                            'https://thinksenpai.com',
                         ],
                     }),
                 },

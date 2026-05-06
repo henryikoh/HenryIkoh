@@ -86,8 +86,9 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Thought experiments, system designs, and problem breakdowns. Problems that have a real solution if approached the right way.',
+					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh. Problems that have a real solution if approached the right way.',
 				},
+				{ hid: 'og:type', property: 'og:type', content: 'website' },
 				{
 					hid: 'og:title',
 					property: 'og:title',
@@ -96,12 +97,22 @@ export default {
 				{
 					hid: 'og:description',
 					property: 'og:description',
-					content: 'Thought experiments, system designs, and problem breakdowns. Problems that have a real solution if approached the right way.',
+					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh. Problems that have a real solution if approached the right way.',
 				},
 				{
 					hid: 'og:url',
 					property: 'og:url',
 					content: 'https://www.henryikoh.com/ideas',
+				},
+				{
+					hid: 'og:image',
+					property: 'og:image',
+					content: 'https://www.henryikoh.com/meta.png',
+				},
+				{
+					hid: 'twitter:card',
+					name: 'twitter:card',
+					content: 'summary_large_image',
 				},
 				{
 					hid: 'twitter:title',
@@ -111,12 +122,43 @@ export default {
 				{
 					hid: 'twitter:description',
 					name: 'twitter:description',
-					content: 'Thought experiments, system designs, and problem breakdowns.',
+					content: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh.',
+				},
+				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: 'https://www.henryikoh.com/meta.png',
 				},
 			],
 			link: [
 				{ rel: 'canonical', href: 'https://www.henryikoh.com/ideas' },
 			],
+			script: [
+				{
+					hid: 'ldjson-ideas',
+					type: 'application/ld+json',
+					innerHTML: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'CollectionPage',
+						name: 'Open Problems — Henry Ikoh',
+						description: 'Thought experiments, system designs, and problem breakdowns by Henry Ikoh.',
+						url: 'https://www.henryikoh.com/ideas',
+						author: {
+							'@type': 'Person',
+							name: 'Henry Ikoh',
+							url: 'https://www.henryikoh.com/',
+						},
+						breadcrumb: {
+							'@type': 'BreadcrumbList',
+							itemListElement: [
+								{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.henryikoh.com/' },
+								{ '@type': 'ListItem', position: 2, name: 'Ideas', item: 'https://www.henryikoh.com/ideas' },
+							],
+						},
+					}),
+				},
+			],
+			__dangerouslyDisableSanitizers: ['script'],
 		}
 	},
 	methods: {

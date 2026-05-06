@@ -15,7 +15,7 @@
           The <span style="color: #00ff9f;">Zero</span> Point System
         </h1>
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light mb-6 max-w-3xl italic">
-          Strategic Systems Architecture for Operations That Scale and Impact That Lasts
+          A framework for building better systems
         </p>
         <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed mb-4">
           After ten years as a designer, product manager, engineer, and founder — working with startups, venture studios, and social impact organizations — one pattern kept showing up: people skip the foundation. They skip the diagnosis. They go straight to building before they understand what's actually broken or what success even looks like.
