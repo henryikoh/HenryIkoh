@@ -10,10 +10,10 @@
 					<span class="block mt-3 md:mt-4">People. Systems. Futures.</span>
 				</h2>
 				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
-					I partner with founders, leaders, and organizations to diagnose broken systems and build what their next stage actually requires — apps, workflows, and infrastructure — using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The <span style="color: #00ff9f;">Zero</span> Point System</nuxt-link>.
+					I partner with founders, leaders, and organizations to diagnose broken systems and engineer the infrastructure their next stage actually requires, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The <span style="color: #00ff9f;">Zero</span> Point System</nuxt-link>.
 				</p>
 				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
-					The people who change the world aren't smarter than anyone else. They just learned to see broken systems — and had the courage to build new ones.
+					You can already see the next version of what you're building. The question isn't whether to build it — it's whether the system underneath can actually carry it there.
 				</p>
 
 				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7">
