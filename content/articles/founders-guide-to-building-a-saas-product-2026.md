@@ -231,29 +231,47 @@ Before committing to development, test whether people actually want what you're 
 
 ## Defining Your Pricing Strategy
 
-Pricing is often the last thing founders think about and one of the first things that kills a business. Your price signals value. Get it wrong and you either undercharge (leaving money on the table and attracting the wrong customers) or overcharge (killing conversion).
+Pricing is often the last thing founders think about and one of the first things that kills a business. Your price doesn't just determine revenue — it signals who your product is for, what category it competes in, and how seriously people will take it. Get it wrong in either direction and you pay for it.
 
 ### Common SaaS Pricing Models
 
-**Subscription:** Recurring monthly or annual fee. Predictable revenue, but requires continuously delivering value to justify renewal.
+**Subscription:** Recurring monthly or annual fee. The most common SaaS model. Predictable revenue for you, predictable cost for the customer. The risk: if customers don't feel continued value, they churn. You have to earn the renewal every period.
 
-**Per-user:** Charge based on number of seats. Scales with customer growth, straightforward to understand.
+**Per-user:** Charge based on the number of seats. Scales naturally with your customer's growth, and is easy for buyers to understand and justify internally. The risk: large teams may resist adoption if the cumulative cost feels high.
 
-**Tiered:** Multiple plans at different price points. Allows you to capture different segments and upsell over time.
+**Tiered:** Multiple plans at different price points, each with a different feature set or usage limit. Lets you capture different customer segments and create a natural upsell path. The risk: too many tiers creates decision paralysis. Three is usually the right number — Basic, Professional, Enterprise.
 
-**Pay-as-you-go:** Charge based on usage. Lowers the barrier to entry but makes revenue harder to predict.
+**Pay-as-you-go:** Charge based on usage (API calls, messages sent, documents processed). Lowers the barrier to entry and aligns cost with value. The risk: revenue is unpredictable and customers with variable usage are harder to retain.
 
-### How to Set Your Pricing
+**Freemium:** Offer a permanently free tier to drive adoption, monetise the users who need more. Works well when your product has viral or network effects — the free users become part of the product's value (Slack, Figma, Notion). The risk: if your free tier is good enough, nobody upgrades. Use freemium intentionally, not as a default because you're afraid to charge.
 
-1. **Understand your costs** — development, infrastructure, support, marketing
-2. **Analyse what competitors charge** — not to copy them, but to understand market expectations
-3. **Understand what customers value most** — use your interview data here
-4. **Start somewhere and test it** — pricing is not permanent; iterate based on real data
+### Monthly vs Annual Billing
+
+Always offer both. Annual billing improves your cash flow, reduces churn, and gives you a cleaner picture of committed revenue. The standard discount for paying annually is 15–20%. Many B2B buyers prefer annual billing because it simplifies their budgeting — so not offering it is leaving money on the table.
+
+### How to Set Your Price
+
+**1. Understand what the problem costs your customer.** If the problem you're solving costs a business $50,000 a year in wasted time, a $200/month tool is an easy decision. Price relative to the value you create, not the cost of building it.
+
+**2. Talk to your customers about willingness to pay — before you set a price.** Ask directly in interviews: "If this existed today, what would you expect to pay for it?" Then ask: "At what price would it feel too cheap to trust? At what price would it be too expensive to try?" This gives you a range to work within.
+
+**3. Look at what competitors charge — then decide where to position.** You don't have to match competitor pricing, but you need to understand market expectations. Charging significantly more requires a clear reason why. Charging less works as a penetration strategy early on, but makes it harder to raise prices later.
+
+**4. Charge more than you think.** Most founders underprice. If you launch and nobody complains about the price, you're probably too cheap. The customers who push hardest on price are often not your best customers anyway — they'll churn the moment something cheaper comes along.
+
+**5. Don't start with too many tiers.** Two plans at launch is usually enough. Add a third when you have real data on where customers cluster. Keep it simple until complexity earns its place.
 
 **Example tiered structure for a project management tool:**
-- Basic: $10/user/month — core features
-- Professional: $20/user/month — advanced tracking, integrations
-- Enterprise: custom — dedicated support, custom integrations
+- **Basic:** $10/user/month — core task management and file sharing
+- **Professional:** $20/user/month — advanced reporting, integrations, team collaboration tools
+- **Enterprise:** Custom — dedicated support, custom integrations, SSO, SLA
+
+### Common Pricing Mistakes
+
+- **Pricing based on your costs, not the customer's value.** Your hosting bill is irrelevant. What matters is what the product is worth to the person paying for it.
+- **Offering too many tiers.** Every option you add is a decision your customer has to make. Make it easy to say yes.
+- **Not offering annual billing.** You're leaving predictable revenue on the table.
+- **Being afraid to raise prices.** Your early pricing is an experiment, not a permanent commitment. As the product improves, the price should too.
 
 ---
 
@@ -292,15 +310,20 @@ For the app itself, the main options are:
 - **Flutter** (Dart) — Google's framework. Excellent performance, consistent UI across iOS and Android, and a growing ecosystem. My preferred choice for most mobile products.
 - **React Native** — write once, deploy to both platforms. Larger community, more third-party libraries, but slightly more friction with native features.
 
-### No-Code: A Legitimate Option
+### No-Code and Low-Code: Legitimate Options
 
-Not every MVP needs custom code. If you haven't yet validated that people will pay for your product, no-code tools can get you to that answer significantly faster and cheaper.
+Not every MVP needs custom code. If you haven't yet validated that people will pay for your product, no-code and low-code tools can get you to that answer significantly faster and cheaper.
 
-**For web apps:** Bubble is the most capable no-code platform for complex SaaS products. Webflow is better for content-heavy or marketing-focused tools.
+**No-code** means building without writing any code at all. The platform handles everything visually.
+- **For web apps:** Bubble is the most capable no-code platform for complex SaaS products. Webflow is better for content-heavy or marketing-focused tools.
+- **For mobile apps:** FlutterFlow lets you build real Flutter apps visually, with the option to export the code and hand it to a developer when you're ready to scale.
 
-**For mobile apps:** FlutterFlow lets you build real Flutter apps visually, with the option to export the code and continue in custom development when you're ready to scale.
+**Low-code** tools sit in the middle — you configure and extend rather than write everything from scratch, but you get more flexibility and control than pure no-code.
+- **Supabase** — gives you a hosted Postgres database, authentication, file storage, and real-time features with minimal backend code. Dramatically reduces setup time for early-stage web products.
+- **Retool** — best for internal tools and dashboards. If your product is primarily used by your own team or operations staff, Retool can ship it in days instead of weeks.
+- **Xano** — a no-code backend that pairs well with FlutterFlow or Webflow frontends. Good option when you want a real API without writing server code.
 
-**The tradeoff:** No-code tools are fast to start but hit ceilings. You'll eventually encounter something you can't build, a performance issue you can't fix, or a cost structure that doesn't make sense at scale. The question is whether the validation speed is worth the rebuild cost later — and for most early-stage products, it is.
+**The tradeoff:** No-code and low-code tools are fast to start but hit ceilings. You'll eventually encounter something you can't build, a performance issue you can't fix, or a cost structure that doesn't scale. The question is whether the speed to validation is worth the rebuild cost later — and for most early-stage products, it is.
 
 > For most early-stage founders: validate with no-code, then rebuild with custom code once you know what you're building is worth building.
 
