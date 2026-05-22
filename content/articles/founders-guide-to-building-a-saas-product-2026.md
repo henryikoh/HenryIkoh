@@ -299,7 +299,24 @@ A web app has at most three layers:
 
 If you do need a server, my recommendation is **Go (Golang)**. It's fast, statically typed (which catches errors before they reach production), compiles to a single binary, and handles high load with far less infrastructure than Node.js. For products that need to process data reliably and scale cleanly, it's a better foundation than JavaScript on the server. **Node.js** is a reasonable alternative if your team already knows it well.
 
-**3. The database** — if you have a server, you almost certainly need a database. **PostgreSQL** is the default for most SaaS products. It's relational, battle-tested, and handles most use cases well. **Supabase** gives you a hosted Postgres database with built-in authentication and file storage — significantly reducing setup time for early-stage products.
+**3. The database** — if you have a server, you almost certainly need a database. This is where your product's data lives permanently. The fundamental choice here is between two types: **SQL (relational)** databases and **document (NoSQL)** databases. They work differently, and picking the wrong one for your use case creates problems down the line.
+
+**SQL databases** store data in structured tables with rows and columns, like a spreadsheet — except the tables can relate to each other. A users table, an orders table, a products table: each row in orders can reference a row in users, and the database enforces those relationships. This structure means your data stays consistent and accurate. You can't accidentally create an order that points to a user who doesn't exist. SQL databases also support transactions — if a payment goes through but the order record fails to save, the whole operation rolls back cleanly. Nothing gets left in a broken state.
+
+- **PostgreSQL** — the gold standard. Fast, feature-rich, handles complex queries well, and used by some of the largest products in the world. The default choice for most SaaS products.
+- **MySQL** — similarly mature and widely used. Slightly simpler than Postgres, with a massive community and ecosystem.
+- **Hosted options:** **Supabase** (Postgres), **PlanetScale** (MySQL), and **Neon** (Postgres) all give you a managed SQL database with no infrastructure to run yourself.
+
+**Use SQL when:** your data has clear, stable relationships; you're handling anything financial (payments, invoices, balances); you need strong consistency guarantees; or your schema is well-defined and unlikely to change dramatically.
+
+**Document databases** store data as flexible JSON-like documents rather than fixed table rows. Each document can have a different shape — one user record might have five fields, another might have twenty, and that's fine. There's no rigid schema to define upfront. This makes them faster to start with when your data model is still evolving, and they scale horizontally well when you need to handle very high volumes of reads and writes.
+
+- **MongoDB** — the most widely used document database. Flexible, well-documented, strong ecosystem.
+- **Firebase Firestore** — Google's real-time document database. Data syncs to connected clients instantly, which makes it particularly good for mobile apps or any product where live updates matter (chats, collaborative tools, live dashboards).
+
+**Use a document database when:** your data structure varies significantly across records or is likely to change frequently; you're building something with real-time sync requirements (chats, live feeds); or you're moving fast and want schema flexibility in the early stages.
+
+**The honest trade-off:** Document databases are often faster to start with but can become harder to keep consistent as your product grows. SQL databases require more upfront thinking about your data structure but reward you with reliability and query power as complexity increases. For most SaaS products — especially anything handling user accounts, payments, or structured business data — SQL is the safer long-term choice. If you're unsure, start with PostgreSQL.
 
 ### How a Mobile App Is Built
 
