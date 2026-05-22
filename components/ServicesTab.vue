@@ -117,13 +117,13 @@
                         </div>
                         <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
                             <div class="text-2xl mb-3">🌱</div>
-                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Social Impact Programs</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">You're doing meaningful work but can't prove it to funders. We design the program as a measurable system — clear outcomes, evidence collection, and professional impact reporting built in from day one.</p>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Social Impact & Government Programs</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Good intentions aren't enough — sustainable impact requires the right system behind it. For NGOs, social enterprises, and government initiatives, we design programs that create real, lasting change and can demonstrate it clearly.</p>
                         </div>
                         <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
                             <div class="text-2xl mb-3">⚡</div>
-                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Personal Productivity Systems</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">You're capable but scattered. We audit how you actually work, cut the friction, and build a personal operating system — tools, routines, and decision frameworks — designed around the way your mind works.</p>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Executive Operating Systems</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">For high-performers and senior professionals who operate at a level where scattered systems cost real opportunities. We build a personal infrastructure — decision frameworks, workflows, and prioritization systems — that functions like a world-class executive assistant, systematized.</p>
                         </div>
                     </div>
                 </div>
