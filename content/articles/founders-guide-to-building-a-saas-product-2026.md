@@ -299,7 +299,24 @@ A web app has at most three layers:
 
 If you do need a server, my recommendation is **Go (Golang)**. It's fast, statically typed (which catches errors before they reach production), compiles to a single binary, and handles high load with far less infrastructure than Node.js. For products that need to process data reliably and scale cleanly, it's a better foundation than JavaScript on the server. **Node.js** is a reasonable alternative if your team already knows it well.
 
-**3. The database** — if you have a server, you almost certainly need a database. **PostgreSQL** is the default for most SaaS products. It's relational, battle-tested, and handles most use cases well. **Supabase** gives you a hosted Postgres database with built-in authentication and file storage — significantly reducing setup time for early-stage products.
+**3. The database** — if you have a server, you almost certainly need a database. This is where your product's data lives permanently. The fundamental choice here is between two types: **SQL (relational)** databases and **document (NoSQL)** databases. They work differently, and picking the wrong one for your use case creates problems down the line.
+
+**SQL databases** store data in structured tables with rows and columns, like a spreadsheet — except the tables can relate to each other. A users table, an orders table, a products table: each row in orders can reference a row in users, and the database enforces those relationships. This structure means your data stays consistent and accurate. You can't accidentally create an order that points to a user who doesn't exist. SQL databases also support transactions — if a payment goes through but the order record fails to save, the whole operation rolls back cleanly. Nothing gets left in a broken state.
+
+- **PostgreSQL** — the gold standard. Fast, feature-rich, handles complex queries well, and used by some of the largest products in the world. The default choice for most SaaS products.
+- **MySQL** — similarly mature and widely used. Slightly simpler than Postgres, with a massive community and ecosystem.
+- **Hosted options:** **Supabase** (Postgres), **PlanetScale** (MySQL), and **Neon** (Postgres) all give you a managed SQL database with no infrastructure to run yourself.
+
+**Use SQL when:** your data has clear, stable relationships; you're handling anything financial (payments, invoices, balances); you need strong consistency guarantees; or your schema is well-defined and unlikely to change dramatically.
+
+**Document databases** store data as flexible JSON-like documents rather than fixed table rows. Each document can have a different shape — one user record might have five fields, another might have twenty, and that's fine. There's no rigid schema to define upfront. This makes them faster to start with when your data model is still evolving, and they scale horizontally well when you need to handle very high volumes of reads and writes.
+
+- **MongoDB** — the most widely used document database. Flexible, well-documented, strong ecosystem.
+- **Firebase Firestore** — Google's real-time document database. Data syncs to connected clients instantly, which makes it particularly good for mobile apps or any product where live updates matter (chats, collaborative tools, live dashboards).
+
+**Use a document database when:** your data structure varies significantly across records or is likely to change frequently; you're building something with real-time sync requirements (chats, live feeds); or you're moving fast and want schema flexibility in the early stages.
+
+**The honest trade-off:** Document databases are often faster to start with but can become harder to keep consistent as your product grows. SQL databases require more upfront thinking about your data structure but reward you with reliability and query power as complexity increases. For most SaaS products — especially anything handling user accounts, payments, or structured business data — SQL is the safer long-term choice. If you're unsure, start with PostgreSQL.
 
 ### How a Mobile App Is Built
 
@@ -343,37 +360,69 @@ If you want a partner who can take your idea from concept to shipped product —
 
 You've done the research. You understand the problem, the market, the customer, and the solution. Now it's time to build — the right way.
 
-An MVP is the smallest version of your product that delivers real value to real users and generates real feedback. It is not a prototype. It's not a demo. It is a working product with deliberately limited scope.
+An MVP is the smallest version of your product that delivers real value to real users and generates real feedback. It is not a prototype, not a demo, and not a stripped-down version of your full vision. It is a working product with deliberately limited scope, designed to answer one question: does this solve the problem well enough that someone will use it and pay for it?
+
+The most common mistake founders make here is building too much. The second most common mistake is building the wrong things. Both come from the same root cause: not being clear enough about what the MVP actually needs to do.
 
 ### Step 1: Identify Core Features
 
-List every feature you could potentially build. Then cut ruthlessly. Your MVP should only include the features that directly address the core problem for your ICP. Everything else is a distraction.
+Start by listing every feature you could possibly build. Don't filter yet — get it all out. Then step back and ask a single question for each item: *does this directly help my ICP solve the core problem I identified?* If the answer is anything other than a clear yes, it doesn't belong in the MVP.
 
-> Ask yourself: "Can a user solve their problem without this feature?" If yes, cut it.
+A useful framework is **MoSCoW prioritisation**: sort every feature into Must Have, Should Have, Could Have, and Won't Have. Your MVP scope is your Must Have list only. Everything else is a distraction until you have users and revenue.
+
+The pressure to add features is constant — from advisors, from early users, from your own imagination. Resist it. Scope creep is how MVPs take twelve months instead of six, run out of budget, and launch to an audience that has moved on. The discipline to say no is a product skill.
+
+> Ask yourself: "Can a user solve their core problem without this feature?" If yes, cut it.
 
 ### Step 2: Map the User Flow
 
-Before writing a line of code, map out the journey a user will take through your product from start to finish. This surfaces friction points early when they're cheap to fix.
+Before a line of code is written, map the complete journey a user will take through your product — from the moment they land on it for the first time to the moment they experience the value it promises. This is called the user flow, and getting it wrong is expensive.
 
-Keep it simple. Add complexity later based on what users actually need.
+The most important concept here is **time to value**: how quickly does a new user get from signup to the moment where the product is actually useful to them? Every step between signup and value is an opportunity to lose them. A good MVP flow is ruthlessly short.
 
-### Step 3: Build a Prototype First
+Draw it out — pen and paper, Figma, or a whiteboard tool like FigJam or Miro. Map the happy path first: the sequence of steps a user takes when everything goes right. Then identify the three or four places where things could go wrong and decide how to handle each. You don't need to design every edge case, but you need to know where they are.
 
-Before development, create a clickable prototype (Figma works well) that demonstrates the core functionality. Show it to potential users. Get their reactions before committing engineering resources.
+### Step 3: Build a Prototype Before You Build
 
-This step alone can save months of wasted development.
+Before any development begins, build a clickable prototype that simulates the core user flow. Figma is the standard tool for this. The prototype doesn't need to be beautiful — it needs to be navigable. A user should be able to click through it and experience the journey without anyone explaining it to them.
+
+Then put it in front of five to ten people from your target audience. Don't walk them through it — watch them use it. Where do they hesitate? Where do they click in the wrong place? Where do they get confused? What do they say when they reach the end?
+
+This step consistently surfaces major design problems before a single line of code exists, when fixing them is free. It is not optional. Founders who skip it routinely spend months building flows that users can't navigate.
+
+What you're testing here is the logic of the experience, not the aesthetics. Ignore feedback about colours and fonts. Pay close attention to anything that affects whether a user can complete the core task.
 
 ### Step 4: Build the MVP
 
-Now build. Keep the scope locked to what you defined. Use agile sprints and test continuously throughout. Involve real users early — not after it's "done."
+Now build. Your job during this phase is to protect the scope you defined in Step 1. Every feature request, every "what if we also added..." should be logged for later and kept out of the current build.
+
+Work in short cycles — one to two week sprints — where each cycle ends with something testable. Don't build for months and then test all at once. Test continuously, fix problems early, and keep your early users in the loop throughout. They should feel like they're building it with you.
+
+**Shipping criteria:** know in advance what "done" means for your MVP. Define the exact conditions under which you will launch — not "when it feels ready," because it will never feel ready. A specific list: these five user flows work end-to-end, data saves correctly, payments process without errors. When those conditions are met, you ship.
 
 ### Step 5: Launch to Early Adopters
 
-Release to a small, specific group — ideally your ICP. Set up clear channels for feedback: short surveys, quick calls, in-app prompts. Make it easy for them to tell you what's working and what isn't.
+Your first launch is not a public launch. It's a controlled release to a small, specific group — ideally the people you interviewed during discovery, plus others who fit your ICP closely. Aim for twenty to fifty users, not thousands.
 
-### Step 6: Iterate
+Your early adopters are not just users — they're your research partners. Set up clear, low-friction feedback channels from day one: a short weekly survey, a group chat, a standing call every two weeks. Make it easy for them to tell you what's working, what isn't, and what they wish existed.
 
-Ship → measure → learn → improve. This loop is the product. Your MVP is not the end point — it's the starting point for building something that actually works at scale.
+What to watch closely in these early weeks:
+- **Activation:** do users actually complete the core flow after signing up, or do they drop off?
+- **Retention:** do they come back? A product that gets used once and abandoned is not yet solving the problem well enough.
+- **Engagement:** which features are used most? Which are ignored?
+- **Qualitative signals:** what exact words do users use when describing the product to others?
+
+Retention is the most honest signal you have. If people aren't coming back, the product isn't yet doing what it needs to do — and no amount of marketing will fix that.
+
+### Step 6: Iterate With Intention
+
+The build-measure-learn loop is the engine of product development. But iteration without direction is just spinning. Each cycle should be answering a specific question, not just "making things better."
+
+After each round of feedback, identify the single most important thing to fix or improve — the change most likely to move your key metric. Build it, ship it, measure whether it worked, and repeat. Resist the urge to tackle ten things at once. Focus compounds faster than breadth.
+
+**When to persist, when to pivot:** if users love the concept but find the execution frustrating, keep iterating on the execution. If users don't find the concept compelling at all — if they wouldn't miss it if it disappeared — that's a signal about the problem definition or the market, not just the product. Go back to your customer interviews and listen again.
+
+Your MVP is not the destination. It's the first real answer to the question you've been building toward since the beginning of this guide. Every iteration makes that answer sharper.
 
 > **💬 Ready to build but not sure where to start?** If you have a validated idea and want a technical partner to help you scope, build, and ship your MVP — [let's talk](/contact).
 
