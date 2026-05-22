@@ -133,25 +133,25 @@
                     <h3 class="text-2xl font-bold dark:text-white mb-6">Service Tiers</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-                            <h4 class="font-bold text-gray-900 dark:text-white mb-1">Systems Optimization</h4>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Phases 1-4 | For founders & organizations</p>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">Focus on efficiency, cost reduction, and scalability. Best for startups building from scratch and organizations fixing broken operations.</p>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-1">Build</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">For founders and individuals creating from scratch</p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">You have a vision for something that doesn't exist yet — a product, a program, or a personal operating system. We design and build it end-to-end.</p>
                             <ul class="text-gray-600 dark:text-gray-400 text-xs space-y-1">
-                                <li>• System Discovery Report</li>
-                                <li>• Architecture Blueprint</li>
-                                <li>• Solution Design Document</li>
-                                <li>• Pilot Results + ROI Proof</li>
+                                <li>• A working system designed and shipped</li>
+                                <li>• Clear evidence it solves the right problem</li>
+                                <li>• Infrastructure that scales with you</li>
+                                <li>• Full ownership — no dependency on me to run it</li>
                             </ul>
                         </div>
                         <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-                            <h4 class="font-bold text-gray-900 dark:text-white mb-1">Systems + Impact 🌱</h4>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Phases 1-5 | For social impact clients</p>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">Everything in Systems Optimization plus impact reporting — outcome evidence and professional documentation for funders and stakeholders.</p>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-1">Transform</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">For organizations and leaders redesigning what exists</p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">Something is already running but it's broken, slow, or not built for where you're going. We diagnose the real problem and redesign from first principles.</p>
                             <ul class="text-gray-600 dark:text-gray-400 text-xs space-y-1">
-                                <li>• Everything in Systems Optimization</li>
-                                <li>• Impact Measurement Framework</li>
-                                <li>• Professional Impact Report</li>
-                                <li>• Evidence-based storytelling for funders</li>
+                                <li>• Root causes identified, not just symptoms patched</li>
+                                <li>• Measurable improvement in efficiency or impact</li>
+                                <li>• Team equipped to operate the new system</li>
+                                <li>• Before/after evidence of what changed and why</li>
                             </ul>
                         </div>
                     </div>
