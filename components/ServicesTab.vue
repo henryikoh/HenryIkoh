@@ -100,6 +100,34 @@
                     </li>
                 </ul>
 
+                <!-- Practical Examples -->
+                <div class="mt-14">
+                    <h3 class="text-2xl font-bold dark:text-white mb-3">What this looks like in practice</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-base mb-8 max-w-2xl">The same four-phase process produces very different things depending on the problem. Here are a few examples of what we might build together.</p>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                            <div class="text-2xl mb-3">📱</div>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Idea → App Store</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">You have a product idea. We design the system around it — user flows, data architecture, core features — then build and ship it. End-to-end: from concept to a working app in users' hands.</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                            <div class="text-2xl mb-3">🏗️</div>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Codebase & Company Structure Audit</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Your technical debt and org design are slowing you down. We map both — code architecture and team structure — identify the real bottlenecks, and redesign for the next stage of growth.</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                            <div class="text-2xl mb-3">🌱</div>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Social Impact Programs</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">You're doing meaningful work but can't prove it to funders. We design the program as a measurable system — clear outcomes, evidence collection, and professional impact reporting built in from day one.</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                            <div class="text-2xl mb-3">⚡</div>
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Personal Productivity Systems</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">You're capable but scattered. We audit how you actually work, cut the friction, and build a personal operating system — tools, routines, and decision frameworks — designed around the way your mind works.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Service Tiers -->
                 <div class="mt-12">
                     <h3 class="text-2xl font-bold dark:text-white mb-6">Service Tiers</h3>
