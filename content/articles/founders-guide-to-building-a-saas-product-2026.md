@@ -237,6 +237,88 @@ Pricing is often the last thing founders think about and one of the first things
 
 ---
 
+## Choosing Your Technology Stack
+
+One of the most consequential decisions you'll make as a founder is what to build with. Get this wrong and you end up with a product that's expensive to maintain, hard to scale, or that takes six months to ship when it should take six weeks.
+
+The first question is not which framework to use — it's how much custom code you actually need.
+
+### No-Code, Low-Code, or Custom Code?
+
+**No-code tools** (Bubble, Webflow, Glide, Softr) let you build functional products without writing any code. They're fast, cheap, and enough to validate most ideas. If you haven't talked to a single paying customer yet, a no-code MVP is often the right call.
+
+**Low-code tools** (Retool, Supabase, Xano) sit in the middle — you configure rather than code, but you get more flexibility and control than pure no-code.
+
+**Custom code** gives you full control over every part of the product. It's the right choice when your product's core value is something no-code can't replicate, when you need specific performance, or when you've already validated demand and are building for scale.
+
+> For most early-stage founders: validate with no-code, then rebuild with custom code once you know what you're building is worth building.
+
+### Frontend: What Users Actually See
+
+The frontend is everything the user interacts with — screens, flows, interactions.
+
+**For web apps:**
+- **Next.js** (React) — the most widely adopted choice in 2026. Strong ecosystem, excellent performance, great for SEO. Best default for most SaaS products.
+- **Nuxt.js** (Vue) — similar capabilities, slightly gentler learning curve. Strong choice if your team prefers Vue.
+- **SvelteKit** — faster and leaner, gaining serious traction. Worth considering for performance-sensitive products.
+
+**For mobile apps:**
+- **React Native** — write once, deploy to iOS and Android. Large community, battle-tested at scale.
+- **Flutter** (Dart) — Google's framework. Excellent performance and UI consistency across platforms. Growing fast.
+- **Expo** — sits on top of React Native, significantly reduces setup friction for early-stage products.
+
+### Backend: Where the Logic Lives
+
+The backend handles your business logic, data processing, and everything that happens behind the scenes.
+
+- **Node.js** with **Express** or **Fastify** — lightweight, fast, shares a language with most frontend stacks. Good default for most SaaS products.
+- **Python** with **FastAPI** or **Django** — excellent if your product involves AI, data processing, or machine learning. Django gives you a lot out of the box.
+- **Supabase** — open-source Firebase alternative. Gives you a Postgres database, authentication, file storage, and real-time subscriptions with minimal backend code. Dramatically reduces time to ship for most MVPs.
+
+### Database: Where Your Data Lives
+
+- **PostgreSQL** — the default choice for most SaaS products. Relational, battle-tested, and highly capable. Supabase runs on Postgres.
+- **MongoDB** — document-based, flexible schema. Useful when your data structure is likely to change frequently early on.
+- **PlanetScale** or **Neon** — hosted serverless Postgres options that scale automatically. Good if you want to avoid managing your own database infrastructure.
+
+### Infrastructure and Hosting
+
+- **Vercel** — the easiest way to deploy Next.js apps. Handles scaling automatically. Good default for most web products.
+- **Railway** or **Render** — simple, developer-friendly platforms for deploying backends and full-stack apps without complex DevOps.
+- **AWS / GCP / Azure** — more control, more complexity. Usually overkill at the MVP stage unless you have specific compliance or infrastructure requirements.
+
+### Key Tools You'll Almost Certainly Need
+
+**Authentication** (login, sessions, permissions):
+- **Clerk** — the fastest way to add auth in 2026. Handles sign-up, sign-in, multi-factor, and user management out of the box.
+- **Auth0** — more flexible, better for complex enterprise auth requirements.
+- **Supabase Auth** — good if you're already using Supabase.
+
+**Payments:**
+- **Stripe** — the standard. Handles one-time payments, subscriptions, invoicing, and more. Well-documented and reliable.
+
+**Email:**
+- **Resend** — clean API, built for developers, easy to integrate.
+- **SendGrid** — more established, good for transactional and marketing email at scale.
+
+**Analytics:**
+- **PostHog** — open-source product analytics. Tracks user behaviour, funnels, feature flags, and session recordings in one place.
+- **Mixpanel** — event-based analytics, strong for SaaS products that need to understand how users move through the product.
+
+### How to Think About Stack Decisions
+
+A few principles that will save you time and money:
+
+**1. Boring is better at the MVP stage.** Pick widely-used technologies with large communities and good documentation. When you hit a problem at 2am, you want Stack Overflow to have the answer.
+
+**2. Don't optimise for scale you don't have yet.** The architecture that handles 10 million users is not the right architecture for the first 100. Build for now, refactor when the problem is real.
+
+**3. Your stack should match your team.** The best stack is the one your developers already know. Switching to a new technology to solve a problem is rarely worth the learning cost at the early stage.
+
+**4. Minimise the number of moving parts.** Every service you add is another thing that can fail. Start with as few as possible and add only when you have a clear reason.
+
+---
+
 ## Defining Your MVP
 
 You've done the research. You understand the problem, the market, the customer, and the solution. Now it's time to build — the right way.
