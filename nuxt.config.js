@@ -141,7 +141,7 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-vs.css',
+        theme: 'prism-themes/themes/prism-one-dark.css',
       },
     },
   },
