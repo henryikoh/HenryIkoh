@@ -1,6 +1,6 @@
 ---
 title: "How to Build an AI-Powered App in 2026"
-description: A practical guide for founders and developers who want to go beyond the ChatGPT wrapper — covering how AI actually works at the API level, how to build with it properly, and the tool use, agents, and architecture patterns that make AI apps genuinely useful.
+description: A practical guide for founders and developers who want to go beyond the ChatGPT wrapper — covering how AI actually works at the API level, the full model landscape (text, image generation, open source), and the tool use, agents, and architecture patterns that make AI apps genuinely useful.
 cover: /computer.jpeg
 alt: Developer building an AI-powered application
 tag: ['AI', 'Founders']
@@ -11,7 +11,7 @@ Everyone wants to build an AI-powered app right now. Very few people understand 
 
 There's a wide gap between pasting an API key into a tutorial and understanding how to build AI features that work reliably in production — features that use real data, respond correctly under different conditions, and don't fall apart when the input doesn't match what you tested. Closing that gap is what this guide is for.
 
-What follows is a ground-up explanation of how AI works at the API level, how to build basic and advanced functionality on top of it, and the patterns — tool use, evaluations, agents — that separate AI features that genuinely work from ones that just look like they work in a demo.
+What follows is a ground-up explanation of how AI works at the API level, a map of what's actually out there — text models, image generation, open source alternatives — and the patterns that separate AI features that genuinely work from ones that just look like they work in a demo.
 
 ---
 
@@ -36,6 +36,105 @@ Embeddings are the foundation of semantic search, recommendation systems, and re
 When you call the API, you're sending a context window — a sequence of messages — and the model generates a response by predicting, token by token, what should come next given everything it's been shown. It's a probabilistic process, not a lookup. The model doesn't retrieve answers from a database; it generates them based on patterns learned during training, conditioned on your specific input.
 
 This is why the same prompt can produce different outputs on different runs. It's also why context management matters: the model can only work with what's in the window you send it, which means that what you include — and how you frame it — directly shapes what you get back.
+
+---
+
+## The Model Landscape: Text, Images, and Open Source
+
+The concepts in this guide — system prompts, tool use, temperature, evaluations — apply across all the major AI APIs. But before getting into how to build, it's worth knowing what's actually available and what each type of model is designed to do. The AI ecosystem in 2026 has three distinct categories, and most real products end up using at least two of them.
+
+**Text and language model APIs**
+
+This is the category most founders reach for first. Send text in, get text back. The major providers:
+
+- **Claude (Anthropic)** — strong reasoning, long-context tasks, and instruction-following. The largest models support context windows up to 200k tokens, meaning you can feed an entire document or codebase into a single request. The examples in this guide use Claude, but the patterns work everywhere.
+- **GPT-4o (OpenAI)** — the model most developers learn on first, with an extensive ecosystem of documentation and community resources. Broad capability across nearly every task category.
+- **Gemini (Google DeepMind)** — competitive performance across most benchmarks, with Gemini 1.5 Pro supporting a 1 million token context window for very large document analysis tasks. Tightly integrated with Google's infrastructure.
+
+The good news: the API structure across all three is nearly identical. Messages in, completion out, system prompt, temperature — these concepts transfer directly. The main differences are in pricing, context window size, and which specific tasks each model performs best on. Learning one gets you most of the way to using the others.
+
+**Multimodal: sending images to language models**
+
+All the major text models now accept images alongside text. You include an image in the messages array — either as a URL or base64-encoded data — and the model reads and reasons about what it sees alongside your text instructions.
+
+```python
+message = client.messages.create(
+    model="claude-opus-4-7",
+    max_tokens=1024,
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image",
+                    "source": {"type": "url", "url": "https://example.com/receipt.jpg"}
+                },
+                {
+                    "type": "text",
+                    "text": "Extract all line items, quantities, and totals from this receipt as JSON."
+                }
+            ]
+        }
+    ]
+)
+```
+
+Real use cases for this in products: extracting structured data from uploaded invoices and receipts, reading scanned contracts or forms, analysing screenshots to give design or UX feedback, verifying that user-uploaded images meet requirements, and processing any document that arrives as a photo rather than structured text.
+
+Gemini has particularly strong document understanding capabilities. GPT-4o handles a wide range of visual tasks. Claude handles vision through the same API pattern shown above. All three work with this same model — image and text together in the messages array.
+
+**Image generation APIs: a different paradigm entirely**
+
+Image generation works nothing like a language model. There's no messages array, no system prompt, no conversation history, no tool use. You send a text prompt describing the image you want, and the API returns an image. The primary inputs are the prompt and a few parameters — size, quality, style.
+
+```python
+# OpenAI DALL-E 3
+from openai import OpenAI
+client = OpenAI()
+
+response = client.images.generate(
+    model="dall-e-3",
+    prompt="A minimal SaaS dashboard showing revenue metrics, dark mode, clean typography, no people",
+    size="1024x1024",
+    quality="hd"
+)
+
+image_url = response.data[0].url
+```
+
+The main image generation APIs founders use in products:
+
+- **DALL-E 3 (OpenAI)** — high quality, strong prompt adherence, accessible through the same OpenAI API key you likely already have. Best for product mockups, marketing visuals, and cases where the output needs to match the prompt closely.
+- **Imagen 3 (Google)** — Google's model, accessible through the Gemini API. Strong photorealism and detail.
+- **Flux (Black Forest Labs)** — fast, high-quality, available through Replicate and other hosting providers. Popular for products that need generation at volume because of its speed-to-quality ratio.
+- **Stable Diffusion** — open source, which means you can run it on your own infrastructure with no per-image API cost. More setup required, but at scale the economics change significantly.
+
+Real product use cases: generating product imagery from written descriptions, creating social media assets on demand, avatar and profile picture generation, design-tool integrations that let users describe and generate visuals, and personalised content creation at scale.
+
+One important practical note: image generation is slow compared to text — typically 5–15 seconds per image depending on the model and quality settings. Design your UX around this. Show progress states, generate asynchronously in the background, pre-generate where possible, and cache results aggressively.
+
+**Open source models: when you run your own**
+
+Hosted APIs are pay-per-token and you never touch the underlying model. Open source models are different: you download the weights and run them yourself, either locally or on cloud infrastructure you control. The API you call looks the same, but the compute is yours.
+
+The major open source text models:
+
+- **Llama 3 (Meta)** — Meta's open source model family, ranging from 8B to 70B+ parameters. The 70B model is competitive with closed APIs on most benchmarks and is widely deployed in production.
+- **Mistral / Mixtral (Mistral AI)** — strong European open source models. Mistral 7B is remarkably capable for its size. Mixtral 8x7B uses a mixture-of-experts architecture — multiple specialist models routing between them — that delivers high quality with lower compute requirements than a dense model of equivalent performance.
+- **Qwen 2.5 (Alibaba)** — competitive models with strong multilingual capabilities, particularly for Asian language tasks.
+- **Phi-4 (Microsoft)** — small models built to punch above their weight on reasoning. Good for cost-sensitive deployments where context windows stay short.
+
+Why you might use open source instead of a hosted API:
+
+*Cost at scale.* At high token volumes, running your own model is dramatically cheaper than paying per token. The crossover point is usually somewhere in the range of tens of millions of tokens per day — but once you're there, the savings are significant.
+
+*Data privacy.* If you're handling sensitive data — healthcare records, legal documents, financial information — and can't send it to a third-party API, running your own model is often the only compliant option.
+
+*Fine-tuning.* Open source models can be trained further on your own data to specialise them for a specific task. A fine-tuned Llama 3 8B can outperform much larger general-purpose models on a narrow domain, at a fraction of the cost per token.
+
+The easiest way to start with open source is through a hosting provider that runs them for you: Groq, Together AI, Replicate, and Hugging Face Inference all let you call open source models via API without managing servers. Most expose OpenAI-compatible endpoints, which means switching from GPT-4o to Llama 3 is often one line of code.
+
+The tradeoff is honest: open source models generally require more prompting work to get consistent results, tool use support is less mature (though improving fast), and you take on infrastructure responsibility as you scale. The right default for most founders: start with a hosted API, move to open source when cost, data requirements, or customisation needs make it necessary.
 
 ---
 
@@ -362,7 +461,7 @@ By the time you've done all of that, you'll have more practical understanding of
 
 ---
 
-Building with AI in 2026 isn't about knowing the latest models or following the hype cycle. It's about understanding the fundamentals — what the API actually does, how to structure your prompts and tools, how to test what you build, and when to use agents versus workflows. Get those right and the rest is implementation.
+Building with AI in 2026 isn't about knowing the latest models or following the hype cycle. It's about understanding the fundamentals — what the API actually does, how the model landscape fits together, how to structure your prompts and tools, how to test what you build, and when to use agents versus workflows. Get those right and the rest is implementation detail: which provider, which model size, hosted or open source.
 
 If you're building something with AI and want to think through the architecture or talk through where to start, [get in touch](/contact). This is work I find genuinely interesting.
 
