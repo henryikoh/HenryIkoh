@@ -47,9 +47,9 @@ The concepts in this guide — system prompts, tool use, temperature, evaluation
 
 This is the category most founders reach for first. Send text in, get text back. The major providers:
 
-- **Claude (Anthropic)** — strong reasoning, long-context tasks, and instruction-following. The largest models support context windows up to 200k tokens, meaning you can feed an entire document or codebase into a single request. The examples in this guide use Claude, but the patterns work everywhere.
-- **GPT-4o (OpenAI)** — the model most developers learn on first, with an extensive ecosystem of documentation and community resources. Broad capability across nearly every task category.
-- **Gemini (Google DeepMind)** — competitive performance across most benchmarks, with Gemini 1.5 Pro supporting a 1 million token context window for very large document analysis tasks. Tightly integrated with Google's infrastructure.
+- **[Claude (Anthropic)](https://docs.anthropic.com)** — strong reasoning, long-context tasks, and instruction-following. The largest models support context windows up to 200k tokens, meaning you can feed an entire document or codebase into a single request. The examples in this guide use Claude, but the patterns work everywhere.
+- **[GPT-4o (OpenAI)](https://platform.openai.com)** — the model most developers learn on first, with an extensive ecosystem of documentation and community resources. Broad capability across nearly every task category.
+- **[Gemini (Google DeepMind)](https://ai.google.dev)** — competitive performance across most benchmarks, with Gemini 1.5 Pro supporting a 1 million token context window for very large document analysis tasks. Tightly integrated with Google's infrastructure.
 
 The good news: the API structure across all three is nearly identical. Messages in, completion out, system prompt, temperature — these concepts transfer directly. The main differences are in pricing, context window size, and which specific tasks each model performs best on. Learning one gets you most of the way to using the others.
 
@@ -104,10 +104,10 @@ image_url = response.data[0].url
 
 The main image generation APIs founders use in products:
 
-- **DALL-E 3 (OpenAI)** — high quality, strong prompt adherence, accessible through the same OpenAI API key you likely already have. Best for product mockups, marketing visuals, and cases where the output needs to match the prompt closely.
-- **Imagen 3 (Google)** — Google's model, accessible through the Gemini API. Strong photorealism and detail.
-- **Flux (Black Forest Labs)** — fast, high-quality, available through Replicate and other hosting providers. Popular for products that need generation at volume because of its speed-to-quality ratio.
-- **Stable Diffusion** — open source, which means you can run it on your own infrastructure with no per-image API cost. More setup required, but at scale the economics change significantly.
+- **[DALL-E 3 (OpenAI)](https://platform.openai.com/docs/guides/images)** — high quality, strong prompt adherence, accessible through the same OpenAI API key you likely already have. Best for product mockups, marketing visuals, and cases where the output needs to match the prompt closely.
+- **[Imagen 3 (Google)](https://ai.google.dev/gemini-api/docs/image-generation)** — Google's model, accessible through the Gemini API. Strong photorealism and detail.
+- **[Flux (Black Forest Labs)](https://replicate.com/black-forest-labs)** — fast, high-quality, available through Replicate and other hosting providers. Popular for products that need generation at volume because of its speed-to-quality ratio.
+- **[Stable Diffusion (Stability AI)](https://stability.ai)** — open source, which means you can run it on your own infrastructure with no per-image API cost. More setup required, but at scale the economics change significantly.
 
 Real product use cases: generating product imagery from written descriptions, creating social media assets on demand, avatar and profile picture generation, design-tool integrations that let users describe and generate visuals, and personalised content creation at scale.
 
@@ -119,10 +119,10 @@ Hosted APIs are pay-per-token and you never touch the underlying model. Open sou
 
 The major open source text models:
 
-- **Llama 3 (Meta)** — Meta's open source model family, ranging from 8B to 70B+ parameters. The 70B model is competitive with closed APIs on most benchmarks and is widely deployed in production.
-- **Mistral / Mixtral (Mistral AI)** — strong European open source models. Mistral 7B is remarkably capable for its size. Mixtral 8x7B uses a mixture-of-experts architecture — multiple specialist models routing between them — that delivers high quality with lower compute requirements than a dense model of equivalent performance.
-- **Qwen 2.5 (Alibaba)** — competitive models with strong multilingual capabilities, particularly for Asian language tasks.
-- **Phi-4 (Microsoft)** — small models built to punch above their weight on reasoning. Good for cost-sensitive deployments where context windows stay short.
+- **[Llama 3 (Meta)](https://llama.meta.com)** — Meta's open source model family, ranging from 8B to 70B+ parameters. The 70B model is competitive with closed APIs on most benchmarks and is widely deployed in production.
+- **[Mistral / Mixtral (Mistral AI)](https://mistral.ai)** — strong European open source models. Mistral 7B is remarkably capable for its size. Mixtral 8x7B uses a mixture-of-experts architecture — multiple specialist models routing between them — that delivers high quality with lower compute requirements than a dense model of equivalent performance.
+- **[Qwen 2.5 (Alibaba)](https://huggingface.co/Qwen)** — competitive models with strong multilingual capabilities, particularly for Asian language tasks.
+- **[Phi-4 (Microsoft)](https://huggingface.co/microsoft/phi-4)** — small models built to punch above their weight on reasoning. Good for cost-sensitive deployments where context windows stay short.
 
 Why you might use open source instead of a hosted API:
 
@@ -132,7 +132,7 @@ Why you might use open source instead of a hosted API:
 
 *Fine-tuning.* Open source models can be trained further on your own data to specialise them for a specific task. A fine-tuned Llama 3 8B can outperform much larger general-purpose models on a narrow domain, at a fraction of the cost per token.
 
-The easiest way to start with open source is through a hosting provider that runs them for you: Groq, Together AI, Replicate, and Hugging Face Inference all let you call open source models via API without managing servers. Most expose OpenAI-compatible endpoints, which means switching from GPT-4o to Llama 3 is often one line of code.
+The easiest way to start with open source is through a hosting provider that runs them for you: [Groq](https://groq.com), [Together AI](https://together.ai), [Replicate](https://replicate.com), and [Hugging Face Inference](https://huggingface.co/inference-api) all let you call open source models via API without managing servers. Most expose OpenAI-compatible endpoints, which means switching from GPT-4o to Llama 3 is often one line of code.
 
 The tradeoff is honest: open source models generally require more prompting work to get consistent results, tool use support is less mature (though improving fast), and you take on infrastructure responsibility as you scale. The right default for most founders: start with a hosted API, move to open source when cost, data requirements, or customisation needs make it necessary.
 
@@ -218,6 +218,87 @@ Temperature is a parameter you can set on most API calls that controls how deter
 The default is usually around 0.7 for general use, which is fine to start with. But once you're building a specific feature, test temperature explicitly. The difference between 0.2 and 0.8 on a support chatbot response is significant — one is crisp and direct, the other meanders.
 
 Temperature is one of the easier levers to tune once you understand what it does. Don't ignore it.
+
+---
+
+## Prompt Engineering: Writing Prompts That Actually Work
+
+Temperature is about tuning the output distribution. Prompt engineering is about being understood in the first place. Most prompts underperform not because the model is incapable, but because the instructions are vague, unstructured, or assume context the model doesn't have.
+
+There are four techniques that account for the majority of improvement in prompt quality.
+
+**Be clear and direct**
+
+The first line of your prompt is the most important. It should start with an action verb and state exactly what you want in plain terms: "Generate a one-day meal plan for an athlete based on their height, weight, and dietary restrictions" is a clear prompt. "Can you help with a meal plan?" is not.
+
+The gap between these two prompts is a gap in eval scores, not just aesthetics. A prompt that opens with a vague request forces the model to infer what you want, and those inferences are often wrong for your specific case.
+
+**Be specific about format and reasoning**
+
+After the main instruction, add two kinds of guidelines:
+
+*Output attributes* — specific things you want the output to have. Length, format, structure, tone, what to include, what to exclude. "Return a JSON object with keys: meal_name, ingredients, prep_time" is an output attribute. "Keep the response under 200 words" is an output attribute. Most prompts benefit from at least two or three of these.
+
+*Reasoning steps* — instructions for how you want the model to arrive at its answer. "Before giving a recommendation, list the tradeoffs of each option" or "First identify the core problem, then propose a solution." Use reasoning steps when you want the model to consider something it might otherwise skip — an edge case, a second perspective, a validation step.
+
+Combined, these two types of specificity are the single highest-leverage prompt improvement available. In practice, adding clear output attributes and reasoning steps to an otherwise vague prompt can move eval scores from poor to good in one iteration.
+
+**Use XML tags to separate content from instructions**
+
+When your prompt includes interpolated content — user input, document excerpts, data records — wrap it in descriptive XML tags to make the structure explicit.
+
+```python
+prompt = f"""
+Analyse the support ticket below and classify it by urgency and category.
+
+<support_ticket>
+{ticket_text}
+</support_ticket>
+
+Return JSON with keys: urgency (low/medium/high), category, and a one-sentence summary.
+"""
+```
+
+Without the XML tags, longer prompts become ambiguous — the model can lose track of where the instructions end and the content begins. With them, the structure is obvious. Use descriptive tag names (`<support_ticket>`, `<athlete_profile>`, `<sales_data>`) that describe what the content actually is, not generic names like `<input>`.
+
+**Give examples**
+
+If you want a specific output format, style, or handling of an edge case, show it. One well-chosen example (one-shot) outperforms three paragraphs of description for complex or structured outputs. Multiple examples (multi-shot) are especially useful when there are tricky edge cases the model would otherwise mishandle.
+
+```python
+system = """
+You classify customer messages as: complaint, question, or praise.
+
+Examples:
+Message: "I've been waiting three weeks and nothing has arrived."
+Classification: complaint
+
+Message: "Does this plan include API access?"
+Classification: question
+
+Message: "Your support team was incredibly helpful, thank you."
+Classification: praise
+"""
+```
+
+Place examples after your main instructions and, where useful, add a brief note about what makes the example ideal — this reinforces the pattern rather than just demonstrating it.
+
+**Controlling output precisely: prefilling and stop sequences**
+
+Two more techniques worth knowing for when you need clean, structured output with no surrounding commentary.
+
+*Prefilling* means manually adding the beginning of the assistant's response in the messages array before making the API call. The model then continues from exactly where you left off — it treats your prefill as content it has already authored.
+
+```python
+messages = [
+    {"role": "user", "content": "Extract the key metrics from this report as JSON."},
+    {"role": "assistant", "content": "```json"}  # prefill — model continues from here
+]
+```
+
+*Stop sequences* tell the model to stop generating the moment it produces a specific string. Pair a prefill of ` ```json` with a stop sequence of ` ``` ` and you get raw JSON back — no explanation, no markdown, no preamble — which you can parse directly.
+
+These two techniques together are the cleanest way to extract structured data from a model without using a full tool call.
 
 ---
 
@@ -377,7 +458,7 @@ This is the difference between a chatbot that answers general questions and one 
 
 As you add more tools to your AI app, you run into a practical problem: writing and maintaining tool schemas for every external service you want to connect to is slow and repetitive. If you want the model to interact with Notion, Slack, GitHub, your database, and your internal APIs, you're writing and maintaining a lot of boilerplate.
 
-MCP — Model Context Protocol — is Anthropic's answer to this problem. It's an open standard that lets AI models connect to external services through a consistent interface, without you having to write bespoke tool definitions for each one.
+MCP — [Model Context Protocol](https://modelcontextprotocol.io) — is Anthropic's answer to this problem. It's an open standard that lets AI models connect to external services through a consistent interface, without you having to write bespoke tool definitions for each one.
 
 **What MCP actually is**
 

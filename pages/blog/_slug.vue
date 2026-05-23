@@ -297,14 +297,32 @@ async asyncData({ $content, params }) {
 </script>
 
 <style scoped>
-/* ul.li::marker {
-	color: red;
-} */
 aside div::-webkit-scrollbar {
 	display: none;
 }
 aside div {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+}
+
+/* Force code blocks to always use a dark background with light text,
+   regardless of light/dark mode or prose-invert conflicts with Prism */
+::v-deep pre[class*="language-"] {
+	background-color: #282c34 !important;
+}
+::v-deep pre[class*="language-"] code {
+	color: #abb2bf;
+	background-color: transparent !important;
+}
+/* Inline code: distinct but readable in both modes */
+::v-deep :not(pre) > code {
+	background-color: #f3f4f6;
+	color: #1f2937;
+	padding: 0.15em 0.35em;
+	border-radius: 0.25rem;
+}
+::v-deep .dark :not(pre) > code {
+	background-color: #374151;
+	color: #e5e7eb;
 }
 </style>
