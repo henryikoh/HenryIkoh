@@ -252,9 +252,23 @@ Beyond custom tools you define yourself, Claude also supports a set of built-in 
 
 These are particularly useful in agentic workflows where you want the model to be able to gather information or perform operations without you having to anticipate and implement every possible action in advance.
 
+**What tool use looks like in real products**
+
+Here's where it clicks. Without tools, an AI feature in your product can only respond based on what the model was trained on — which has no knowledge of your users, your data, or anything that's happened since the training cutoff. With tools, you connect the model to your actual application.
+
+A few real examples of what this unlocks:
+
+*Customer support chatbot for a SaaS product.* Without tools, the chatbot can only answer generic questions about the category. With tools — `get_account_details(email)`, `get_recent_invoices(account_id)`, `check_subscription_status(account_id)` — it can answer "why did my card get charged twice last month?" with a real answer, not a redirect to the billing page.
+
+*E-commerce shopping assistant.* Without tools, it can describe products in general terms. With tools — `search_catalogue(query, filters)`, `check_inventory(product_id)`, `get_delivery_estimate(product_id, postcode)` — it can tell a customer "the navy version is in stock and will arrive Thursday if you order now."
+
+*Internal ops tool for a hiring team.* Without tools, it can draft job descriptions. With tools — `get_applicants(role_id)`, `fetch_resume(applicant_id)`, `get_interview_notes(applicant_id)`, `update_application_status(applicant_id, status)` — a recruiter can ask "which candidates for the senior engineer role have been waiting more than a week for feedback?" and get a real answer they can act on.
+
+In every case the tool use pattern is identical — the model decides what to call, your code executes it, the result comes back. What changes is the data you expose and the actions you allow. The more of your app's logic you surface through well-described tools, the more genuinely useful the AI feature becomes.
+
 **Why tool use is the foundation of useful AI apps**
 
-Without tools, your AI app is limited to what the model knows from training — which is static, potentially outdated, and has no access to your application's specific data. With tools, the model can look up the current user's account details, search your product catalogue, check inventory, create records, send notifications, or do anything else your backend can do.
+Without tools, your AI app is limited to what the model knows from training — static, potentially outdated, and completely blind to your application's specific data. With tools, the model can look up the current user's account details, search your product catalogue, check inventory, create records, send notifications, or do anything else your backend can do.
 
 This is the difference between a chatbot that answers general questions and one that can actually help your users accomplish tasks in your product. Every seriously useful AI feature either uses tool calls or should.
 
@@ -284,38 +298,51 @@ MCP is still relatively early, but it's the direction the ecosystem is moving. F
 
 ## Agents vs Workflows: A Distinction That Matters
 
-Once you understand tools, you can build both workflows and agents. These terms get used interchangeably, but they describe genuinely different architectural patterns with different tradeoffs. Understanding the distinction helps you choose the right approach for a given problem.
+Once you understand tools, you can build both workflows and agents. These terms get used interchangeably everywhere, but they describe fundamentally different architectures — and choosing the wrong one is one of the most expensive mistakes founders make when building AI features.
 
-**Workflows**
+**Workflows: the model as a step in your process**
 
-A workflow is a predetermined sequence of steps. You decide in advance what needs to happen and in what order. The model plays a role in some or all of the steps — it might extract information, generate text, classify something — but the structure of the process is fixed in your code.
+A workflow is a predetermined sequence of steps that you design and control. Your code decides what happens and in what order. The model plays a role in specific steps — extracting information, generating text, classifying input — but the overall structure is fixed. The model doesn't decide what to do next. Your code does.
 
-Example: A content moderation workflow might always run: classify input → if flagged, extract the specific violation → generate a moderator notification. The steps don't change. The model doesn't decide what to do next; your code does.
+Three real examples:
 
-Workflows are:
-- Predictable and auditable — you know exactly what will run
-- Easy to test and debug — each step can be examined independently
-- Appropriate when the task structure is known and consistent
+*Inbound lead qualification for a B2B SaaS.* When a signup comes in: extract company name and role from the email → enrich with company size data → score the lead against your ICP criteria → if score is above threshold, draft a personalised outreach email and add to CRM → if below threshold, add to nurture sequence. Every step is defined. The model handles the language tasks (extraction, scoring logic, email drafting), but the pipeline is yours.
 
-**Agents**
+*Invoice processing for a finance tool.* Upload an invoice → extract line items, amounts, vendor name, and due date → validate against purchase orders in the database → flag discrepancies → if clean, create the payment record → notify the finance team. The model reads and extracts; the workflow decides what to do with what it finds.
 
-An agent is a system where the model itself decides what actions to take, in what order, based on the current situation and a goal. You give it tools and a task; it figures out how to accomplish the task by deciding which tools to use and when, looping until it reaches the goal or determines it can't.
+*Content moderation for a marketplace.* New listing submitted → classify content against policy categories → if flagged, identify the specific violation → generate a rejection notice in the seller's language → log the decision for audit. Same path every time, predictable output, easy to test.
 
-Example: A research agent given "summarise the competitive landscape for project management tools" might decide to: search for recent comparisons, visit specific product pages, extract pricing information, find recent news, and then synthesise everything into a report — choosing each step based on what it's found so far, not because you wrote a script that told it to do those things.
+What these have in common: the task has a known structure. You can draw the flowchart before writing any code. The AI handles the parts that require language understanding, but the orchestration logic is explicit and auditable.
 
-Agents are:
-- Flexible — they can handle situations you didn't anticipate when writing the code
-- More powerful for open-ended tasks — they can adapt their approach based on what they find
-- Harder to predict and audit — since the model chooses its own path
-- More prone to failure modes that are difficult to reproduce — because the path depends on intermediate results
+**Agents: the model as the orchestrator**
 
-**Choosing between them**
+An agent is a system where the model itself decides what to do next. You give it tools, a goal, and context. It figures out how to reach the goal by choosing which tools to use, in what order, based on what it discovers along the way. It loops — calling tools, incorporating results, deciding on the next step — until it completes the task or concludes it can't.
 
-The rule of thumb: if the problem has a clear, consistent structure, use a workflow. If the problem is open-ended or requires adapting to information that isn't known in advance, use an agent.
+Three real examples:
 
-In practice, most production AI apps use workflows more than agents. Workflows are easier to ship reliably. Agents are compelling but require more careful design, better evaluation, and more robust error handling to behave consistently at scale.
+*Customer success health check agent.* You give it a tool to pull account usage data, a tool to search support ticket history, a tool to fetch NPS scores, and a tool to look up contract renewal date. Then you say: "Assess the health of Acme Corp's account and recommend whether we need to intervene." The agent decides which data to pull first, what patterns to look for, which threads to follow based on what it finds, and what conclusion to draw. A workflow couldn't do this because you don't know in advance what's going to be relevant.
 
-The hybrid pattern — a workflow that delegates to an agent-like component for specific open-ended sub-tasks — is common and often the right call. Structure what you can; give the model flexibility where you must.
+*Competitor research assistant.* You give it web search, the ability to visit URLs, and the ability to create structured notes. You say: "Research how our three main competitors have changed their pricing in the last six months." It searches, finds relevant pages, reads them, decides what's signal versus noise, follows links that seem relevant, and synthesises a summary — adapting its path based on what it finds. You couldn't write a workflow for this because the steps depend entirely on what's out there.
+
+*Automated bug triage agent.* A new bug report comes in. The agent can search existing issues, read code files, check recent commits, and look up error logs. It determines whether this is a duplicate, identifies likely cause, estimates severity based on how many users are affected, and drafts a summary for the engineering team. Each of these decisions depends on what the previous step found.
+
+What these have in common: the task is open-ended. The right sequence of steps isn't knowable until you start gathering information. The model needs flexibility to adapt.
+
+**Why the distinction matters — and what goes wrong**
+
+Most founders building AI features for the first time reach for the agent architecture because it sounds more impressive and more capable. This is usually the wrong call.
+
+Agents are harder to test (the path changes with every run), harder to debug (failures can happen anywhere in a dynamic loop), and prone to a failure mode called "reasoning drift" — where the model makes a plausible-seeming but wrong decision mid-loop, and everything that follows is built on that wrong foundation. In a workflow, a bad step produces a bad output you can catch and fix. In an agent, a bad intermediate decision can compound invisibly.
+
+The right instinct: start with a workflow whenever the task has any discernible structure. Build the most boring version that could work. You can always introduce agent-like flexibility later for the parts that genuinely need it.
+
+**The hybrid — which is what most good AI apps actually are**
+
+The pattern that works best in production is usually a workflow with one or two agentic sub-tasks embedded in it. The outer structure is defined and controlled. Within a specific step — one that's genuinely open-ended — you let the model loose with a set of tools.
+
+A recruiting tool might have a fixed workflow: receive application → run background check → screen for minimum requirements → route to hiring manager. But the "screen for minimum requirements" step is where you embed an agent that reads the resume, looks up the company on LinkedIn, checks references if available, and makes a nuanced recommendation — because that step involves open-ended reasoning you can't fully script.
+
+This hybrid is the architecture most mature AI products converge on. Structure what you can. Give the model flexibility only where the task genuinely requires it. And always build evaluation into both layers so you know when either one is failing.
 
 ---
 
