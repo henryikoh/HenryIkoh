@@ -179,7 +179,7 @@ export default {
 
 /* Dark mode — adapt text but keep gold constant */
 @media (prefers-color-scheme: dark) {
-	.ikoh-footer { color: #cbd5e1; /* slate-300 */ }
+	.ikoh-footer { color: #ffffff; }
 	.ikoh-rule { opacity: 0.7; }
 }
 </style>
