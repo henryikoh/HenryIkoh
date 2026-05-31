@@ -19,7 +19,7 @@
 	<!-- Personal wordmark — this is a family crest, so the name carries the legacy -->
 	<h2 class="ikoh-name">Henry Ikoh</h2>
 
-	<p class="ikoh-tagline italic">Stop working harder. Start designing better.</p>
+	<p class="ikoh-tagline">Home to the builders of nations.</p>
 
 	<!-- Menu, restyled in the IKOH language -->
 	<nav class="ikoh-nav">
@@ -45,6 +45,7 @@
 			<a target="_blank" rel="noopener" href="https://twitter.com/henryikoh_" class="ikoh-credit-link">Henry Ikoh</a>
 		</p>
 		<p>Copyright © 2026</p>
+		<p class="ikoh-house">◇ The House of Ikoh — One crest, many legacies.</p>
 	</div>
 
 	<div class="pb-12"></div>
@@ -107,12 +108,14 @@ export default {
 }
 
 .ikoh-tagline {
-	font-family: 'EB Garamond', Georgia, serif;
-	font-size: 15px;
+	font-family: 'Cormorant Garamond', Georgia, serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 18px;
 	line-height: 1.5;
 	margin: 0 0 24px;
 	color: inherit;
-	opacity: 0.85;
+	opacity: 0.9;
 }
 
 .ikoh-nav {
@@ -157,6 +160,14 @@ export default {
 }
 
 .ikoh-fine p { margin: 2px 0; }
+
+.ikoh-house {
+	font-style: italic;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	opacity: 0.7;
+	margin-top: 10px !important;
+}
 
 .ikoh-credit-link {
 	color: inherit;
