@@ -1,55 +1,56 @@
 <template>
-<footer class="ikoh-footer w-11/12 md:w-4/5 mx-auto mt-16 pt-10 pb-6 text-center">
-	<!-- Top gold divider replaces the old gray border -->
-	<div class="ikoh-divider" aria-hidden="true">
-		<span class="ikoh-rule"></span>
-		<span class="ikoh-diamond">◇</span>
-		<span class="ikoh-rule"></span>
+<div>
+	<!-- Original footer — menu + website tagline -->
+	<div class="border-b border-gray-700 border-t dark:border-white w-11/12 dark:text-slate-300 mt-16 mx-auto pb-6 pt-6 signature text-center md:w-4/5 wrapper">
+		<p class="text-sm md:text-base text-gray-600 dark:text-gray-400 italic mb-4">Stop working harder. Start designing better.</p>
+		<div class="flex flex-wrap justify-center gap-6 mb-4 text-xs uppercase tracking-widest">
+			<nuxt-link to="/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Home</nuxt-link>
+			<nuxt-link to="/system" class="hover:text-gray-900 dark:hover:text-white transition-colors">The System</nuxt-link>
+			<a href="https://henryikoh.substack.com/" target="_blank" rel="noopener" class="hover:text-gray-900 dark:hover:text-white transition-colors">Newsletter</a>
+			<nuxt-link to="/contact" class="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</nuxt-link>
+		</div>
 	</div>
 
-	<!-- Family crest -->
-	<img
-		src="/ikoh/ikoh-mark-circle-gold.png"
-		alt=""
-		class="ikoh-mark"
-		width="56"
-		height="56"
-	/>
+	<!-- IKOH family crest — self-contained, no menu -->
+	<section class="ikoh-crest-section w-11/12 md:w-4/5 mx-auto mt-10 text-center" aria-label="House of Ikoh">
+		<div class="ikoh-divider" aria-hidden="true">
+			<span class="ikoh-rule"></span>
+			<span class="ikoh-diamond">◇</span>
+			<span class="ikoh-rule"></span>
+		</div>
 
-	<!-- Personal wordmark — this is a family crest, so the name carries the legacy -->
-	<h2 class="ikoh-name">Henry Ikoh</h2>
+		<img
+			src="/ikoh/ikoh-mark-circle-gold.png"
+			alt=""
+			class="ikoh-mark"
+			width="56"
+			height="56"
+		/>
 
-	<p class="ikoh-tagline">Home to the builders of nations.</p>
+		<h2 class="ikoh-name">Henry Ikoh</h2>
 
-	<!-- Menu, restyled in the IKOH language -->
-	<nav class="ikoh-nav">
-		<nuxt-link to="/" class="ikoh-link">Home</nuxt-link>
-		<span class="ikoh-sep" aria-hidden="true">◇</span>
-		<nuxt-link to="/system" class="ikoh-link">The System</nuxt-link>
-		<span class="ikoh-sep" aria-hidden="true">◇</span>
-		<a href="https://henryikoh.substack.com/" target="_blank" rel="noopener" class="ikoh-link">Newsletter</a>
-		<span class="ikoh-sep" aria-hidden="true">◇</span>
-		<nuxt-link to="/contact" class="ikoh-link">Contact</nuxt-link>
-	</nav>
+		<p class="ikoh-tagline">Home to the builders of nations.</p>
 
-	<!-- Bottom gold divider -->
-	<div class="ikoh-divider" aria-hidden="true">
-		<span class="ikoh-rule"></span>
-		<span class="ikoh-diamond">◇</span>
-		<span class="ikoh-rule"></span>
-	</div>
-
-	<div class="ikoh-fine">
-		<p>
-			Designed and built by
-			<a target="_blank" rel="noopener" href="https://twitter.com/henryikoh_" class="ikoh-credit-link">Henry Ikoh</a>
-		</p>
-		<p>Copyright © 2026</p>
 		<p class="ikoh-house">◇ The House of Ikoh — One crest, many legacies.</p>
+
+		<div class="ikoh-divider" aria-hidden="true">
+			<span class="ikoh-rule"></span>
+			<span class="ikoh-diamond">◇</span>
+			<span class="ikoh-rule"></span>
+		</div>
+	</section>
+
+	<!-- Final line — designed & built credit, last thing on the page -->
+	<div class="w-11/12 md:w-4/5 mx-auto mt-6 text-center uppercase text-xs tracking-widest text-gray-600 dark:text-gray-400">
+		<h2>
+			Designed and built by
+			<a target="_blank" class="underline" href="https://twitter.com/henryikoh_">Henry Ikoh</a>
+		</h2>
+		<p>Copyright © 2026</p>
 	</div>
 
 	<div class="pb-12"></div>
-</footer>
+</div>
 </template>
 
 <script>
@@ -61,8 +62,8 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=EB+Garamond:wght@400;500;600&display=swap');
 
-.ikoh-footer {
-	color: #4b5563; /* gray-600, adapts via dark mode below */
+.ikoh-crest-section {
+	color: #4b5563;
 }
 
 .ikoh-divider {
@@ -77,7 +78,7 @@ export default {
 .ikoh-rule {
 	flex: 1;
 	height: 1px;
-	background: #B98C34; /* --gold */
+	background: #B98C34;
 	opacity: 0.55;
 }
 
@@ -102,7 +103,7 @@ export default {
 	font-size: 22px;
 	letter-spacing: 0.32em;
 	text-transform: uppercase;
-	text-indent: 0.32em; /* optical: tracking adds trailing space */
+	text-indent: 0.32em;
 	margin: 0 0 14px;
 	color: inherit;
 }
@@ -113,73 +114,23 @@ export default {
 	font-style: italic;
 	font-size: 18px;
 	line-height: 1.5;
-	margin: 0 0 24px;
+	margin: 0 0 14px;
 	color: inherit;
 	opacity: 0.9;
 }
 
-.ikoh-nav {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 10px 16px;
-	margin: 0 0 28px;
-}
-
-.ikoh-link {
-	font-family: 'EB Garamond', Georgia, serif;
-	font-weight: 600;
-	font-size: 11px;
-	letter-spacing: 0.22em;
-	text-transform: uppercase;
-	color: inherit;
-	text-decoration: none;
-	transition: color 0.25s ease;
-	white-space: nowrap;
-}
-
-.ikoh-link:hover {
-	color: #B98C34;
-}
-
-.ikoh-sep {
-	color: #B98C34;
-	font-size: 8px;
-	opacity: 0.6;
-	line-height: 1;
-}
-
-.ikoh-fine {
-	font-family: 'EB Garamond', Georgia, serif;
-	font-size: 12px;
-	letter-spacing: 0.06em;
-	margin-top: 22px;
-	color: inherit;
-	opacity: 0.8;
-}
-
-.ikoh-fine p { margin: 2px 0; }
-
 .ikoh-house {
+	font-family: 'EB Garamond', Georgia, serif;
 	font-style: italic;
 	font-size: 11px;
 	letter-spacing: 0.08em;
 	opacity: 0.7;
-	margin-top: 10px !important;
-}
-
-.ikoh-credit-link {
+	margin: 0 0 28px;
 	color: inherit;
-	border-bottom: 1px solid #B98C34;
-	transition: color 0.25s ease;
 }
 
-.ikoh-credit-link:hover { color: #B98C34; }
-
-/* Dark mode — adapt text but keep gold constant */
 @media (prefers-color-scheme: dark) {
-	.ikoh-footer { color: #ffffff; }
+	.ikoh-crest-section { color: #ffffff; }
 	.ikoh-rule { opacity: 0.7; }
 }
 </style>
