@@ -1,10 +1,10 @@
 /* eslint-disable vue/valid-v-for */
 <template>
   <div class=" relative">
-		<div class="absolute flex flex-wrap top-3 left-3 right-3 gap-2">
-			<p v-for="tag in article.tag" :key="tag" class=" myblur text-white px-2 py-2 rounded-lg text-sm bg-slate-400 backdrop-blur bg-opacity-30" >
+		<div class="absolute flex flex-wrap top-3 left-3 right-3 gap-2 z-10">
+			<nuxt-link v-for="tag in article.tag" :key="tag" :to="{ path: '/thoughts', query: { tag: tag.trim().toLowerCase() } }" class=" myblur text-white px-2 py-2 rounded-lg text-sm bg-slate-400 backdrop-blur bg-opacity-30 hover:bg-opacity-60 transition-colors" >
 			{{tag}}
-		</p>
+		</nuxt-link>
 		</div>
 		<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
 		<img :src="article.cover" class="h-60 object-center object-cover rounded-xl w-full" alt="" />

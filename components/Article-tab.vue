@@ -1,6 +1,9 @@
 <template>
 <div>
-  <h2 class="text-4xl font-bold dark:text-white pb-9">Thoughts</h2>
+  <nuxt-link to="/thoughts" class="group inline-flex items-baseline gap-3 pb-9">
+    <h2 class="text-4xl font-bold dark:text-white group-hover:underline underline-offset-4">Thoughts</h2>
+    <span class="text-2xl text-gray-500 dark:text-gray-400 transition-transform group-hover:translate-x-1">&rarr;</span>
+  </nuxt-link>
   <ul v-if="page" class=" gap-8 md:gap-6 grid md:grid-cols-3">
 				<li v-for="page in page" :key="page.slug">
 					<ArticleCard :article="page" />
