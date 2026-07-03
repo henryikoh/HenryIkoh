@@ -7,6 +7,7 @@
 			<nuxt-link to="/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Home</nuxt-link>
 			<nuxt-link to="/system" class="hover:text-gray-900 dark:hover:text-white transition-colors">The System</nuxt-link>
 			<a href="https://henryikoh.substack.com/" target="_blank" rel="noopener" class="hover:text-gray-900 dark:hover:text-white transition-colors">Newsletter</a>
+			<a href="https://lab.henryikoh.com" target="_blank" rel="noopener" class="hover:text-gray-900 dark:hover:text-white transition-colors">Lab ↗</a>
 			<nuxt-link to="/contact" class="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</nuxt-link>
 		</div>
 	</div>
