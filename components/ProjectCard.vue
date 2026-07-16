@@ -2,7 +2,7 @@
 <template>
     <div>
         <nuxt-link :to="{ name: 'projects-slug', params: { slug: article.slug } }" class="block group">
-            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden hover:border-gray-400 dark:hover:border-gray-500 transition-all">
+            <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:shadow-lg dark:group-hover:shadow-gray-900/40">
 
                 <!-- Top: Cover + Header side by side on desktop -->
                 <div class="grid md:grid-cols-5">
@@ -66,7 +66,7 @@
                 <div class="border-t border-gray-200 dark:border-gray-700 px-5 md:px-8 py-4 flex items-center justify-between bg-gray-50 dark:bg-gray-800/50">
                     <span class="text-gray-500 dark:text-gray-400 text-sm">{{ article.type }}</span>
                     <span class="text-gray-900 dark:text-white font-medium text-sm group-hover:underline underline-offset-4">
-                        Read Case Study &rarr;
+                        Read Case Study <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
                     </span>
                 </div>
 

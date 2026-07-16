@@ -124,9 +124,22 @@ export default {
 
 <style scoped>
 .fade-enter-active, .fade-leave-active {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter {
     opacity: 0;
+    transform: translateX(12px);
+}
+.fade-leave-to {
+    opacity: 0;
+    transform: translateX(-12px);
+}
+@media (prefers-reduced-motion: reduce) {
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity 0.3s ease;
+    }
+    .fade-enter, .fade-leave-to {
+        transform: none;
+    }
 }
 </style>

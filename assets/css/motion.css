@@ -1,0 +1,60 @@
+/* Global motion system — additive only, no visual change at rest */
+
+/* Page fade between routes (Nuxt's default "page" transition hooks) */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* One-time entrance on page load (hero) */
+@keyframes motion-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.motion-rise {
+  animation: motion-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--motion-delay, 0s);
+}
+
+/* Scroll-triggered reveal (used with the v-reveal directive) */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.reveal-hidden,
+.reveal-visible {
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--motion-delay, 0s);
+  will-change: opacity, transform;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-rise {
+    animation: none;
+  }
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-hidden,
+  .reveal-visible,
+  .page-enter-active,
+  .page-leave-active {
+    transition: none;
+  }
+}

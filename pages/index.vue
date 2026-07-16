@@ -2,40 +2,40 @@
   <div class="dark:bg-dark">
     <Navbar :show-profile="true" />
     <div class="wrapper hero w-11/12 md:w-4/5 mx-auto pt-8 md:pt-32">
-		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3" src="/profile.jpeg" alt="henry ikoh">
+		<img class=" h-28 w-28 visible md:hidden md:h-36 md:w-36 object-cover rounded-lg mb-3 motion-rise" src="/profile.jpeg" alt="henry ikoh">
 			<div class="copy">
-				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500">
+				<h2 class="mb-1 md:mb-5 md:text-4xl text-xl text-gray-500 motion-rise">
 					<span class="font-bold md:text-8xl text-5xl text-gray-900 dark:text-white md:whitespace-nowrap">Building Better <span class="gradient-text">Systems.</span></span>
 					<br />
 					<span class="block mt-3 md:mt-4">People. Systems. Futures.</span>
 				</h2>
-				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl">
+				<p class="dark:text-white font-light md:leading-snug md:text-4xl text-gray-900 leading-relaxed tracking-wider text-xl motion-rise" style="--motion-delay: 120ms">
 					I partner with founders, leaders, and organizations to diagnose broken systems and build the infrastructure their next stage requires, using <nuxt-link to="/system" class="underline underline-offset-4 hover:opacity-70 transition-opacity">The <span style="color: #00ff9f;">Zero</span> Point System</nuxt-link>.
 				</p>
-				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600">
+				<p class="font-light text-lg mt-3 md:mt-5 md:text-2xl text-gray-600 motion-rise" style="--motion-delay: 240ms">
 					The people who build the future aren't special. They just refused to let the old system define what's possible and started building a new one.
 				</p>
 
-				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7">
-					<nuxt-link to="/contact" class="bg-black dark:bg-gray-600 text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Diagnose Your System →</nuxt-link>
-					<nuxt-link to="/system" class="text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors">See the Method →</nuxt-link>
+				<div class="flex flex-col sm:flex-row gap-3 mt-5 md:mt-7 motion-rise" style="--motion-delay: 360ms">
+					<nuxt-link to="/contact" class="group bg-black dark:bg-gray-600 text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors">Diagnose Your System <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></nuxt-link>
+					<nuxt-link to="/system" class="group text-center px-7 md:py-4 py-3 text-lg rounded-md md:text-2xl text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-900 dark:hover:border-gray-300 transition-colors">See the Method <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></nuxt-link>
 				</div>
 
 			</div>
 		</div>
-		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+		<div v-reveal class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
 		<ProjectsTab/>
 		</div>
-		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+		<div v-reveal class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
 		<ServicesTab/>
 		</div>
-		<div class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
+		<div v-reveal class="mx-auto thoughts w-11/12 md:w-4/5 wrapper pt-12">
 
 			<component :is="tab"></component>
 		</div>
-		<div class="mx-auto w-11/12 md:w-4/5 wrapper pt-12">
+		<div v-reveal class="mx-auto w-11/12 md:w-4/5 wrapper pt-12">
 			<CommunitySignup />
 		</div>
 		<Footer/>

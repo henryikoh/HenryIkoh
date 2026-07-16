@@ -5,8 +5,8 @@
     <span class="text-2xl text-gray-500 dark:text-gray-400 transition-transform group-hover:translate-x-1">&rarr;</span>
   </nuxt-link>
   <ul v-if="page" class=" gap-8 md:gap-6 grid md:grid-cols-3">
-				<li v-for="page in page" :key="page.slug">
-					<ArticleCard :article="page" />
+				<li v-for="(article, i) in page" :key="article.slug" v-reveal="(i % 3) * 90">
+					<ArticleCard :article="article" />
 				</li>
 
 			</ul>

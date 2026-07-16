@@ -6,14 +6,16 @@
 			{{tag}}
 		</nuxt-link>
 		</div>
-		<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-		<img :src="article.cover" class="h-60 object-center object-cover rounded-xl w-full" alt="" />
+		<nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }" class="group block">
+		<div class="overflow-hidden rounded-xl">
+			<img :src="article.cover" class="h-60 object-center object-cover rounded-xl w-full transition-transform duration-500 ease-out group-hover:scale-105" alt="" />
+		</div>
 		<div class=" flex py-1">
 			<p class="date dark:text-slate-300">{{ formatDate(article.createdAt) }}</p>
 			<p class=" text-gray-600 ml-2">{{ article.readingTime }}</p>
 		</div>
 		
-			<h3 class="text-2xl font-bold dark:text-white">{{ article.title }}</h3>
+			<h3 class="text-2xl font-bold dark:text-white group-hover:underline underline-offset-4">{{ article.title }}</h3>
 		
 		<p class=" text-gray-700 pt-1 dark:text-slate-400">{{ article.description }}</p>
 		</nuxt-link>
