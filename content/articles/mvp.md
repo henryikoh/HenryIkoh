@@ -81,3 +81,10 @@ So I would break down the steps to building an MVP into these steps
 To save yourself time, money, and resources, we highly recommend an MVP.
 
 Being a Unicorn PM, I have developed MVPs for all sorts of projects, websites, and applications. I offer full consultations for minimum viable product development. Are you interested in developing your MVP with me? Do have any questions on how to make an MVP? Send “Hello MVP” to henry@thinksenpai.com
+
+---
+
+**Related reading:**
+
+- [How to Validate Your App Idea Before Spending a Dollar on Development](/blog/how-to-validate-your-app-idea-before-spending-a-dollar-on-development)
+- [How to Build a SaaS Product in 2026: A Founder's Complete Guide](/blog/how-to-build-a-saas-product-in-2026-a-founders-complete-guide)

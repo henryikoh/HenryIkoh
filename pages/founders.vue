@@ -441,6 +441,32 @@
         </div>
       </div>
 
+      <!-- FREE GUIDES -->
+      <div class="py-20 border-b border-gray-200 dark:border-gray-800">
+        <p class="text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-500 mb-4">Not Ready Yet? Start Here</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 max-w-2xl">Free guides for founders who want to build it right.</h2>
+        <p class="text-lg text-gray-700 dark:text-white mb-10 max-w-2xl">Everything in these guides comes from the same thinking behind the Zero Point System. Read them, apply them, and come back when you want help running the process.</p>
+
+        <div class="grid gap-4 max-w-2xl">
+          <nuxt-link to="/blog/how-to-validate-your-app-idea-before-spending-a-dollar-on-development" class="group border border-gray-200 dark:border-gray-800 rounded-xl p-6 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            <p class="font-bold text-gray-900 dark:text-white mb-1 group-hover:underline underline-offset-4">How to Validate Your App Idea Before Spending a Dollar on Development <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">The validation work that should happen before any money goes to a developer.</p>
+          </nuxt-link>
+          <nuxt-link to="/blog/how-to-build-a-saas-product-in-2026-a-founders-complete-guide" class="group border border-gray-200 dark:border-gray-800 rounded-xl p-6 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            <p class="font-bold text-gray-900 dark:text-white mb-1 group-hover:underline underline-offset-4">How to Build a SaaS Product in 2026: A Founder's Complete Guide <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">From idea to shipped product — the full process, costs, and decisions along the way.</p>
+          </nuxt-link>
+          <nuxt-link to="/blog/how-to-build-a-mobile-app-in-nigeria-in-2026-developers-costs-and-what-to-know-before-you-start" class="group border border-gray-200 dark:border-gray-800 rounded-xl p-6 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            <p class="font-bold text-gray-900 dark:text-white mb-1 group-hover:underline underline-offset-4">How to Build a Mobile App in Nigeria in 2026 <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Developers, real costs, and what to know before you start building in Nigeria.</p>
+          </nuxt-link>
+          <nuxt-link to="/blog/how-to-build-an-ai-powered-app-in-2026" class="group border border-gray-200 dark:border-gray-800 rounded-xl p-6 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            <p class="font-bold text-gray-900 dark:text-white mb-1 group-hover:underline underline-offset-4">How to Build an AI-Powered App in 2026 <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Beyond the ChatGPT wrapper — models, tool use, agents, and architecture that works.</p>
+          </nuxt-link>
+        </div>
+      </div>
+
       <!-- FINAL CTA -->
       <div class="pt-20 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Ready to Get Clarity?</h2>

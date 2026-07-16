@@ -157,14 +157,23 @@ export default {
     defaults: {
       changefreq: 'weekly',
       priority: 0.7,
-      lastmod: new Date(),
     },
     async routes() {
       const { $content } = require('@nuxt/content')
 
-      const articles = await $content('articles').only(['slug']).fetch()
-      const projects = await $content('projects').only(['slug']).fetch()
-      const ideas = await $content('ideas').only(['slug']).fetch()
+      const fields = ['slug', 'createdAt', 'updatedAt']
+      const articles = await $content('articles').only(fields).fetch()
+      const projects = await $content('projects').only(fields).fetch()
+      const ideas = await $content('ideas').only(fields).fetch()
+
+      // Real per-document dates; a fabricated global lastmod makes Google
+      // distrust the sitemap's freshness signals entirely. Frontmatter
+      // createdAt is preferred: updatedAt is file mtime, which CI resets
+      // to the clone time on every build.
+      const lastmod = (doc) => {
+        const date = new Date(doc.createdAt || doc.updatedAt)
+        return isNaN(date) ? undefined : date.toISOString()
+      }
 
       return [
         { url: '/', priority: 1.0, changefreq: 'weekly' },
@@ -173,9 +182,23 @@ export default {
         { url: '/founders', priority: 0.8 },
         { url: '/contact', priority: 0.7 },
         { url: '/ideas', priority: 0.7 },
-        ...articles.map((a) => ({ url: `/blog/${a.slug}`, priority: 0.8 })),
-        ...projects.map((p) => ({ url: `/projects/${p.slug}`, priority: 0.7 })),
-        ...ideas.map((i) => ({ url: `/ideas/${i.slug}`, priority: 0.6 })),
+        { url: '/thoughts', priority: 0.7 },
+        { url: '/about', priority: 0.6 },
+        ...articles.map((a) => ({
+          url: `/blog/${a.slug}`,
+          priority: 0.8,
+          lastmod: lastmod(a),
+        })),
+        ...projects.map((p) => ({
+          url: `/projects/${p.slug}`,
+          priority: 0.7,
+          lastmod: lastmod(p),
+        })),
+        ...ideas.map((i) => ({
+          url: `/ideas/${i.slug}`,
+          priority: 0.6,
+          lastmod: lastmod(i),
+        })),
       ]
     },
   },
