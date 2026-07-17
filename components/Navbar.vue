@@ -1,4 +1,20 @@
 <template>
+  <div>
+    <div v-if="showBanner && $route.path !== '/founders'" class="relative" style="background-color: #00ff9f;">
+      <nuxt-link
+        to="/founders"
+        class="group block text-center text-black text-sm md:text-base py-2 pl-4 pr-12 hover:opacity-90 transition-opacity"
+      >
+        Building something and deep down it feels off? <span class="font-semibold">You're not crazy <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span></span>
+      </nuxt-link>
+      <button
+        aria-label="Dismiss banner"
+        class="absolute right-3 top-1/2 -translate-y-1/2 text-black text-2xl leading-none px-2 hover:opacity-60 transition-opacity"
+        @click="dismissBanner"
+      >
+        &times;
+      </button>
+    </div>
   <div class="bg-center bg-cover flex h-16 md:h-28 items-center md:relative navback object-cover sticky top-0 z-10">
     <div class="w-11/12 md:w-4/5 mx-auto flex justify-between items-center">
 
@@ -19,12 +35,30 @@
 
     </div>
 	</div>
+  </div>
 </template>
 
 <script>
 export default {
 	props: {
 		showProfile: Boolean
+	},
+	data() {
+		return {
+			// Rendered in the static HTML by default; hidden on mount if dismissed
+			showBanner: true
+		}
+	},
+	mounted() {
+		if (localStorage.getItem('foundersBannerDismissed') === '1') {
+			this.showBanner = false
+		}
+	},
+	methods: {
+		dismissBanner() {
+			this.showBanner = false
+			localStorage.setItem('foundersBannerDismissed', '1')
+		}
 	}
 }
 </script>
